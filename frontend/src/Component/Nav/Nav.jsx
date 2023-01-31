@@ -35,22 +35,22 @@ function Nav() {
           </label>
         <div className="navmenu">
           <ul>
-            <a style={{ textDecoration: "none", color: "#000" }} href="#">
+            <a style={{ textDecoration: "none", color: "#000" }} href="/">
               <li className="link">
                 <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>હોમ
               </li>
             </a>
-            <a style={{ textDecoration: "none", color: "#000" }} href="#">
+            <a style={{ textDecoration: "none", color: "#000" }} href="/">
               <li className="link">
                 <FontAwesomeIcon icon={faPlayCircle}></FontAwesomeIcon>વીડિઓ
               </li>
             </a>
-            <a style={{ textDecoration: "none", color: "#000" }} href="#">
+            <a style={{ textDecoration: "none", color: "#000" }} href="/Search">
               <li className="link">
                 <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>સર્ચ કરો
               </li>
             </a>
-            <a style={{ textDecoration: "none", color: "#000" }} href="#">
+            <a style={{ textDecoration: "none", color: "#000" }} href="/EPapers">
               <li className="link">
                 <FontAwesomeIcon icon={faNewspaper}></FontAwesomeIcon>ઇ-પેપર્સ
               </li>
