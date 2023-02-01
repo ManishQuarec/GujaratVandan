@@ -13,9 +13,13 @@ import ShortNews from "./Component/ShortNews/ShortNews";
 import HomePage from "./Pages/HomePage/HomePage";
 import Search from "./Component/SearchNews/Search";
 import EPapers from "./Component/E-Papers/EPapers"
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import FullNews from "./Component/FullNews/FullNews";
+import FullNewsPost from "./Component/FullNews/FullNewsPost";
+import { Route, Routes, BrowserRouter, useParams  } from "react-router-dom";
 
 function App() {
+  let { userId, cat } = useParams();
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -24,6 +28,8 @@ function App() {
           <Route path="/VideoSlider" element={<VideoSlider/>} />
           <Route path="/Search" element={<Search/>} />
           <Route path="/EPapers" element={<EPapers/>} />
+          <Route path="/FullNews/:userId" element={<FullNewsPost/>} />
+          <Route path="/category/:cat" element={<HomePage  />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,22 +1,69 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./Papers.css";
 import PapersIMG from "./IMG/Papers.png";
+import axios from "axios";
+import fileDownload from 'js-file-download'
+import { saveAs } from 'file-saver';
 
 function Papers() {
+  const [newsData, setNewsData] = useState([]);
+
+const url ="http://localhost:5000/call/downloads"
+
+const downloads = (e) => {
+  saveAs(url, "new.pdf")
+
+}
+
+ const download = (e) => {
+  e.preventDefault();
+  axios({
+    url:"http://localhost:5000/call/downloads",
+    method:"GET",
+    responseType:"blob",
+  }).then((res)=>{
+    console.log(res);
+    fileDownload(res.data, "download.pdf")
+  })
+ }
+
+
+console.log("newsData", newsData);
+
+
+  useEffect(() => {
+    
+    axios.get(process.env.REACT_APP_API_BASE_URL+"/newsPaper").then(async (response) => {
+      // console.log(response.data.response);
+      await setNewsData(response.data.response);
+      // console.log(response.data.response);
+    });
+  
+    
+  },[])
+  
   return (
     <>
       <div className="E-Papers">
         <h1>ઈ-ન્યુઝ પેપર્સ</h1>
       </div>
       <div className="Collection">
-        <div className="upload">
-          <img src={PapersIMG} alt="" />
+      {newsData.map((news, index) => (
+
+<div className="upload">
+          <button onClick={download}>
+          <img  src={PapersIMG} alt="" />
           <p>
-            તારીખ:-20/08/2022 <br />
+            તારીખ:-{news.NewsPaperDate}<br />
             શનિવાર
           </p>
+          </button>
         </div>
-        <div className="upload">
+        
+      ))}
+     
+        
+        {/* <div className="upload">
           <img src={PapersIMG} alt="" />
           <p>
             તારીખ:-20/08/2022 <br />
@@ -108,7 +155,7 @@ function Papers() {
             તારીખ:-20/08/2022 <br />
             શનિવાર
           </p>
-        </div>
+        </div> */}
       </div>
     </>
   );

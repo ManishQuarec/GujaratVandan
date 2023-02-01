@@ -8,109 +8,109 @@ function LeftMenuBar() {
     <div className="category-section">
       <a
        style={{ textDecoration: "none", color: "#000" }}
-        href="/HTML/Serch-News.html"
+        href="/category/Homeandabroad"
       >
         <div className="category">
-          <FontAwesomeIcon href="/HTML/Serch-News.html" icon={faEarth}></FontAwesomeIcon>
+          <FontAwesomeIcon  icon={faEarth}></FontAwesomeIcon>
           દેશ-વિદેશ
         </div>
       </a>
       <a
        style={{ textDecoration: "none", color: "#000" }}
-        href="/HTML/Serch-News.html"
+        href="/category/India"
       >
         <div className="category">
-          <FontAwesomeIcon href="/HTML/Serch-News.html" icon={faEarth}></FontAwesomeIcon>
+          <FontAwesomeIcon  icon={faEarth}></FontAwesomeIcon>
           ભારત
         </div>
       </a>
       <a
        style={{ textDecoration: "none", color: "#000" }}
-        href="/HTML/Serch-News.html"
+        href="/category/politics"
       >
         <div className="category">
-          <FontAwesomeIcon href="/HTML/Serch-News.html" icon={faEarth}></FontAwesomeIcon>
+          <FontAwesomeIcon  icon={faEarth}></FontAwesomeIcon>
           રાજકારણ
         </div>
       </a>
       <a
        style={{ textDecoration: "none", color: "#000" }}
-        href="/HTML/Serch-News.html"
+        href="/category/Game-world"
       >
         <div className="category">
-          <FontAwesomeIcon href="/HTML/Serch-News.html" icon={faEarth}></FontAwesomeIcon>
+          <FontAwesomeIcon  icon={faEarth}></FontAwesomeIcon>
           રમત-ગમત
         </div>
       </a>
       <a
        style={{ textDecoration: "none", color: "#000" }}
-        href="/HTML/Serch-News.html"
+        href="/category/Business"
       >
         <div className="category">
-          <FontAwesomeIcon href="/HTML/Serch-News.html" icon={faEarth}></FontAwesomeIcon>
+          <FontAwesomeIcon  icon={faEarth}></FontAwesomeIcon>
           વ્યાપાર
         </div>
       </a>
       <a
        style={{ textDecoration: "none", color: "#000" }}
-        href="/HTML/Serch-News.html"
+        href="/category/Crime"
       >
         <div className="category">
-          <FontAwesomeIcon href="/HTML/Serch-News.html" icon={faEarth}></FontAwesomeIcon>
+          <FontAwesomeIcon  icon={faEarth}></FontAwesomeIcon>
           ક્રાઇમ
         </div>
       </a>
       <a
        style={{ textDecoration: "none", color: "#000" }}
-        href="/HTML/Serch-News.html"
+        href="/category/Education"
       >
         <div className="category">
-          <FontAwesomeIcon href="/HTML/Serch-News.html" icon={faEarth}></FontAwesomeIcon>
+          <FontAwesomeIcon  icon={faEarth}></FontAwesomeIcon>
           મનોરંજન
         </div>
       </a>
       <a
        style={{ textDecoration: "none", color: "#000" }}
-        href="/HTML/Serch-News.html"
+        href="/category/Education"
       >
         <div className="category">
-          <FontAwesomeIcon href="/HTML/Serch-News.html" icon={faEarth}></FontAwesomeIcon>
+          <FontAwesomeIcon  icon={faEarth}></FontAwesomeIcon>
           શિક્ષણ
         </div>
       </a>
       <a
        style={{ textDecoration: "none", color: "#000" }}
-        href="/HTML/Serch-News.html"
+        
       >
         <div className="category">
-          <FontAwesomeIcon href="/HTML/Serch-News.html" icon={faEarth}></FontAwesomeIcon>
+          <FontAwesomeIcon  icon={faEarth}></FontAwesomeIcon>
           અજબગજબ
         </div>
       </a>
       <a
        style={{ textDecoration: "none", color: "#000" }}
-        href="/HTML/Serch-News.html"
+        href="/category/piety"
       >
         <div className="category">
-          <FontAwesomeIcon href="/HTML/Serch-News.html" icon={faEarth}></FontAwesomeIcon>
+          <FontAwesomeIcon  icon={faEarth}></FontAwesomeIcon>
           ધર્મભક્તિ
         </div>
       </a>
       <a
        style={{ textDecoration: "none", color: "#000" }}
-        href="/HTML/Serch-News.html"
+        href="/category/Lifestyle"
       >
         <div className="category">
-          <FontAwesomeIcon href="/HTML/Serch-News.html" icon={faEarth}></FontAwesomeIcon>
+          <FontAwesomeIcon  icon={faEarth}></FontAwesomeIcon>
           લાઇફ સ્ટાઇલ
         </div>
       </a>
       <a
        style={{ textDecoration: "none", color: "#000" }}
-        href="/HTML/Serch-News.html"
+        href="/category/Technology"
       >
         <div className="category">
-          <FontAwesomeIcon href="/HTML/Serch-News.html" icon={faEarth}></FontAwesomeIcon>
+          <FontAwesomeIcon  icon={faEarth}></FontAwesomeIcon>
           ટેક્નોલોજી
         </div>
       </a>

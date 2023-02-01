@@ -3,11 +3,11 @@ import "./VideoSlider.css";
 import axios from "axios";
 
 function VideoSlider() {
-  const Background = " http://localhost:5000/Media/2023/1/16/jpg.jpg";
+
   const [newsData, setNewsData] = useState([]);
   console.log();
   useEffect(() => {
-    axios.post(process.env.REACT_APP_API_BASE_URL+"/allNews").then(async (response) => {
+    axios.post(process.env.REACT_APP_API_BASE_URL+"/allNewsData" ,{data:"India"}).then(async (response) => {
       // console.log(response.data.response);
       await setNewsData(response.data.response);
       // console.log(response.data.response);
@@ -24,7 +24,7 @@ function VideoSlider() {
 
       <div id="slideshow">
         <div className="slide-wrapper">
-          {newsData.map((news, index) => (
+        {newsData.map((news, index) => (
             <>
               {console.log(news.Path)}
               <a href="/index.html" key={index}>
