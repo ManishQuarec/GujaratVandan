@@ -37,9 +37,9 @@ function HomePage(props) {
           <AppStore />
         </div>
         <div className="MiddleSection">
-          {/* <VideoSlider /> */}
-          {/* <ImageData  value={{GujCategory:"રાજકારણ", EngCategory: "politics"}}/> */}
-          {/* <ImageData  value={{GujCategory:"વ્યાપાર", EngCategory: "Business"}}/> */}
+          <VideoSlider />
+          <ImageData  value={{GujCategory:"રાજકારણ", EngCategory: "politics"}}/>
+          <ImageData  value={{GujCategory:"વ્યાપાર", EngCategory: "Business"}}/>
           {/* <NewsBlock /> */}
           {/* <NewsRead/> */}
           {/* <FullNews/> */}
