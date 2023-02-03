@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ImageData.css";
+import Most from "./IMG/Slider.png"
 import axios from "axios";
 
 function ImageData(name) {
@@ -29,6 +30,16 @@ function ImageData(name) {
         <p>વધુ વાંચો...</p>
       </div>
       <div className="Main-Img">
+      {/* <img className="Img-1" src={Most} alt="" />
+      <p className="Aabohava">આબોહવા પરિવર્તન: આગથી વૈશ્વિક વૃક્ષોના નુકસાનનો આશ્ચર્યજનક દર</p>
+      
+      <img className="Img-1" src={Most} alt="" />
+      <p className="Aabohava2">આબોહવા પરિવર્તન: આગથી વૈશ્વિક વૃક્ષોના નુકસાનનો આશ્ચર્યજનક દર</p>
+ */}
+
+
+
+
         {/* <div  className="detialsdifr" style={{border:"1px solid red", width:"44%", height: "295px"}}> */}
         {newsData.slice(length-2, length).map((news, index) => {
           return (

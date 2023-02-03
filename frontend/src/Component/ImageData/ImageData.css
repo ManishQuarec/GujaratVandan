@@ -10,9 +10,9 @@
   margin: 20px 0px;
   display: flex;
   flex-direction: row;
-  /* padding: 0px 70px; */
+  float: right;
+  padding: 0px 20px;
 }
-
 .Img-1 {
   width: 44%;
   position: absolute;
@@ -25,9 +25,7 @@
   background-size: cover;
   border: 1px solid;
   z-index: 0;
-  margin-left: 5%;
-  
-
+  /* margin-left: 5%; */
 }
 .Img-2 {
   width: 44%;
@@ -43,38 +41,58 @@
   background-size: cover;
   border: 1px solid;
   z-index: 0;
-  
+}
+/* .Img-1 {
+  border: 2px solid #000;
+  float: left;
+  width: 47%;
+  margin: 10px;
+  height: 300px;
+} */
+.Aabohava {
+  position: absolute;
+  width: 25.7%;
+  color: #000;
+  margin-left: 12px;
+  margin-top: 255px;
+  background-color: #ffffffa6;
+  padding: 10px 0px 0px 10px;
+}
+.Aabohava2 {
+  position: absolute;
+  width: 25.7%;
+  color: #000;
+  margin-left: 408px;
+  margin-top: 255px;
+  background-color: #ffffffa6;
+  padding: 10px 0px 0px 10px;
 }
 
-.Text-bottem1{
-  z-index:1;
+.Text-bottem1 {
+  z-index: 1;
   bottom: 0;
   left: 0;
   background-color: white;
   position: relative;
-  width: 43.5%;
+  width: 46.3%;
   bottom: -231px;
   opacity: 63%;
-  margin-left: 5.2%;
- 
- 
-    /* padding: 15.10rem 0rem 0rem 1rem; */
+  margin-left: 0%;
 
+  /* padding: 15.10rem 0rem 0rem 1rem; */
 }
-.Text-bottem2{
-  z-index:1;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  
-  width: 43.5%;
-  position: relative;
-  height: 4rem;
-bottom: -231px;
-opacity: 63%;
-margin-left: 1.5%;
-    /* padding: 15.10rem 0rem 0rem 1rem; */
-
+.Text-bottem2 {
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 46.3%;
+    position: relative;
+    height: 4rem;
+    bottom: -231px;
+    opacity: 63%;
+    margin-left: 6.5%;
+    /* padding: 15.1rem 0rem 0rem 1rem; */
 }
 
 .Bind {

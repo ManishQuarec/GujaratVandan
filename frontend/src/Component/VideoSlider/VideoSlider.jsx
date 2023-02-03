@@ -7,7 +7,7 @@ function VideoSlider() {
   const [newsData, setNewsData] = useState([]);
   console.log();
   useEffect(() => {
-    axios.post(process.env.REACT_APP_API_BASE_URL+"/allNewsData" ,{data:"India"}).then(async (response) => {
+    axios.post(process.env.REACT_APP_API_BASE_URL+"/allNews" ,{data:"India"}).then(async (response) => {
       // console.log(response.data.response);
       await setNewsData(response.data.response);
       // console.log(response.data.response);
@@ -28,12 +28,12 @@ function VideoSlider() {
             <>
               {console.log(news.Path)}
               <a href="/index.html" key={index}>
-                {/* <img
+                <img
                   style={{ height: "20.938rem", width: "50rem" }}
                   src={"http://localhost:5000" + `/${news.Path}`}
                   // src={"http://localhost:5000/Media/2023/1/13/jpg.jpg"}
                   alt=""
-                /> */}
+                />
 
                 <div
                 key={index}

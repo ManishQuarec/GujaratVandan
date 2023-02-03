@@ -10,24 +10,22 @@ import ImageData from "../../Component/ImageData/ImageData";
 import ShortNews from "../../Component/ShortNews/ShortNews";
 import RightPhotoImage from "../../Component/RightPhotoImage/RightPhotoImage";
 import SocialMediaLeft from "../../Component/SocialMediaLeft/SocialMediaLeft";
-import  FullNews from "../../Component/FullNews/FullNews";
-import { Route, Routes, BrowserRouter, useParams  } from "react-router-dom";
+import FullNews from "../../Component/FullNews/FullNews";
+import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
 import axios from "axios";
-
-
 
 function HomePage(props) {
   let { cat } = useParams();
   console.log(cat);
 
   console.log(process.env.REACT_APP_YOURVARIABLE);
-  console.warn(process.env.REACT_APP_API_BASE_URL+"/allnews");
+  console.warn(process.env.REACT_APP_API_BASE_URL + "/allnews");
 
   // axios.get("http://localhost:5000/call/allNews/allBreakingNews").then(async (response) => {
   //   console.log(response);
-    // await setNewsData(response.data.response);
-    // console.log(response.data.response);
+  // await setNewsData(response.data.response);
+  // console.log(response.data.response);
   // });
   return (
     <div className="HomePage">
@@ -39,17 +37,17 @@ function HomePage(props) {
           <AppStore />
         </div>
         <div className="MiddleSection">
-      {/* <VideoSlider/> */}
-        {/* <ImageData  value={{GujCategory:"રાજકારણ", EngCategory: "politics"}}/> */}
-        {/* <ImageData  value={{GujCategory:"વ્યાપાર", EngCategory: "Business"}}/> */}
-          <NewsBlock value={{"unique":false,"data":cat} }/>
+          {/* <VideoSlider /> */}
+          {/* <ImageData  value={{GujCategory:"રાજકારણ", EngCategory: "politics"}}/> */}
+          {/* <ImageData  value={{GujCategory:"વ્યાપાર", EngCategory: "Business"}}/> */}
+          {/* <NewsBlock /> */}
           {/* <NewsRead/> */}
           {/* <FullNews/> */}
         </div>
         <div className="RightSection">
-        <SocialMediaLeft/>
-        <RightPhotoImage/>
-        <ShortNews/>
+          <SocialMediaLeft />
+          <RightPhotoImage />
+          <ShortNews />
         </div>
       </div>
     </div>
