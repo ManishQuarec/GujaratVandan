@@ -51,4 +51,5 @@ function ShortNews() {
   )
 }
 
-export default ShortNews
+// export default ShortNews
+export default React.memo(ShortNews)

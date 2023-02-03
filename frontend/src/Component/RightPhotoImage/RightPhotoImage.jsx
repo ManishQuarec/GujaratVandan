@@ -2,6 +2,7 @@ import React from "react";
 import "./RightPhotoImage.css";
 
 function RightPhotoImage() {
+ 
   return (
     <>
       <div className="head">
@@ -12,6 +13,7 @@ function RightPhotoImage() {
         <img
           src={require("../../Image/HomePageIMage/raspred1.png")}
           style={{ height: "222px", width: "267px", border: "1px solid #000" }}
+          alt=""
         />
         <p className="ShortNews">
           આબોહવા પરિવર્તન: આગથી વૈશ્વિક વૃક્ષોના નુકસાનનો આશ્ચર્યજનક દર
@@ -21,6 +23,7 @@ function RightPhotoImage() {
         <img
           src={require("../../Image/HomePageIMage/raspred1.png")}
           style={{ height: "222px", width: "267px", border: "1px solid #000" }}
+          alt=""
         />
         <p className="ShortNews">
           આબોહવા પરિવર્તન: આગથી વૈશ્વિક વૃક્ષોના નુકસાનનો આશ્ચર્યજનક દર
@@ -30,4 +33,5 @@ function RightPhotoImage() {
   );
 }
 
-export default RightPhotoImage;
+// export default RightPhotoImage;
+export default React.memo(RightPhotoImage)

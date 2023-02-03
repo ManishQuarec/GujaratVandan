@@ -11,18 +11,24 @@ import ShortNews from "../../Component/ShortNews/ShortNews";
 import RightPhotoImage from "../../Component/RightPhotoImage/RightPhotoImage";
 import SocialMediaLeft from "../../Component/SocialMediaLeft/SocialMediaLeft";
 import  FullNews from "../../Component/FullNews/FullNews";
+import  searchNews from "../../Component/SearchNews/SearchNews"
 import { Route, Routes, BrowserRouter, useParams  } from "react-router-dom";
+import EPapers from "../../Component/E-Papers/Papers";
+
 
 import axios from "axios";
 
 
 
 function HomePage(props) {
-  let { cat } = useParams();
-  console.log(cat);
 
-  console.log(process.env.REACT_APP_YOURVARIABLE);
-  console.warn(process.env.REACT_APP_API_BASE_URL+"/allnews");
+
+
+  // let { cat } = useParams();
+  // console.log(cat);
+
+  // console.log(process.env.REACT_APP_YOURVARIABLE);
+  // console.warn(process.env.REACT_APP_API_BASE_URL+"/allnews");
 
   // axios.get("http://localhost:5000/call/allNews/allBreakingNews").then(async (response) => {
   //   console.log(response);
@@ -30,30 +36,19 @@ function HomePage(props) {
     // console.log(response.data.response);
   // });
   return (
-    <div className="HomePage">
-      <Nav />
-      <BreakingNews />
-      <div className="boundry">
-        <div className="LeftSection">
-          <LeftMenuBar />
-          <AppStore />
-        </div>
-        <div className="MiddleSection">
-      {/* <VideoSlider/> */}
-        {/* <ImageData  value={{GujCategory:"રાજકારણ", EngCategory: "politics"}}/> */}
-        {/* <ImageData  value={{GujCategory:"વ્યાપાર", EngCategory: "Business"}}/> */}
-          <NewsBlock value={{"unique":false,"data":cat} }/>
-          {/* <NewsRead/> */}
-          {/* <FullNews/> */}
-        </div>
-        <div className="RightSection">
-        <SocialMediaLeft/>
-        <RightPhotoImage/>
-        <ShortNews/>
-        </div>
-      </div>
-    </div>
+    
+    
+    
+    <>
+       <VideoSlider/> 
+        <ImageData  value={{GujCategory:"રાજકારણ", EngCategory: "politics"}}/> 
+        <ImageData  value={{GujCategory:"વ્યાપાર", EngCategory: "Business"}}/> 
+        <NewsBlock value={{"unique":true,} }/> 
+        </>
+      
+    
   );
 }
 
-export default HomePage;
+// export default HomePage;
+export default React.memo(HomePage)

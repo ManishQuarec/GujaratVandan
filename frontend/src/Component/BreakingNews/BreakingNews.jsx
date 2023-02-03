@@ -4,10 +4,11 @@ import axios from "axios";
 
 function BreakingNews() {
   const [newsData, setNewsData] =useState([]);
+  
 
   useEffect(() => {
 
-
+    console.count("breaking news");
           
     axios.get(process.env.REACT_APP_API_BASE_URL+"/allBreakingNews").then(async(response)=> {
       // console.log(response.data.response);

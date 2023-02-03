@@ -6,12 +6,13 @@ import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import FullNews from "../../Component/FullNews/FullNews";
+import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
 function NewsBlock(props) {
   console.log(props.value.data);
   const navigate = useNavigate();
   const [newsData, setNewsData] = useState([]);
-
+  let { userId, cat } = useParams();
   // console.log(newsData);
 
   useEffect(() => {
@@ -26,7 +27,7 @@ function NewsBlock(props) {
               // console.log(response.data.response);
             })
         : axios
-            .post(process.env.REACT_APP_API_BASE_URL + "/allNewsData", {data:props.value.data})
+            .post(process.env.REACT_APP_API_BASE_URL + "/allNewsData", {data:cat})
             .then(async (response) => {
               // console.log(response.data.response);
               await setNewsData(response.data.response);
@@ -140,4 +141,7 @@ function NewsBlock(props) {
   );
 }
 
-export default NewsBlock;
+// export default NewsBlock;
+export default React.memo(NewsBlock)
+
+
