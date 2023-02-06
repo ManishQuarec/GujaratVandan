@@ -1,14 +1,14 @@
 import React from "react";
 import "./SearchNews.css";
-import { useCookies, useState } from 'react-cookie'
+import { useCookies, useState } from "react-cookie";
 
 function SearchNews() {
-  const [cookies, setCookies] = useCookies('GujCategory');
+  const [cookies, setCookies] = useCookies("GujCategory");
   // const [data, setData]= useState()
   // console.log(cookies.GujCategory);
-  let cookiesdata  = cookies.GujCategory
+  let cookiesdata = cookies.GujCategory;
   console.log(cookiesdata);
-  
+
   return (
     <>
       <div className="Searchbar">
@@ -16,22 +16,41 @@ function SearchNews() {
         <button className="Searchbarbtn">
           <i class="fa fa-search"></i>
         </button>
-        </div>
+      </div>
       <div className="controlBox">
-      {cookiesdata.map((news, index)=>{
-        return (
+        {/* {cookiesdata.map((news, index) => { */}
+        {/* // return ( */}
+        {/* <div className="Searchitem"> */}
+        {/* <button className="BtnItems"> */}
+        {/* <i class="fa fa-globe"></i> {news.Category.GujCategory} */}
+        {/* </button> */}
+        {/* </div> */}
+        {/* ); */}
+        {/* })} */}
         <div className="Searchitem">
-        <button className="BtnItems">
-          <i class="fa fa-globe"></i> {news.Category.GujCategory}
-        </button>
+          <button className="BtnItems">
+            <i class="fa fa-globe">અમદાવાદ</i>
+          </button>
+          <button className="BtnItems">
+            <i class="fa fa-globe">ભાવનગર</i>
+          </button>
+          <button className="BtnItems">
+            <i class="fa fa-globe">સુરત</i>
+          </button>
+          <button className="BtnItems">
+            <i class="fa fa-globe">અમદાવાદ</i>
+          </button>
+          <button className="BtnItems">
+            <i class="fa fa-globe">ભાવનગર</i>
+          </button>
+          <button className="BtnItems">
+            <i class="fa fa-globe">ક્રાઇમ</i>
+          </button>
+          <button className="BtnItems">
+            <i class="fa fa-globe">ભાવનગર</i>
+          </button>
         </div>
-        
-       )
-
-     })}
-        </div>
-      
-     
+      </div>
     </>
   );
 }
