@@ -20,9 +20,11 @@
 }
 .Searchitem {
   margin-top: 3rem;
+  margin-left: 2%;
+  
 }
 .BtnItems {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   font-size: 25px;
   border: 1px solid #000;
   border-radius: 40px;
@@ -31,4 +33,9 @@
 .BtnItems i {
   color: #789cc4;
   font-size: 40px;
+}
+.controlBox{
+  /* border: red 1px solid; */
+  display: flex;
+  flex-wrap: wrap;
 }

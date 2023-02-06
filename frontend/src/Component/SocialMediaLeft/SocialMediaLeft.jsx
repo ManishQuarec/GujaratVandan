@@ -26,27 +26,27 @@ function SocialMediaLeft() {
       </button>
       <br />
       <button id="social-btn">
-        <a href="#">
+        
           <FontAwesomeIcon style={{color:" #0088cc"}} icon={faTelegram}>
             &nbsp;
           </FontAwesomeIcon>
-        </a>
+       
         ટેલિગ્રામ પર અમારી સાથે જોડાઓ
       </button>
       <button id="social-btn">
-        <a href="#">
+        
           <FontAwesomeIcon style={{color: "#25d366"}} icon={faWhatsapp}>
             &nbsp;
           </FontAwesomeIcon>
-        </a>
+     
         વોટ્સેપ પર અમારી સાથે જોડાઓ
       </button>
       <button id="social-btn">
-        <a href="#">
+        
           <FontAwesomeIcon style={{color: "#bc2a8d"}} icon={faInstagramSquare}>
             &nbsp;
           </FontAwesomeIcon>
-        </a>
+        
         ઇન્સ્ટાગ્રામ પર અમારી સાથે જોડાઓ
       </button>
       <br />
@@ -54,4 +54,5 @@ function SocialMediaLeft() {
   );
 }
 
-export default SocialMediaLeft;
+// export default SocialMediaLeft;
+export default React.memo(SocialMediaLeft)

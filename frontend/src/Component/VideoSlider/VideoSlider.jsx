@@ -61,4 +61,5 @@ function VideoSlider() {
   );
 }
 
-export default VideoSlider;
+
+export default React.memo(VideoSlider)

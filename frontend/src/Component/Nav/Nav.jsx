@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,6 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Nav() {
+  
   var [date, setDate] = useState(new Date());
 
   useEffect(() => {
@@ -59,10 +61,11 @@ function Nav() {
           
         </div>
         
-        {/* <div className="date">{date.toLocaleDateString()} {date.toLocaleTimeString()}</div> */}
+        <div className="date">{date.toLocaleDateString()} {date.toLocaleTimeString()}</div>
       </div>
     </>
   );
 }
 
-export default Nav;
+// export default Nav;
+export default React.memo(Nav)
