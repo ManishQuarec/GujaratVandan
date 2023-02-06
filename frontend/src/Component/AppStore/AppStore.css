@@ -218,3 +218,8 @@ ul li:hover::before {
     font-size: 10px;
   }
 }
+@media all and (max-width:700px){
+  .download-app{
+    display: none;
+  }
+}

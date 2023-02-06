@@ -11,12 +11,10 @@
 
 .logo {
   flex-basis: 30%;
-
 }
 
 .navmenu {
   flex-basis: 70%;
- 
 }
 
 .navmenu ul {
@@ -42,7 +40,6 @@
 
 .logo img {
   height: 4.375rem;
-
 }
 
 .date {
@@ -64,7 +61,6 @@
   display: none;
 }
 
-
 @media only screen and (max-width: 1330px) {
   .Container {
     padding: 0%;
@@ -85,14 +81,21 @@
 
 @media only screen and (max-width: 701px) {
   .Container {
-
     display: inline-block;
-    
+    /* position: fixed;
+    z-index: 1;
+    margin-top: -10px; */
   }
-
+  .date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: bold;
+    margin-right: 11%;
+    font-size: 12px;
+  }
   .logo {
-    display: contents
-  
+    display: contents;
   }
   .logo img {
     height: 2rem;
@@ -107,17 +110,16 @@
     display: none;
   }
 
-  #check:checked ~ .Container{
+  #check:checked ~ .Container {
     background-color: #ffffff;
-  
+
     height: 100vh;
   }
   #check:checked ~ .navmenu ul {
     flex-direction: column;
     background-color: #ffffff;
     flex-basis: 70%;
-  
-    
+
     /* width: 108%; */
   }
   #check:checked ~ .navmenu li {
@@ -128,5 +130,4 @@
     width: 100%;
     /* height: 500%; */
   }
-  
 }
