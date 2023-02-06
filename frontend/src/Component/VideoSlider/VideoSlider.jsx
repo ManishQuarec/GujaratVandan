@@ -7,7 +7,7 @@ function VideoSlider() {
   const [newsData, setNewsData] = useState([]);
   console.log();
   useEffect(() => {
-    axios.post(process.env.REACT_APP_API_BASE_URL+"/allNewsData" ,{data:"India"}).then(async (response) => {
+    axios.post(process.env.REACT_APP_API_BASE_URL+"/allNews" ,{data:"India"}).then(async (response) => {
       // console.log(response.data.response);
       await setNewsData(response.data.response);
       // console.log(response.data.response);
@@ -28,39 +28,27 @@ function VideoSlider() {
             <>
               {console.log(news.Path)}
               <a href="/index.html" key={index}>
-                {/* <img
-                  style={{ height: "20.938rem", width: "50rem" }}
+                <img
+                  style={{ height: "400px", width: "800px" }}
                   src={"http://localhost:5000" + `/${news.Path}`}
                   // src={"http://localhost:5000/Media/2023/1/13/jpg.jpg"}
                   alt=""
-                /> */}
+                />
 
                 <div
-                key={index}
+                key={index} className="IMGSlider"
                   style={{
                     backgroundImage: `url(http://localhost:5000/${news.Path})`,
-                    height: "20.938rem",
-                    width: "50rem",
-                    backgroundSize: 'cover',
-                    backgroundRepeat: "no-repeat",
-                    position: "relative",
-                    display: "inline-flex",
-                    
-                    
+                    // height: "20.938rem",
+                    // width: "50rem",
+                    // backgroundSize: 'cover',
+                    // backgroundRepeat: "no-repeat",
+                    // position: "relative",
+                    // display: "inline-flex",                   
                   }}
+
                 >
-                <div
-                  key={index}
-                  className="bottom-left"
-                  style={{
-                    backgroundColor: "white",
-                    width: "50rem",
-                    left: "0",
-                    bottom: "0",
-                    opacity: "70%",
-                    display: "inline-flex",
-                  }}
-                >
+                <div key={index} className="bottom-left">
                   {news.NewsTittle}
                 </div>
                 </div>

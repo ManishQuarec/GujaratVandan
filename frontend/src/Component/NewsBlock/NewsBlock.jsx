@@ -36,14 +36,14 @@ function NewsBlock(props) {
             });
     }
 
-    // axios
-    //   .post(process.env.REACT_APP_API_BASE_URL + "/allNews")
-    //   .then(async (response) => {
-    //     // console.log(response.data.response);
-    //     await setNewsData(response.data.response);
+    axios
+      .post(process.env.REACT_APP_API_BASE_URL + "/allNews")
+      .then(async (response) => {
+        // console.log(response.data.response);
+        await setNewsData(response.data.response);
 
-    //     // console.log(response.data.response);
-    //   });
+        // console.log(response.data.response);
+      });
   }, []);
 
   return (
