@@ -24,8 +24,9 @@ import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
 function App() {
   let { userId, cat } = useParams();
-
+  console.log(process.env.REACT_APP_API_BASE_URL);
   const Layout =({ children }) => {
+    
     return (
       <>
      
