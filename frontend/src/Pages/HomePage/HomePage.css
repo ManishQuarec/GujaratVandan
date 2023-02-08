@@ -53,7 +53,46 @@
   .RightSection {
     display: none;
   }
-  .LeftSection {
+  .MiddleSection {
+    margin-top: 17%;
+  }
+  /* .LeftSection {
     display: none;
+  } */
+  .boundry {
+    margin: 0;
+  }
+  .LeftSection {
+    flex: 1s;
+    flex-basis: 0%;
+    margin: 0%;
+    border: red 1px solid;
+    height: 99%;
+    z-index: 99;
+  }
+}
+@media all and (max-width: 650px) {
+  .MiddleSection {
+    margin-top: 19%;
+  }
+}
+@media all and (max-width: 570px) {
+  .MiddleSection {
+    margin-top: 21%;
+  }
+}
+@media all and (max-width: 450px) {
+  .MiddleSection {
+    margin-top: 22.5%;
+  }
+}
+@media all and (max-width: 400px) {
+  .MiddleSection {
+    margin-top: 25.5%;
+  }
+}
+@media all and (max-width: 360px) {
+  .MiddleSection {
+    margin-top: 30.5%;
   }
 }
