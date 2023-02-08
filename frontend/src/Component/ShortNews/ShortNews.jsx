@@ -8,7 +8,7 @@ function ShortNews() {
     <table className="tbl">
       <tr style={{color: "#000", backgroundColor: "transparent"}}>
         <th>
-          <b>સંક્ષિપ્ત સમાચાર </b><span id="read-more">વધુ વાંચો...</span>
+          <b className='Sanshipt'>સંક્ષિપ્ત સમાચાર </b><span id="read-more">વધુ વાંચો...</span>
         </th>
         
       </tr>

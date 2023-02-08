@@ -10,6 +10,7 @@ import ImageData from "../../Component/ImageData/ImageData";
 import ShortNews from "../../Component/ShortNews/ShortNews";
 import RightPhotoImage from "../../Component/RightPhotoImage/RightPhotoImage";
 import SocialMediaLeft from "../../Component/SocialMediaLeft/SocialMediaLeft";
+
 import  FullNews from "../../Component/FullNews/FullNews";
 import  searchNews from "../../Component/SearchNews/SearchNews"
 import { Route, Routes, BrowserRouter, useParams  } from "react-router-dom";
@@ -18,9 +19,8 @@ import EPapers from "../../Component/E-Papers/Papers";
 
 import axios from "axios";
 
-
-
 function HomePage(props) {
+
 
 
 
@@ -30,13 +30,14 @@ function HomePage(props) {
   // console.log(process.env.REACT_APP_YOURVARIABLE);
   // console.warn(process.env.REACT_APP_API_BASE_URL+"/allnews");
 
+
   // axios.get("http://localhost:5000/call/allNews/allBreakingNews").then(async (response) => {
   //   console.log(response);
-    // await setNewsData(response.data.response);
-    // console.log(response.data.response);
+  // await setNewsData(response.data.response);
+  // console.log(response.data.response);
   // });
   return (
-    
+
     
     
     <>
@@ -47,6 +48,7 @@ function HomePage(props) {
         </>
       
     
+
   );
 }
 

@@ -6,3 +6,32 @@
   background-color: #ffffff8a;
   width: 266px;
 }
+.img-right img {
+  height: 222px;
+  width: 267px;
+  border: 1px solid #000;
+}
+@media all and (max-width: 1050px) {
+  .img-right img {
+    height: 193px;
+    width: 235px;
+    border: 1px solid #000;
+  }
+  .ShortNews {
+    margin-top: -35px;
+    font-size: 11px;
+    width: 233px;
+  }
+}
+@media all and (max-width: 800px) {
+  .img-right img {
+    height: 165px;
+    width: 170px;
+    border: 1px solid #000;
+  }
+  .ShortNews {
+    margin-top: -31px;
+    font-size: 10px;
+    width: 169px;
+  }
+}

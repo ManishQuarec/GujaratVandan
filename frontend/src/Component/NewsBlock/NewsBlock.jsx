@@ -27,7 +27,9 @@ function NewsBlock(props) {
               // console.log(response.data.response);
             })
         : axios
-            .post(process.env.REACT_APP_API_BASE_URL + "/allNewsData", {data:cat})
+            .post(process.env.REACT_APP_API_BASE_URL + "/allNewsData", {
+              data: cat,
+            })
             .then(async (response) => {
               // console.log(response.data.response);
               await setNewsData(response.data.response);
@@ -36,14 +38,14 @@ function NewsBlock(props) {
             });
     }
 
-    // axios
-    //   .post(process.env.REACT_APP_API_BASE_URL + "/allNews")
-    //   .then(async (response) => {
-    //     // console.log(response.data.response);
-    //     await setNewsData(response.data.response);
+    axios
+      .post(process.env.REACT_APP_API_BASE_URL + "/allNews")
+      .then(async (response) => {
+        // console.log(response.data.response);
+        await setNewsData(response.data.response);
 
-    //     // console.log(response.data.response);
-    //   });
+        // console.log(response.data.response);
+      });
   }, []);
 
   return (
@@ -70,66 +72,33 @@ function NewsBlock(props) {
                 <div className="headlines-left">
                   <h3>
                     {news.NewsTittle}
-                    {/* સુરક્ષાદળો સાથેની અથડામણમાં */}
-                    {/* <span style={{ color: "#ff0000" }}>જમ્મુ-કાશ્મીરના</span>{" "} */}
-                    {/* અરનિયામાં એક આતંકીને ઠાર */}
                   </h3>
                   <p>
-                    {/* મોહમ્મદ અલી હુસૈન નામના આતંકીને સુરક્ષાદળોએ ઠાર કર્યો છે તો બીજી
-              બાજુ ટોફ ગામમાં એક પાકિસ્તાની ડ્રોનથી છોડવામાં આવેલા હથિયાર અને
-              દારૂગોળા જપ્ત કરવામાં આવ્યા છે. આ માહિતી પોલીસ દ્વારા આપવામાં આવી
-              છે. */}
-
                     {news.News}
                   </p>
                   <div className="footer">
-                    {/* <div className="icon"> */}
-                    {/* <h4> */}
                     <FontAwesomeIcon
+                      className="globelicon"
                       href="#"
                       icon={faGlobe}
-                      style={{
-                        fontSize: "100%",
-                        color: "#3b5998",
-                        // marginTop: "10%",
-                      }}
                     ></FontAwesomeIcon>
                     &nbsp;
-                    <span style={{ fontWeight: "900" }}>
-                      {news.GujCategory}{" "}
-                    </span>
+                    <span className="CatName">{news.GujCategory} </span>
                     <FontAwesomeIcon
+                      className="SocialGlobelIcns"
                       href="#"
                       icon={faLink}
-                      style={{
-                        fontSize: "100%",
-                        color: "#3b5998",
-                        float: "right",
-                        paddingRight: "1%",
-                      }}
                     ></FontAwesomeIcon>
                     <FontAwesomeIcon
+                      className="SocialGlobelIcns"
                       href="#"
                       icon={faFacebook}
-                      style={{
-                        fontSize: "100%",
-                        color: "#3b5998",
-                        float: "right",
-                        paddingRight: "1%",
-                      }}
                     ></FontAwesomeIcon>
                     <FontAwesomeIcon
+                      className="SocialGlobelIcns"
                       href="#"
                       icon={faTwitter}
-                      style={{
-                        fontSize: "100%",
-                        color: "#3b5998",
-                        float: "right",
-                        paddingRight: "1%",
-                      }}
                     ></FontAwesomeIcon>
-                    {/* </h4> */}
-                    {/* </div> */}
                   </div>
                 </div>
               </div>
@@ -142,6 +111,4 @@ function NewsBlock(props) {
 }
 
 // export default NewsBlock;
-export default React.memo(NewsBlock)
-
-
+export default React.memo(NewsBlock);
