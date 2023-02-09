@@ -76,10 +76,13 @@ ul li::before {
   overflow: hidden;
   transition: 0.5s ease-in-out;
 }
-ul li:nth-child(1)::before {
-  content: "\f09a";
+.social-link ul li:nth-child(1)::before {
+  content: "\f09a"; 
   color: #3b5998;
-  top: 0.063rem;
+  left: 6px;
+  overflow: hidden;
+  /* top: 100px; */
+  top: 5px;
   width: 100%;
   /* border-bottom: 2px solid #3b5998; */
 }
@@ -101,16 +104,18 @@ ul li:nth-child(3)::before {
     #bc1888 100%
   );
   top: 0.063rem;
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 100%;
   /* border-bottom: 2px solid #dc2743; */
 }
 ul li:nth-child(4)::before {
-  content: "\f167";
+  content: "\f16a";
   color: #ff0000;
   top: 0.063rem;
   width: 100%;
+  left: 1px;
+  
   /* border-bottom: 2px solid #ff0000; */
 }
 ul li:hover::before {
@@ -218,8 +223,29 @@ ul li:hover::before {
     font-size: 10px;
   }
 }
-@media all and (max-width:700px){
-  .download-app{
+@media all and (max-width: 700px) {
+  .download-app {
     display: none;
   }
+}
+@media only screen and (max-width: 2000px) and (min-width: 1500px) {
+  .download-app {
+    width: 350px;
+    height: 21.5rem;
+    font-size: 30px;
+  }
+  .box {
+    width: 18rem;
+    height: 8rem;
+    border-radius: 0.438rem ;
+    background-color: black;
+    margin-top: 0.688rem;
+  }
+  .google-play > div {
+    font-size: 2rem;
+  }
+  .app-store > div {
+    font-size: 1.9rem;
+  }
+
 }

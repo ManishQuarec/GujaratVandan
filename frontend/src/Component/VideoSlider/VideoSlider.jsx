@@ -3,15 +3,16 @@ import "./VideoSlider.css";
 import axios from "axios";
 
 function VideoSlider() {
-
   const [newsData, setNewsData] = useState([]);
   console.log();
   useEffect(() => {
-    axios.post(process.env.REACT_APP_API_BASE_URL+"/allNews" ,{data:"India"}).then(async (response) => {
-      // console.log(response.data.response);
-      await setNewsData(response.data.response);
-      // console.log(response.data.response);
-    });
+    axios
+      .post(process.env.REACT_APP_API_BASE_URL + "/allNews", { data: "India" })
+      .then(async (response) => {
+        // console.log(response.data.response);
+        await setNewsData(response.data.response);
+        // console.log(response.data.response);
+      });
   }, []);
 
   return (
@@ -24,34 +25,19 @@ function VideoSlider() {
 
       <div id="slideshow">
         <div className="slide-wrapper">
-        {newsData.map((news, index) => (
+          {newsData.map((news, index) => (
             <>
               {console.log(news.Path)}
               <a href="/index.html" key={index}>
-                <img
-                  style={{ height: "400px", width: "800px" }}
+                <img className="SliderIMG"
+                  // style={{ height: "400px", width: "800px" }}
                   src={"http://localhost:5000" + `/${news.Path}`}
                   // src={"http://localhost:5000/Media/2023/1/13/jpg.jpg"}
                   alt=""
                 />
-
-                <div
-                key={index} className="IMGSlider"
-                  style={{
-                    backgroundImage: `url(http://localhost:5000/${news.Path})`,
-                    // height: "20.938rem",
-                    // width: "50rem",
-                    // backgroundSize: 'cover',
-                    // backgroundRepeat: "no-repeat",
-                    // position: "relative",
-                    // display: "inline-flex",                   
-                  }}
-
-                >
-                <div key={index} className="bottom-left">
+                {/* <div key={index} className="bottom-left">
                   {news.NewsTittle}
-                </div>
-                </div>
+                </div> */}
               </a>
             </>
           ))}
@@ -61,5 +47,4 @@ function VideoSlider() {
   );
 }
 
-
-export default React.memo(VideoSlider)
+export default React.memo(VideoSlider);
