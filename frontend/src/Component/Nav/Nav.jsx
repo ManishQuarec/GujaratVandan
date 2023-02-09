@@ -61,7 +61,7 @@ function Nav() {
           
         </div>
         
-        <div className="date">{date.toLocaleDateString()} {date.toLocaleTimeString()}</div>
+        <div className="date">{date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear()} {date.toLocaleTimeString()}</div>
       </div>
     </>
   );

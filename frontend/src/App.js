@@ -24,8 +24,9 @@ import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
 function App() {
   let { userId, cat } = useParams();
-
+  console.log(process.env.REACT_APP_API_BASE_URL);
   const Layout =({ children }) => {
+    
     return (
       <>
      
@@ -35,13 +36,13 @@ function App() {
           <div className="boundry">
             <div className="LeftSection">
               <LeftMenuBar />
-              <AppStore />
+              {/* <AppStore /> */}
             </div>
             <div className="MiddleSection">{children}</div>
             <div className="RightSection">
               <SocialMediaLeft />
-              <RightPhotoImage />
-              <ShortNews />
+              <RightPhotoImage value={{GujCategory:"રસપ્રદ", EngCategory: "Interesting"}} />
+              {/* <ShortNews /> */}
             </div>
           </div>
         </div>
@@ -61,7 +62,7 @@ function App() {
           <Route path="/Search" element={<SearchNews/>} />
           <Route path="/EPapers" element={<EPapers/>} />
           <Route path="/FullNews/:userId" element={<FullNews/>} />
-          <Route path="/category/:cat" element={<NewsBlock value={{"unique":false,"data":cat} }/> } />
+          <Route path="/category/:cat" element={<NewsBlock value={{"unique":false,} }/> } />
         </Routes>
         </BrowserRouter>
 </Layout>

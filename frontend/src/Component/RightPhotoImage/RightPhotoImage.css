@@ -5,13 +5,20 @@
   padding: 0rem 0.5rem;
   background-color: #ffffff8a;
   width: 266px;
+
   height: 64px;
   overflow: hidden;
+
+  
 }
 .img-right img {
   height: 222px;
   width: 267px;
   border: 1px solid #000;
+}
+.rtes{
+
+  color: black;
 }
 @media all and (max-width: 1050px) {
   .img-right img {

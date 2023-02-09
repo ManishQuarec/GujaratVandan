@@ -1,3 +1,4 @@
+
 .category-section {
   width: 223px;
   height: auto;
@@ -59,6 +60,7 @@
     width: 223px;
     height: auto;
     background: linear-gradient(#e74b4b, #001aff);
+
     padding-top: 10px;
     display: inline;
     align-items: center;

@@ -8,17 +8,12 @@ import { saveAs } from 'file-saver';
 function Papers() {
   const [newsData, setNewsData] = useState([]);
 
-const url ="http://localhost:5000/call/downloads"
 
-const downloads = (e) => {
-  saveAs(url, "new.pdf")
-
-}
 
  const download = (e) => {
   e.preventDefault();
   axios({
-    url:"http://localhost:5000/call/downloads",
+    url:process.env.REACT_APP_API_BASE_URL+"/downloads",
     method:"GET",
     responseType:"blob",
   }).then((res)=>{
