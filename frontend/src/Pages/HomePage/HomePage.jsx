@@ -24,18 +24,7 @@ function HomePage(props) {
 
 
 
-  // let { cat } = useParams();
-  // console.log(cat);
 
-  // console.log(process.env.REACT_APP_YOURVARIABLE);
-  // console.warn(process.env.REACT_APP_API_BASE_URL+"/allnews");
-
-
-  // axios.get("http://localhost:5000/call/allNews/allBreakingNews").then(async (response) => {
-  //   console.log(response);
-  // await setNewsData(response.data.response);
-  // console.log(response.data.response);
-  // });
   return (
 
     
@@ -44,7 +33,7 @@ function HomePage(props) {
        <VideoSlider/> 
         <ImageData  value={{GujCategory:"રાજકારણ", EngCategory: "politics"}}/> 
         <ImageData  value={{GujCategory:"વ્યાપાર", EngCategory: "Business"}}/> 
-        <NewsBlock value={{"unique":true,} }/> 
+        <NewsBlock value={{"unique":true} }/> 
         </>
       
     

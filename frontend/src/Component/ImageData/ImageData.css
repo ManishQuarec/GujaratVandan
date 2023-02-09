@@ -98,6 +98,7 @@
 .Bind {
   /* border: 1px solid red; */
   height: 30%;
+  margin-top: 2%;
 }
 @media all and (max-width: 1330px) {
   .Img-1 {

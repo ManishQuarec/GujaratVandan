@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-.category-section{
-    Width: 223px;
-    height: auto;
-    background: linear-gradient(#E74B4B,#001AFF);
-=======
+
 .category-section {
   width: 223px;
   height: auto;
@@ -65,7 +60,7 @@
     width: 223px;
     height: auto;
     background: linear-gradient(#e74b4b, #001aff);
->>>>>>> 125d4ea885acdb4183bff8c1b11f8e130389063e
+
     padding-top: 10px;
     display: inline;
     align-items: center;

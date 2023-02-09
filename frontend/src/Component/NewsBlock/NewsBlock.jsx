@@ -9,7 +9,7 @@ import FullNews from "../../Component/FullNews/FullNews";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
 function NewsBlock(props) {
-  console.log(props.value.data);
+  console.log(props.value.unique);
   const navigate = useNavigate();
   const [newsData, setNewsData] = useState([]);
   let { userId, cat } = useParams();
@@ -28,7 +28,7 @@ function NewsBlock(props) {
             })
         : axios
             .post(process.env.REACT_APP_API_BASE_URL + "/allNewsData", {
-              data: cat,
+              "data": cat,
             })
             .then(async (response) => {
               // console.log(response.data.response);
@@ -55,7 +55,7 @@ function NewsBlock(props) {
         <p>વધુ વાંચો...</p>
       </div>
 
-      {newsData.map((news, index) => {
+      {newsData.slice(0).reverse().map((news, index) => {
         console.log(process.env.REACT_APP_API_URL + `${news.Path}`);
         console.log(news._id);
 

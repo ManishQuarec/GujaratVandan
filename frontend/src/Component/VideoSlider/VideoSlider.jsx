@@ -7,12 +7,14 @@ function VideoSlider() {
   const [newsData, setNewsData] = useState([]);
   console.log();
   useEffect(() => {
-    axios.post(process.env.REACT_APP_API_BASE_URL+"/allNews" ,{data:"India"}).then(async (response) => {
+    axios.post(process.env.REACT_APP_API_BASE_URL+"/allNewsData" ,{data:"Trending News"}).then(async (response) => {
       // console.log(response.data.response);
       await setNewsData(response.data.response);
       // console.log(response.data.response);
     });
   }, []);
+
+  console.warn(newsData)
 
   return (
     <div className="trending-news">
@@ -25,6 +27,7 @@ function VideoSlider() {
       <div id="slideshow">
         <div className="slide-wrapper">
         {newsData.map((news, index) => (
+       
             <>
               {console.log(news.Path)}
               <a href="/index.html" key={index}>
@@ -35,7 +38,7 @@ function VideoSlider() {
                   alt=""
                 />
 
-                <div
+                {/* <div
                 key={index} className="IMGSlider"
                   style={{
                     backgroundImage: `url(http://localhost:5000/${news.Path})`,
@@ -47,11 +50,11 @@ function VideoSlider() {
                     // display: "inline-flex",                   
                   }}
 
-                >
+                > */}
                 <div key={index} className="bottom-left">
                   {news.NewsTittle}
                 </div>
-                </div>
+                {/* </div> */}
               </a>
             </>
           ))}

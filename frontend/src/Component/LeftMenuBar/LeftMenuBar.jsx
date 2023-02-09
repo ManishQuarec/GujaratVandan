@@ -27,7 +27,7 @@ function LeftMenuBar() {
 
   useEffect(() => {
     if (!cookies.GujCategory) {
-      axios.get("http://localhost:5000/call/GetCategory").then((response) => {
+      axios.get(process.env.REACT_APP_API_BASE_URL +"/GetCategory").then((response) => {
         setResData(response.data);
         console.log(response.data);
         setCookies("GujCategory", JSON.stringify(response.data));

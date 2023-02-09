@@ -25,6 +25,7 @@ function ImageData(name) {
   return (
     <>
     <div className="Bind">
+    
       <div className="head">
         <h4>{name.value.GujCategory}</h4>
         <p>વધુ વાંચો...</p>
@@ -44,6 +45,7 @@ function ImageData(name) {
         {newsData.slice(length-2, length).map((news, index) => {
           return (
             <>
+            <a href={`/FullNews/${news._id}`} >
               {console.log(index)}
               <img
                 key={index}
@@ -54,7 +56,7 @@ function ImageData(name) {
               <p className={index == 1 ? "Text-bottem2" : "Text-bottem1"}>
                 <b>{news.NewsTittle}</b>
               </p>
-
+              </a>
             </>
           );
         })}
