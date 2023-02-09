@@ -37,7 +37,7 @@
 }
 .slide-wrapper {
   width: calc(50rem * 4);
-  animation: slide 15s ease infinite alternate-reverse;
+  /* animation: slide 15s ease infinite alternate-reverse; */
   position: relative;
 }
 .slide:nth-child(1) {
@@ -57,7 +57,10 @@
   background-image: url("../../Image/HomePageIMage/raspred1.png");
   cursor: pointer;
 }
-
+.SliderIMG {
+  height: 350px;
+  width: 800px;
+}
 .bottom-left {
   position: absolute;
   bottom: 8px;
@@ -66,9 +69,10 @@
   font-weight: 500;
   color: black;
   font-size: 200%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.263);
   width: 50rem;
   left: 0;
+  height: 76%;
   bottom: 0;
   opacity: 70%;
   display: inline-flex;
@@ -106,7 +110,11 @@
     width: 33rem;
   }
   .bottom-left {
-    padding-bottom: 80px;
+    padding-bottom: 8 0px;
+  }
+  .SliderIMG {
+    height: 255px;
+    width: 572px;
   }
 }
 @media all and (max-width: 1178px) {
@@ -114,17 +122,29 @@
     height: 15.938rem;
     width: 29rem;
   }
+  .SliderIMG {
+    height: 254px;
+    width: 502px;
+  }
 }
 @media all and (max-width: 930px) {
   #slideshow {
     height: 13rem;
     width: 24rem;
   }
+  .SliderIMG {
+    height: 208px;
+    width: 384px;
+  }
 }
 @media all and (max-width: 833px) {
   #slideshow {
     height: 11rem;
     width: 22rem;
+  }
+  .SliderIMG {
+    height: 173px;
+    width: 352px;
   }
 }
 /* @media all and (max-width: 670px) {
@@ -133,10 +153,24 @@
     width: 18rem;
   }
 } */
+@media all and (max-width: 700px) {
+  #slideshow {
+    height: 16rem;
+    width: 40rem;
+  }
+  .SliderIMG {
+    height: 253px;
+    width: 640px;
+  }
+}
 @media all and (max-width: 624px) {
   #slideshow {
     height: 13rem;
     width: 30rem;
+  }
+  .SliderIMG {
+    height: 206px;
+    width: 480px;
   }
 }
 @media all and (max-width: 600px) {
@@ -144,11 +178,19 @@
     height: 12rem;
     width: 28rem;
   }
+  .SliderIMG {
+    height: 189px;
+    width: 448px;
+  }
 }
 @media all and (max-width: 510px) {
   #slideshow {
     height: 12rem;
-    width: 24rem;
+    width: 26rem;
+  }
+  .SliderIMG {
+    height: 189px;
+    width: 417px;
   }
 }
 @media all and (max-width: 400px) {
@@ -156,10 +198,26 @@
     height: 8rem;
     width: 20rem;
   }
+  .SliderIMG {
+    height: 126px;
+    width: 320px;
+  }
 }
 @media all and (max-width: 350px) {
   #slideshow {
     height: 8rem;
     width: 18rem;
+  }
+  .SliderIMG {
+    height: 126px;
+    width: 288px;
+  }
+}
+@media only screen and (max-width: 2000px) and (min-width: 1500px) {
+  .slide-wrapper {
+    height: 100%;
+  }
+  #slideshow {
+    width: 58rem;
   }
 }

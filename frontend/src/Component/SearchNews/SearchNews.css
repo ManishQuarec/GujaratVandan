@@ -263,3 +263,26 @@
     margin: 4px;
   }
 }
+
+
+@media all and (max-width: 2000px) and (min-width: 1500px) {
+  .Searchbar input {
+    padding: 15px 333px 15px 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 35px;
+  }
+  .Searchbarbtn {
+    background-color: red;
+    font-size: 50px;
+    padding: 5px 65px;
+    border-radius: 50px;
+    border: none;
+    margin: 0px 0px 0px 13px;
+  }
+  .BtnItems i {
+    color: #789cc4;
+    font-size: 40px;
+  }
+}
+

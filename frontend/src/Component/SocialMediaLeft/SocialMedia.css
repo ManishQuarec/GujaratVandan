@@ -1,9 +1,8 @@
 .social {
-  height: 320;
-  width: 223;
+  height: auto;
+  width: auto;
   background-color: #000000;
   color: #fff;
-  line-height: 16prem;
   padding: 1.25rem 1.25rem 1.25rem 1.25rem;
 }
 
@@ -181,5 +180,35 @@
   }
   .social-link ul li a {
     font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 2000px) and (min-width: 1500px) {
+  #news1 {
+    font-size: 2rem;
+  }
+  #news {
+    font-size: 1rem;
+  }
+  #news1 span {
+    font-size: 1rem;
+  }
+  #input {
+    height: 2.5rem;
+    width: 14rem;
+    font-size: 1.2rem;
+  }
+  #submit {
+    width: 5.2rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    margin: 0px 0px 0px 10px;
+  }
+  .social-link ul li a {
+    font-size: 2.5rem;
+  }
+  #social-btn {
+    font-size: 1.2rem;
+    padding: 1px;
+    width: 20.188rem;
   }
 }

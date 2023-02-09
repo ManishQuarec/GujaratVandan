@@ -159,3 +159,27 @@
     height: 30px;
   }
 }
+@media only screen and (max-width: 2000px) and (min-width: 1500px) {
+  .category-section {
+    width: 350px;
+    height: auto;
+    background: linear-gradient(#e74b4b, #001aff);
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1%;
+  }
+  .category {
+    width: 300px ;
+    height: 65px;
+    background-color: white;
+    margin-bottom: 18px;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 6px 0 6px 15px;
+    display: flex;
+    align-items: center;
+  }
+}
