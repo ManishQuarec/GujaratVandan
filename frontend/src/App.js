@@ -17,6 +17,7 @@ import Search from "./Component/SearchNews/Search";
 import EPapers from "./Component/E-Papers/Papers.jsx";
 import FullNews from "./Component/FullNews/FullNews";
 import FullNewsPost from "./Component/FullNews/FullNewsPost";
+import Comming from "./Component/ComingSoon/Coming"
 
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
@@ -36,7 +37,7 @@ function App() {
           <div className="boundry">
             <div className="LeftSection">
               <LeftMenuBar />
-              {/* <AppStore /> */}
+              <AppStore />
             </div>
             <div className="MiddleSection">{children}</div>
             <div className="RightSection">
@@ -57,6 +58,7 @@ function App() {
 <Layout>
 <BrowserRouter>
         <Routes>
+          <Route path="/Coming" element={<Comming />} />
           <Route path="/" element={<HomePage/>} />
           <Route path="/VideoSlider" element={<VideoSlider/>} />
           <Route path="/Search" element={<SearchNews/>} />

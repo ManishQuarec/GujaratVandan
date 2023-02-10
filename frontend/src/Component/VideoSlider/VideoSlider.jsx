@@ -29,8 +29,6 @@ function VideoSlider() {
         <div className="slide-wrapper">
 
         {newsData.map((news, index) => (
-       
-
             <>
               {console.log(news.Path)}
               <a href="/index.html" key={index}>
@@ -41,11 +39,11 @@ function VideoSlider() {
                   alt=""
                 />
 
-                {/* <div key={index} className="bottom-left">
+                <div key={index} className="bottom-left">
                   {news.NewsTittle}
-                </div> */}
-
+                </div>
               </a>
+              
             </>
           ))}
         </div>

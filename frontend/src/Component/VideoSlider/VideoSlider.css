@@ -37,7 +37,7 @@
 }
 .slide-wrapper {
   width: calc(50rem * 4);
-  /* animation: slide 15s ease infinite alternate-reverse; */
+  animation: slide 15s ease infinite alternate-reverse;
   position: relative;
 }
 .slide:nth-child(1) {
@@ -213,7 +213,7 @@
     width: 288px;
   }
 }
-@media only screen and (max-width: 2000px) and (min-width: 1500px) {
+@media only screen and (max-width: 2000px) and (min-width: 1800px) {
   .slide-wrapper {
     height: 100%;
   }

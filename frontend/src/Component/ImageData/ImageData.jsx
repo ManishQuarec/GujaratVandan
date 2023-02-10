@@ -45,7 +45,7 @@ function ImageData(name) {
         {newsData.slice(length-2, length).map((news, index) => {
           return (
             <>
-            <a href={`/FullNews/${news._id}`} >
+            {/* <a href={`/FullNews/${news._id}`} > */}
               {console.log(index)}
               <img
                 key={index}
@@ -56,7 +56,7 @@ function ImageData(name) {
               <p className={index == 1 ? "Text-bottem2" : "Text-bottem1"}>
                 <b>{news.NewsTittle}</b>
               </p>
-              </a>
+              {/* </a> */}
             </>
           );
         })}

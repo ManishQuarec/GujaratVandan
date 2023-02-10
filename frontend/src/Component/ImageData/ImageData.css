@@ -78,6 +78,8 @@
   bottom: -231px;
   opacity: 63%;
   margin-left: 0%;
+  height: 64px;
+  overflow: hidden;
 
   /* padding: 15.10rem 0rem 0rem 1rem; */
 }
@@ -92,12 +94,15 @@
   bottom: -231px;
   opacity: 63%;
   margin-left: 6.5%;
+  height: 64px;
+  overflow: hidden;
+
   /* padding: 15.1rem 0rem 0rem 1rem; */
 }
 
 .Bind {
   /* border: 1px solid red; */
-  height: 30%;
+  height: 23rem;
   margin-top: 2%;
 }
 @media all and (max-width: 1330px) {
@@ -150,6 +155,7 @@
     width: 43.8%;
     bottom: -194px;
     height: 41px;
+    font-size: 12px;
   }
   .Text-bottem2 {
     width: 43.8%;
@@ -194,13 +200,13 @@
   }
   .Text-bottem1 {
     width: 44.5%;
-    bottom: -164px;
-    height: 41px;
+    bottom: -170px;
+    height: 34px;
   }
   .Text-bottem2 {
     width: 44.5%;
-    bottom: -164px;
-    height: 41px;
+    bottom: -170px;
+    height: 34px;
     margin-left: 9.5%;
   }
 }
@@ -209,6 +215,7 @@
     width: 44.5%;
     bottom: -164px;
     height: 41px;
+    font-size: 10px;
   }
   .Text-bottem2 {
     width: 44.5%;
@@ -216,6 +223,7 @@
     height: 41px;
     font-size: 11px;
     margin-left: 10%;
+    font-size: 10px;
   }
 }
 @media all and (max-width: 940px) {
@@ -400,10 +408,16 @@
     font-size: 10px;
   }
 }
-@media only screen and (max-width: 2000px) and (min-width: 1500px) {
+
+@media only screen and (max-width: 2000px) and (min-width: 1800px) {
   .Text-bottem1 {
     font-size: 24px;
     bottom: -386px;
+  }
+  .Bind {
+    /* border: 1px solid red; */
+    height: 34rem;
+    margin-top: 2%;
   }
   .Text-bottem2 {
     margin-left: 5.6%;
