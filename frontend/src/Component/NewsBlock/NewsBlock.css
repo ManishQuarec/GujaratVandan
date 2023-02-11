@@ -337,7 +337,7 @@
   }
   .BlockHead {
     margin-top: 3%;
-    height: 12.3%;
+    height: 10.2rem;
     background-color: #ffff;
   }
   .headlines-right img {
@@ -362,6 +362,11 @@
   }
   .headlines-left p {
     height: 69px;
+  }
+  .BlockHead {
+    margin-top: 3%;
+    height: 9.5rem;
+    background-color: #ffff;
   }
 }
 @media all and (max-width: 360px) {
