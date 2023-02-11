@@ -213,7 +213,7 @@
     width: 288px;
   }
 }
-@media only screen and (max-width: 2000px) and (min-width: 1500px) {
+@media only screen and (max-width: 2000px) and (min-width: 1800px) {
   .slide-wrapper {
     height: 100%;
   }

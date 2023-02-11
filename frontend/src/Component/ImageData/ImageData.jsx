@@ -64,8 +64,6 @@ function ImageData(name) {
               <p className={index == 1 ? "Text-bottem2" : "Text-bottem1"} onClick={(e)=>{handleClick(news._id)}}    >
                 <b>{news.NewsTittle}</b>
               </p>
-              {/* </div> */}
-              {/* </a> */}
             </>
           );
         })}

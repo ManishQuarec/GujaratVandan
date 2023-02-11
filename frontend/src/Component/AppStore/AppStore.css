@@ -77,7 +77,7 @@ ul li::before {
   transition: 0.5s ease-in-out;
 }
 .social-link ul li:nth-child(1)::before {
-  content: "\f09a"; 
+  content: "\f09a";
   color: #3b5998;
   left: 6px;
   overflow: hidden;
@@ -115,7 +115,7 @@ ul li:nth-child(4)::before {
   top: 0.063rem;
   width: 100%;
   left: 1px;
-  
+
   /* border-bottom: 2px solid #ff0000; */
 }
 ul li:hover::before {
@@ -228,7 +228,27 @@ ul li:hover::before {
     display: none;
   }
 }
-@media only screen and (max-width: 2000px) and (min-width: 1500px) {
+@media only screen and (max-width: 1800px) and (min-width: 1500px) {
+  .download-app {
+    width: 16rem;
+    height: 21.5rem;
+    font-size: 22px;
+  }
+  .box {
+    width: 11rem;
+    height: 3rem;
+    border-radius: 0.438rem;
+    background-color: black;
+    margin-top: 0.688rem;
+  }
+  .google-play > div {
+    font-size: 1.2rem;
+  }
+  .app-store > div {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 2000px) and (min-width: 1800px) {
   .download-app {
     width: 350px;
     height: 21.5rem;
@@ -237,7 +257,7 @@ ul li:hover::before {
   .box {
     width: 18rem;
     height: 8rem;
-    border-radius: 0.438rem ;
+    border-radius: 0.438rem;
     background-color: black;
     margin-top: 0.688rem;
   }
@@ -247,5 +267,4 @@ ul li:hover::before {
   .app-store > div {
     font-size: 1.9rem;
   }
-
 }
