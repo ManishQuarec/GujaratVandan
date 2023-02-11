@@ -217,6 +217,11 @@
     height: 41px;
     font-size: 10px;
   }
+  .Bind {
+    /* border: 1px solid red; */
+    height: 16rem;
+    margin-top: 2%;
+  }
   .Text-bottem2 {
     width: 44.5%;
     bottom: -164px;
