@@ -9,22 +9,34 @@ import FullNews from "../../Component/FullNews/FullNews";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
 function NewsBlock(props) {
-  console.log(props.value.unique);
+  console.log("datassss",props.value.unique);
   const navigate = useNavigate();
-  const [newsData, setNewsData] = useState([]);
+  const [newsDatas, setNewsDatas] = useState([]);
+
   let { userId, cat } = useParams();
-  // console.log(newsData);
+  console.log("dataser",newsDatas);
+
+
+  const handleClick = (e) => {
+    setNewsDatas([])
+    // await 
+    navigate("/FullNews/" +`${e}`, { replace: true })
+  }
 
   useEffect(() => {
+    // await setNewsDatas([])
+    console.warn(cat)
+    setNewsDatas([])
     {
-      props.value.unique
+      (props.value.unique == true)
         ? axios
             .post(process.env.REACT_APP_API_BASE_URL + "/allNews")
             .then(async (response) => {
               // console.log(response.data.response);
-              await setNewsData(response.data.response);
+              await setNewsDatas(response.data.response);
+              
 
-              // console.log(response.data.response);
+              console.log("res1");
             })
         : axios
             .post(process.env.REACT_APP_API_BASE_URL + "/allNewsData", {
@@ -32,20 +44,13 @@ function NewsBlock(props) {
             })
             .then(async (response) => {
               // console.log(response.data.response);
-              await setNewsData(response.data.response);
-
+              await setNewsDatas(response.data.response);
+              console.log("res2");
               // console.log(response.data.response);
             });
     }
 
-    axios
-      .post(process.env.REACT_APP_API_BASE_URL + "/allNews")
-      .then(async (response) => {
-        // console.log(response.data.response);
-        await setNewsData(response.data.response);
-
-        // console.log(response.data.response);
-      });
+  
   }, []);
 
   return (
@@ -55,13 +60,13 @@ function NewsBlock(props) {
         <p>વધુ વાંચો...</p>
       </div>
 
-      {newsData.slice(0).reverse().map((news, index) => {
+      {newsDatas.slice(0).reverse().map((news, index) => {
         console.log(process.env.REACT_APP_API_URL + `${news.Path}`);
         console.log(news._id);
 
         return (
-          <a href={`/FullNews/${news._id}`} className="ntres">
-            <div className="BlockHead">
+          // <a href={`/FullNews/${news._id}`} className="ntres">
+            <div className="BlockHead" onClick={(e)=>{handleClick(news._id)}} >
               <div className="headlines">
                 <div className="headlines-right">
                   <img
@@ -103,7 +108,7 @@ function NewsBlock(props) {
                 </div>
               </div>
             </div>
-          </a>
+          // </a>
         );
       })}
     </>

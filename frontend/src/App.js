@@ -62,7 +62,7 @@ function App() {
           <Route path="/Search" element={<SearchNews/>} />
           <Route path="/EPapers" element={<EPapers/>} />
           <Route path="/FullNews/:userId" element={<FullNews/>} />
-          <Route path="/category/:cat" element={<NewsBlock value={{"unique":false,} }/> } />
+          <Route path="category/:cat" element={<NewsBlock value={{"unique":false,} }/> } />
         </Routes>
         </BrowserRouter>
 </Layout>

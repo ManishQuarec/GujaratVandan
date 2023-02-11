@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./RightPhotoImage.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function RightPhotoImage(name) {
   const [newsData, setNewsData] = useState([]);
   const [length, setLength] = useState();
 
   console.log(newsData);
+
+
 
   useEffect(() => {
     axios
@@ -32,13 +35,14 @@ function RightPhotoImage(name) {
         return (
           <>
             <a href={`/FullNews/${news._id}`} className="rtes">
-              <div className="img-right">
+              <div className="img-right"  >
                 <img
                   src={"http://localhost:5000" + `/${news.Path}`}
                   alt="Image"
+                  
                 />
 
-                <p className="ShortNews">
+                <p className="ShortNews" >
                   {/* આબોહવા પરિવર્તન: આગથી વૈશ્વિક વૃક્ષોના નુકસાનનો આશ્ચર્યજનક દર */}
                   {news.NewsTittle}
                 </p>
