@@ -29,19 +29,18 @@
 }
 
 .headlines-left h3 {
-  width: 80%;
-  height: 42px;
+  width: 100%;
+  height: 54px;
   overflow: hidden;
-  font-size: 16px;
-  margin-bottom:0.1rem;
+  font-size: 22px;
+  margin-bottom: 0.7rem;
 }
 
 .headlines-left p {
-  font-size: 0.9rem;
+  font-size: 15px;
   font-family: inter;
-  /* margin-top: 2%; */
-  width: 85%;
-  height: 98px;
+  width: 98%;
+  height: 119px;
   overflow: hidden;
 }
 
@@ -75,17 +74,14 @@
 .BlockHead {
   margin-top: 3%;
   /* height: 29.8%; */
-  height: 12.5rem;
+  height: 14.5rem;
   background-color: #ffff;
   /* overflow-block: hidden; */
 }
 
 .footer {
-  position: static;
-  bottom: 0;
-  left: 0;
-  font-size: xx-large;
-  bottom: -77px;
+  width: 53rem;
+  margin-top: 0.3rem;
 }
 .globelicon {
   color: #3b5998;
@@ -99,7 +95,8 @@
   font-size: 25px;
   color: #3b5998;
   float: right;
-  padding-right: 1%;
+  padding-right: 58px;
+  padding-top: 5px;
 }
 @media all and (max-width: 1400px) {
   .headlines-left h3 {
@@ -403,24 +400,37 @@
     height: 16rem;
   }
   .headlines-left h3 {
-    width: 70%;
-    font-size: 1.5rem;
-    height: 60px;
+    width: 96%;
+    font-size: 25px;
+    height: 65.5px;
     overflow: hidden;
   }
   .BlockHead {
     margin-top: 3%;
     /* height: 29.8%; */
-    height: 16rem;
+    height: 18.5rem;
     background-color: #ffff;
   }
   .headlines-left p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: inter;
     margin-top: 2%;
     width: 85%;
-    height: 112px;
+    height: 138px;
     overflow: hidden;
+  }
+  .SocialGlobelIcns {
+    font-size: 35px;
+    color: #3b5998;
+    float: right;
+    padding-right: 54px;
+    padding-top: 5px;
+  }
+}
+@media all and (max-width: 1799px) {
+  .footer {
+    width: 60.5rem;
+    margin-top: 1.5rem;
   }
 }
 @media only screen and (max-width: 2000px) and (min-width: 1800px) {
@@ -436,11 +446,11 @@
     font-size: 2rem;
   }
   .headlines-left p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-family: inter;
     margin-top: 2%;
     width: 95%;
-    height: 152px;
+    height: 165px;
     overflow: hidden;
   }
   .BlockHead {
@@ -450,6 +460,75 @@
   }
   .headlines-right img {
     width: 100%;
-    height: 21.5rem;
+    height: 18.5rem;
+  }
+  .footer {
+    width: 67rem;
+    margin-top: 1.5rem;
+  }
+  .CatName {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .globelicon {
+    color: #3b5998;
+    font-size: 35px;
+  }
+  .SocialGlobelIcns {
+    font-size: 35px;
+    color: #3b5998;
+    float: right;
+    padding-right: 66px;
+    padding-top: 5px;
+  }
+}
+@media all and (max-width: 1991px) {
+  .footer {
+    width: 66rem;
+    margin-top: 1.5rem;
+  }
+}
+@media all and (max-width: 1965px) {
+  .footer {
+    width: 65rem;
+    margin-top: 1.5rem;
+  }
+}
+@media all and (max-width: 1940px) {
+  .footer {
+    width: 64rem;
+    margin-top: 1.5rem;
+  }
+}
+@media all and (max-width: 1925px) {
+  .footer {
+    width: 63rem;
+    margin-top: 1.5rem;
+  }
+  .SocialGlobelIcns {
+    font-size: 35px;
+    color: #3b5998;
+    float: right;
+    padding-right: 63px;
+    padding-top: 5px;
+  }
+}
+@media all and (max-width: 1909px) {
+  .footer {
+    width: 62rem;
+    margin-top: 1.5rem;
+  }
+}
+@media all and (max-width: 1890px) {
+  .footer {
+    width: 61rem;
+    margin-top: 1.5rem;
+  }
+  .SocialGlobelIcns {
+    font-size: 35px;
+    color: #3b5998;
+    float: right;
+    padding-right: 59px;
+    padding-top: 5px;
   }
 }
