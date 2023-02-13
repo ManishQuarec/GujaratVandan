@@ -11,11 +11,12 @@ function Papers() {
 
 
  const download = (e) => {
-  e.preventDefault();
+  const data={url:e}
   axios({
     url:process.env.REACT_APP_API_BASE_URL+"/downloads",
-    method:"GET",
+    method:"POST",
     responseType:"blob",
+    data
   }).then((res)=>{
     console.log(res);
     fileDownload(res.data, "download.pdf")
@@ -46,7 +47,7 @@ console.log("newsData", newsData);
       {newsData.map((news, index) => (
 
 <div className="upload">
-          <button onClick={download}>
+          <button onClick={(e)=>download(news.Path)}>
           <img  src={PapersIMG} alt="" />
           <p>
             તારીખ:-{news.NewsPaperDate}<br />

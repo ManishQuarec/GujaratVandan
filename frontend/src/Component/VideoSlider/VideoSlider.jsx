@@ -34,7 +34,7 @@ function VideoSlider() {
               <a href="/index.html" key={index}>
                 <img className="SliderIMG"
                   // style={{ height: "400px", width: "800px" }}
-                  src={"http://localhost:5000" + `/${news.Path}`}
+                  src={process.env.REACT_APP_API_URL+ `/${news.Path}`}
                   // src={"http://localhost:5000/Media/2023/1/13/jpg.jpg"}
                   alt=""
                 />

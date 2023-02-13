@@ -19,13 +19,13 @@ import EPapers from "../../Component/E-Papers/Papers";
 
 import axios from "axios";
 
-function HomePage(props) {
+function HomePage (props) {
 
 
 
 
 
-  return (
+  return  (
 
     
     

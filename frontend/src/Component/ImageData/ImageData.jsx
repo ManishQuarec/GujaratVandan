@@ -2,12 +2,18 @@ import React, { useEffect, useState } from "react";
 import "./ImageData.css";
 import Most from "./IMG/Slider.png"
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function ImageData(name) {
 
   const [newsData, setNewsData] = useState([]);
   const [length, setLength] = useState();
   console.log(newsData);
+  let navigate = useNavigate();
+
+  const handleClick = (e) => {
+    navigate("/FullNews/" +`${e}`, { replace: true })
+  }
 
   // console.log(typeof length);
   useEffect(() => {
@@ -46,17 +52,18 @@ function ImageData(name) {
           return (
             <>
             {/* <a href={`/FullNews/${news._id}`} > */}
-              {console.log(index)}
+              
+              {/* <div    onClick={(e)=>{handleClick(news._id)}} > */}
               <img
                 key={index}
                 className={index == 1 ? "Img-2" : "Img-1"}
                 src={"http://localhost:5000" + `/${news.Path}`}
                 alt=""
+                onClick={(e)=>{handleClick(news._id)}} 
               />
-              <p className={index == 1 ? "Text-bottem2" : "Text-bottem1"}>
+              <p className={index == 1 ? "Text-bottem2" : "Text-bottem1"} onClick={(e)=>{handleClick(news._id)}}    >
                 <b>{news.NewsTittle}</b>
               </p>
-              {/* </a> */}
             </>
           );
         })}

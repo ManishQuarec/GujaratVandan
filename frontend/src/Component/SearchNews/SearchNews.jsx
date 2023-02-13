@@ -19,7 +19,7 @@ function SearchNews() {
 
   const functionalData = (props) =>{
     console.log( props);
-    navigate("/category/" +`${props}`, { replace: true })
+    navigate("/category/" +`${props}`)
     // navigate("/category/"+ `${props}`);
   }
   
