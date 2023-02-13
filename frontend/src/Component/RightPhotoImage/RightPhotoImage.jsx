@@ -42,24 +42,34 @@ function RightPhotoImage(name) {
                   
                 />
 
-                <p className="ShortNews" >
-                  {/* આબોહવા પરિવર્તન: આગથી વૈશ્વિક વૃક્ષોના નુકસાનનો આશ્ચર્યજનક દર */}
-                  {news.NewsTittle}
-                </p>
+
+                <p className="ShortNews">{news.NewsTittle}</p>
+
               </div>
             </a>
           </>
         );
       })}
-      {/* <div className="img-right">
-        <img
 
-          src={require("../../Image/HomePageIMage/raspred1.png")} alt="Image"/>
-
-        <p className="ShortNews">
-          આબોહવા પરિવર્તન: આગથી વૈશ્વિક વૃક્ષોના નુકસાનનો આશ્ચર્યજનક દર
-        </p>
-      </div> */}
+      <div className="Stocks">
+      <div className="head">
+        <h4>શેરબજાર</h4> 
+      </div>
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright">
+            <a
+              href="https://in.tradingview.com/markets/stocks-india/"
+              rel="noopener"
+              target="_blank"
+            >
+              <span class="blue-text">Stocks today</span>
+            </a>
+            by Gujarat Vandan
+          </div>
+        </div>
+        {/* Data Add Here */}
+      </div>
     </>
   );
 }
