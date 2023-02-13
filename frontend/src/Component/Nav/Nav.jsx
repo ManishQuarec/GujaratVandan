@@ -27,7 +27,9 @@ function Nav() {
         <input type="checkbox" id="check" />
 
         <div className="logo">
+        <a href="/">
           <img src={require("../../Image/HomePageIMage/Logo.png")} alt="Logo" />
+          </a>
           {/* <div className="date">
             {date.toLocaleDateString()} {date.toLocaleTimeString()}
           </div> */}
