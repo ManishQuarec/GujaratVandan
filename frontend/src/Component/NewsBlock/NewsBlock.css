@@ -16,7 +16,7 @@
 }
 
 .headlines-right img {
-  width: 12.5rem;
+  width: 100%;
   height: 12.5rem;
 }
 .headlines-left {
@@ -69,7 +69,7 @@
   float: right;
   margin: 18px 5px 5px 5px;
   background-color: #000;
-  color: #FFF;
+  color: #fff;
 }
 
 .BlockHead {
@@ -333,7 +333,7 @@
 }
 @media all and (max-width: 1890px) {
   .footer {
-    width: 61rem;
+    width: 144%;
     margin-top: 1.5rem;
   }
   .SocialGlobelIcns {
@@ -414,26 +414,39 @@
 }
 @media all and (max-width: 1618px) {
   .footer {
-    width: 52.5rem;
+    width: 144%;
     margin-top: 0.3rem;
   }
 }
 @media all and (max-width: 1500px) {
   .footer {
-    width: 53rem;
+    width: 144%;
     margin-top: 0.3rem;
   }
   .SocialGlobelIcns {
     font-size: 26px;
     color: #3b5998;
     float: right;
-    padding-right: 57px;
+    padding-right: 49px;
     padding-top: 4px;
   }
   .BlockHead {
     margin-top: 3%;
     height: 15rem;
     background-color: #ffff;
+  }
+}
+@media all and (max-width: 1590px) {
+  .SocialGlobelIcns {
+    font-size: 30px;
+    color: #3b5998;
+    float: right;
+    padding-right: 44px;
+    padding-top: 10px;
+  }
+  .footer {
+    width: 143%;
+    margin-top: 0.3rem;
   }
 }
 @media all and (max-width: 1400px) {
@@ -452,7 +465,7 @@
     height: 10.9rem;
   }
   .footer {
-    width: 46.5rem;
+    width: 145%;
     margin-top: 0.3rem;
   }
   .SocialGlobelIcns {

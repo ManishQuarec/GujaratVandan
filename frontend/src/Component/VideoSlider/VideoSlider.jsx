@@ -16,7 +16,7 @@ function VideoSlider() {
         // console.log(response.data.response);
       });
   }, []);
-  document.title = "Gujarat Vandan - Videos";
+  document.title = "Gujarat Vandan ";
 
   console.warn(newsData);
 

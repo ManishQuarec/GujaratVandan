@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
 import Nav from "../../Component/Nav/Nav";
@@ -11,31 +12,27 @@ import ShortNews from "../../Component/ShortNews/ShortNews";
 import RightPhotoImage from "../../Component/RightPhotoImage/RightPhotoImage";
 import SocialMediaLeft from "../../Component/SocialMediaLeft/SocialMediaLeft";
 
-import  FullNews from "../../Component/FullNews/FullNews";
-import  searchNews from "../../Component/SearchNews/SearchNews"
-import { Route, Routes, BrowserRouter, useParams  } from "react-router-dom";
+import FullNews from "../../Component/FullNews/FullNews";
+import searchNews from "../../Component/SearchNews/SearchNews";
+import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 import EPapers from "../../Component/E-Papers/Papers";
-
 
 import axios from "axios";
 
-function HomePage (props) {
-  document.title = "Gujarat Vandan - Home"
-  return  (
-
-    
-    
+function HomePage(props) {
+  document.title = "Gujarat Vandan - Home";
+  return (
     <>
-       <VideoSlider/> 
-        <ImageData  value={{GujCategory:"રાજકારણ", EngCategory: "politics"}}/> 
-        <ImageData  value={{GujCategory:"વ્યાપાર", EngCategory: "Business"}}/> 
-        <NewsBlock value={{"unique":true} }/> 
-        </>
-      
-    
-
+      <Helmet>
+        <meta property="og:image" content="https://pbs.twimg.com/media/FUJUNyQUUAIPURc.jpg" />
+      </Helmet>
+      <VideoSlider />
+      <ImageData value={{ GujCategory: "રાજકારણ", EngCategory: "politics" }} />
+      <ImageData value={{ GujCategory: "વ્યાપાર", EngCategory: "Business" }} />
+      <NewsBlock value={{ unique: true }} />
+    </>
   );
 }
 
 // export default HomePage;
-export default React.memo(HomePage)
+export default React.memo(HomePage);
