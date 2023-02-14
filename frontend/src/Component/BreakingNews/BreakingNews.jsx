@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./BreakingNew.css";
 // import Marquee from "react-fast-marquee";
 import axios from "axios";
-
 function BreakingNews() {
   const [newsData, setNewsData] = useState([]);
 
@@ -17,16 +16,16 @@ function BreakingNews() {
         // console.log(response.data.response);
       });
   }, []);
-
   return (
     <div className="breakingnews-line">
       <div className="breaking-news">BREAKING NEWS</div>
       <div className="news">
-        <marquee text="swetha" style={{ width: "100%" }}>
+        <marquee
+         direction="left"  text="swetha" style={{ width: "100%" }}>
           {newsData.map((news, index) => (
             <>
               {" "}
-              &nbsp; &nbsp; <b key={index}>{news.Title}:</b>
+              &nbsp; &nbsp; <b key={index}>{news.Title}: </b>
               {news.News}
             </>
           ))}

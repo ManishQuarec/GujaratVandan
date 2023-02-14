@@ -247,6 +247,53 @@ ul li:hover::before {
   .app-store > div {
     font-size: 1.2rem;
   }
+  .social-link ul li:nth-child(1)::before {
+    content: "\f09a";
+    color: #3b5998;
+    overflow: hidden;
+    font-size: 33px;
+    left: 11px;
+    top: 11px;
+    width: 100%;
+  }
+  ul li:nth-child(2)::before {
+    content: "\f099";
+    color: #1da1f2;
+    font-size: 40px;
+    left: 1px;
+    top: 3px;
+    width: 100%;
+  }
+  ul li:nth-child(3)::before {
+    content: "\f16d";
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    top: 0.063rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    font-size: 40px;
+    left: 0px;
+    top: 3px;
+    /* border-bottom: 2px solid #dc2743; */
+  }
+  ul li:nth-child(4)::before {
+    content: "\f16a";
+    color: #ff0000;
+    font-size: 40px;
+    /* left: 11px; */
+    top: 3px;
+    width: 100%;
+    left: 3px;
+
+    /* border-bottom: 2px solid #ff0000; */
+  }
 }
 @media only screen and (max-width: 2000px) and (min-width: 1800px) {
   .download-app {
@@ -266,5 +313,52 @@ ul li:hover::before {
   }
   .app-store > div {
     font-size: 1.9rem;
+  }
+  .social-link ul li:nth-child(1)::before {
+    content: "\f09a";
+    color: #3b5998;
+    overflow: hidden;
+    font-size: 33px;
+    left: 11px;
+    top: 11px;
+    width: 100%;
+  }
+  ul li:nth-child(2)::before {
+    content: "\f099";
+    color: #1da1f2;
+    font-size: 40px;
+    left: 1px;
+    top: 3px;
+    width: 100%;
+  }
+  ul li:nth-child(3)::before {
+    content: "\f16d";
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    top: 0.063rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    font-size: 40px;
+    left: 0px;
+    top: 3px;
+    /* border-bottom: 2px solid #dc2743; */
+  }
+  ul li:nth-child(4)::before {
+    content: "\f16a";
+    color: #ff0000;
+    font-size: 40px;
+    /* left: 11px; */
+    top: 3px;
+    width: 100%;
+    left: 3px;
+
+    /* border-bottom: 2px solid #ff0000; */
   }
 }

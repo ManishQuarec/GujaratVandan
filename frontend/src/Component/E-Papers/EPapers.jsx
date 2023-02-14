@@ -7,6 +7,7 @@ import RightPhotoImage from "../../Component/RightPhotoImage/RightPhotoImage";
 import SocialMediaLeft from "../../Component/SocialMediaLeft/SocialMediaLeft";
 
 function EPapers() {
+
   return (
     <>
       <div className="HomePage">

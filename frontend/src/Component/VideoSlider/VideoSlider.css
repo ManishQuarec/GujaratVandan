@@ -37,12 +37,11 @@
 }
 .slide-wrapper {
   width: calc(50rem * 4);
-  animation: slide 15s ease infinite alternate-reverse;
+  animation: slide 40s ease infinite alternate-reverse;
   position: relative;
 }
 .slide:nth-child(1) {
   background-image: url("../../Image/HomePageIMage/raspred1.png");
-
   cursor: pointer;
 }
 .slide:nth-child(2) {
