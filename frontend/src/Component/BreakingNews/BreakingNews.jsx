@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./BreakingNew.css";
 // import Marquee from "react-fast-marquee";
 import axios from "axios";
+import Marquee from "react-fast-marquee";
 
 function BreakingNews() {
   const [newsData, setNewsData] = useState([]);
+
+
 
   useEffect(() => {
     console.count("breaking news");
@@ -22,7 +25,7 @@ function BreakingNews() {
     <div className="breakingnews-line">
       <div className="breaking-news">BREAKING NEWS</div>
       <div className="news">
-        <marquee text="swetha" style={{ width: "100%" }}>
+        <Marquee pauseOnHover={true} text="swetha" style={{ width: "100%" }} speed={80} >
           {newsData.map((news, index) => (
             <>
               {" "}
@@ -30,7 +33,7 @@ function BreakingNews() {
               {news.News}
             </>
           ))}
-        </marquee>
+        </Marquee>
       </div>
     </div>
   );

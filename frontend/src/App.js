@@ -37,7 +37,7 @@ function App() {
           <div className="boundry">
             <div className="LeftSection">
               <LeftMenuBar />
-              <AppStore />
+              {/* <AppStore /> */}
             </div>
             <div className="MiddleSection">{children}</div>
             <div className="RightSection">
