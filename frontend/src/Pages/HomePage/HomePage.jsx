@@ -20,11 +20,7 @@ import EPapers from "../../Component/E-Papers/Papers";
 import axios from "axios";
 
 function HomePage (props) {
-
-
-
-
-
+  document.title = "Gujarat Vandan - Home"
   return  (
 
     
