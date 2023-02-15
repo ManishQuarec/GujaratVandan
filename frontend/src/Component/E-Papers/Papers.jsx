@@ -6,6 +6,8 @@ import fileDownload from 'js-file-download'
 import { saveAs } from 'file-saver';
 
 function Papers() {
+  document.title = "Gujarat Vandan - E-pepers";
+
   const [newsData, setNewsData] = useState([]);
 
 

@@ -9,38 +9,41 @@ import FullNews from "../../Component/FullNews/FullNews";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
 function NewsBlock(props) {
-  console.log("datassss",props.value.unique);
+  const [url, setUrl] = useState(window.location.href);
+  function handleCopyUrl() {
+    navigator.clipboard.writeText(url);
+    alert("URL copied to clipboard!");
+  }
+  console.log("datassss", props.value.unique);
   const navigate = useNavigate();
   const [newsDatas, setNewsDatas] = useState([]);
 
   let { userId, cat } = useParams();
-  console.log("dataser",newsDatas);
-
+  console.log("dataser", newsDatas);
 
   const handleClick = (e) => {
-    setNewsDatas([])
-    // await 
-    navigate("/FullNews/" +`${e}`, { replace: true })
-  }
+    setNewsDatas([]);
+    // await
+    navigate("/FullNews/" + `${e}`, { replace: true });
+  };
 
   useEffect(() => {
     // await setNewsDatas([])
-    console.warn(cat)
-    setNewsDatas([])
+    console.warn(cat);
+    setNewsDatas([]);
     {
-      (props.value.unique == true)
+      props.value.unique == true
         ? axios
             .post(process.env.REACT_APP_API_BASE_URL + "/allNews")
             .then(async (response) => {
               // console.log(response.data.response);
               await setNewsDatas(response.data.response);
-              
 
               console.log("res1");
             })
         : axios
             .post(process.env.REACT_APP_API_BASE_URL + "/allNewsData", {
-              "data": cat,
+              data: cat,
             })
             .then(async (response) => {
               // console.log(response.data.response);
@@ -49,8 +52,6 @@ function NewsBlock(props) {
               // console.log(response.data.response);
             });
     }
-
-  
   }, []);
 
   return (
@@ -60,13 +61,21 @@ function NewsBlock(props) {
         <p>વધુ વાંચો...</p>
       </div>
 
-      {newsDatas.slice(0).reverse().map((news, index) => {
-        console.log(process.env.REACT_APP_API_URL + `${news.Path}`);
-        console.log(news._id);
+      {newsDatas
+        .slice(0)
+        .reverse()
+        .map((news, index) => {
+          console.log(process.env.REACT_APP_API_URL + `${news.Path}`);
+          console.log(news._id);
 
-        return (
-          // <a href={`/FullNews/${news._id}`} className="ntres">
-            <div className="BlockHead" onClick={(e)=>{handleClick(news._id)}} >
+          return (
+            // <a href={`/FullNews/${news._id}`} className="ntres">
+            <div
+              className="BlockHead"
+              onClick={(e) => {
+                handleClick(news._id);
+              }}
+            >
               <div className="headlines">
                 <div className="headlines-right">
                   <img
@@ -75,12 +84,8 @@ function NewsBlock(props) {
                   />
                 </div>
                 <div className="headlines-left">
-                  <h3>
-                    {news.NewsTittle}
-                  </h3>
-                  <p>
-                    {news.News}
-                  </p>
+                  <h3>{news.NewsTittle}</h3>
+                  <p>{news.News}</p>
                   <div className="footer">
                     <FontAwesomeIcon
                       className="globelicon"
@@ -90,16 +95,19 @@ function NewsBlock(props) {
                     &nbsp;
                     <span className="CatName">{news.GujCategory} </span>
                     <FontAwesomeIcon
+                      onClick={handleCopyUrl}
                       className="SocialGlobelIcns"
-                      href="#"
+                      href="/FullNews"
                       icon={faLink}
                     ></FontAwesomeIcon>
                     <FontAwesomeIcon
+                      onClick={handleCopyUrl}
                       className="SocialGlobelIcns"
                       href="#"
                       icon={faFacebook}
                     ></FontAwesomeIcon>
                     <FontAwesomeIcon
+                      onClick={handleCopyUrl}
                       className="SocialGlobelIcns"
                       href="#"
                       icon={faTwitter}
@@ -108,9 +116,9 @@ function NewsBlock(props) {
                 </div>
               </div>
             </div>
-          // </a>
-        );
-      })}
+            // </a>
+          );
+        })}
     </>
   );
 }

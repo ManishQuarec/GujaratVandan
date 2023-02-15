@@ -22,7 +22,7 @@ function SearchNews() {
     navigate("/category/" +`${props}`)
     // navigate("/category/"+ `${props}`);
   }
-  
+  document.title = "Gujarat Vandan - Search";
 
   return (
     <>
