@@ -25,7 +25,7 @@ function BreakingNews() {
           {newsData.map((news, index) => (
             <>
               {" "}
-              &nbsp; &nbsp; <b key={index}>{news.Title}: </b>
+              &nbsp; &nbsp; <b key={index}>{news.Title}:&nbsp;</b>
               {news.News}
             </>
           ))}
