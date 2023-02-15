@@ -50,7 +50,7 @@ function LeftMenuBar() {
                 <FontAwesomeIcon
                   className="Erthicon"
                   icon={faEarth}
-                ></FontAwesomeIcon>
+                ></FontAwesomeIcon>&nbsp;
                 {news.Category.GujCategory}
               </div>
             </a>

@@ -14,7 +14,7 @@ function Papers() {
 
  const download = (e) => {
 
-  const data={url:(process.env.REACT_APP_API_URL+e)}
+  const data={url:e}
   console.log(data);
   axios({
     url:process.env.REACT_APP_API_BASE_URL+"/downloads",

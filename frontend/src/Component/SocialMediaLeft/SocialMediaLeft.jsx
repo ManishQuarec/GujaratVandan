@@ -5,6 +5,10 @@ import {faGlobe, faLink, } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter,faTelegram, faWhatsapp,faInstagram, faInstagramSquare} from  "@fortawesome/free-brands-svg-icons"
 
 function SocialMediaLeft() {
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+  }
   return (
     <div className="social">
       <h4 id="news1">
@@ -25,27 +29,28 @@ function SocialMediaLeft() {
         સબમિટ
       </button>
       <br />
-      <button id="social-btn">
+      <button id="social-btn" >
         
           <FontAwesomeIcon style={{color:" #0088cc"}} icon={faTelegram}>
-            &nbsp;
-          </FontAwesomeIcon>
+           
+          </FontAwesomeIcon>  &nbsp;
        
         ટેલિગ્રામ પર અમારી સાથે જોડાઓ
       </button>
-      <button id="social-btn">
+      <button id="social-btn" onClick={()=>{openInNewTab("https://wa.me/+916357263573")}}>
         
           <FontAwesomeIcon style={{color: "#25d366"}} icon={faWhatsapp}>
-            &nbsp;
-          </FontAwesomeIcon>
+          
+          </FontAwesomeIcon>   &nbsp; &nbsp;
      
         વોટ્સેપ પર અમારી સાથે જોડાઓ
       </button>
-      <button id="social-btn">
+      <button id="social-btn" onClick={()=>{openInNewTab("https://www.instagram.com/gujarat_vandan/")}}>
         
           <FontAwesomeIcon style={{color: "#bc2a8d"}} icon={faInstagramSquare}>
-            &nbsp;
+       
           </FontAwesomeIcon>
+          &nbsp;
         
         ઇન્સ્ટાગ્રામ પર અમારી સાથે જોડાઓ
       </button>

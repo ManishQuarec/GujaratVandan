@@ -36,16 +36,19 @@ function FullNews() {
   return (
     <>
       <div className="FullNews">
-        <a href="/State">
+        {/* <a href="/State">
           <i className="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp;
           ગુજરાતી / સમાચાર / સ્થાનિક / ગુજરાત / ગાંધીનગર / 
-        </a>
+        </a> */}
+        <div className="NewsContent">
+        <h1>{tittle}</h1>
+      </div>
       </div>
       <div className="ImgSection">
         <img src={process.env.REACT_APP_API_URL + `${image}`} alt="" />
       </div>
       <div className="NewsContent">
-        <h1>{tittle}</h1>
+        {/* <h1>{tittle}</h1> */}
         <p>{news}</p>
       </div>
     </>

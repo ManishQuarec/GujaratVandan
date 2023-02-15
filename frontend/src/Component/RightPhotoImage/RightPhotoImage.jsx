@@ -37,7 +37,7 @@ function RightPhotoImage(name) {
             <a href={`/FullNews/${news._id}`} className="rtes">
               <div className="img-right"  >
                 <img
-                  src={"http://localhost:5000" + `/${news.Path}`}
+                  src={process.env.REACT_APP_API_URL + `${news.Path}`}
                   alt="Image"
                   
                 />

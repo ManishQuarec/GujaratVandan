@@ -34,17 +34,13 @@ function VideoSlider() {
             <>
               {console.log(news.Path)}
               <a href="/index.html" key={index}>
-<<<<<<< HEAD
 
+
+            
                 <img
                   className="SliderIMG"
                   src={process.env.REACT_APP_API_URL + `${news.Path}`}
 
-=======
-                <img
-                  className="SliderIMG"
-                  src={process.env.REACT_APP_API_URL + `${news.Path}`}
->>>>>>> 3165ae9b147e564e9a55dbf7db83f6ceb2c703db
                   alt=""
                 />
                 <div key={index} className="bottom-left">
