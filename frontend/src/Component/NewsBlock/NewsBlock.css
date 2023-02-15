@@ -397,7 +397,7 @@
     color: #3b5998;
     float: right;
     padding-right: 51px;
-    padding-top: 0px;
+    padding-top: 8px;
   }
 }
 @media all and (max-width: 1665px) {
@@ -461,7 +461,7 @@
     height: 99px;
   }
   .headlines-right img {
-    width: 10.9rem;
+    width: 100%;
     height: 10.9rem;
   }
   .footer {
@@ -1087,6 +1087,13 @@
     height: 9.5rem;
     width: 90%;
     background-color: #ffff;
+  }
+  .SocialGlobelIcns {
+    font-size: 22px;
+    color: #3b5998;
+    float: right;
+    padding-right: 27px;
+    padding-top: 9px;
   }
 }
 @media all and (max-width: 560px) {
