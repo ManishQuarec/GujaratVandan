@@ -48,7 +48,8 @@ console.log("newsData", newsData);
         <h1>ઈ-ન્યુઝ પેપર્સ</h1>
       </div>
       <div className="Collection">
-      {newsData.map((news, index) => (
+      {newsData.slice(0)
+        .reverse().map((news, index) => (
 
 <div className="upload">
           <button onClick={(e)=>download(news.Path)}>
