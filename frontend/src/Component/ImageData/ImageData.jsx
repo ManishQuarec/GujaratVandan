@@ -32,10 +32,10 @@ function ImageData(name) {
     <>
     <div className="Bind">
     
-      <div className="head">
+      {/* <div className="head">
         <h4>{name.value.GujCategory}</h4>
         <p>વધુ વાંચો...</p>
-      </div>
+      </div> */}
       <div className="Main-Img">
       {/* <img className="Img-1" src={Most} alt="" />
       <p className="Aabohava">આબોહવા પરિવર્તન: આગથી વૈશ્વિક વૃક્ષોના નુકસાનનો આશ્ચર્યજનક દર</p>
@@ -54,7 +54,7 @@ function ImageData(name) {
             {/* <a href={`/FullNews/${news._id}`} > */}
               
               {/* <div    onClick={(e)=>{handleClick(news._id)}} > */}
-              <img
+              {/* <img
                 key={index}
                 className={index == 1 ? "Img-2" : "Img-1"}
                 src={"http://localhost:5000" + `/${news.Path}`}
@@ -63,7 +63,7 @@ function ImageData(name) {
               />
               <p className={index == 1 ? "Text-bottem2" : "Text-bottem1"} onClick={(e)=>{handleClick(news._id)}}    >
                 <b>{news.NewsTittle}</b>
-              </p>
+              </p> */}
             </>
           );
         })}
