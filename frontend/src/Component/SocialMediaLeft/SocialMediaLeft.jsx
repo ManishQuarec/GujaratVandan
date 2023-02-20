@@ -6,51 +6,52 @@ import { faFacebook, faTwitter,faTelegram, faWhatsapp,faInstagram, faInstagramSq
 
 function SocialMediaLeft() {
   return (
-    <div className="social">
-      <h4 id="news1">
-        અમારા ન્યૂઝલેટર
-        <br />
-        પર સબ્સ્ક્રાઇબ કરો
-      </h4>
-      <p id="news">
-        વર્તમાન રહો આજના ટ્રેન્ડિંગ
-        <br />
-        સમાચારોના રીકેપ સાથે
-      </p>
-      <p id="news1">
-        ગુજરાત વંદન <span>તરફથી</span>
-      </p>
-      <input type="test" id="input" placeholder="તમારો ઈમેઈલ દાખલ કરો" />
-      <button id="submit" type="submit">
-        સબમિટ
-      </button>
-      <br />
-      <button id="social-btn">
+    // <div className="social">
+    //   <h4 id="news1">
+    //     અમારા ન્યૂઝલેટર
+    //     <br />
+    //     પર સબ્સ્ક્રાઇબ કરો
+    //   </h4>
+    //   <p id="news">
+    //     વર્તમાન રહો આજના ટ્રેન્ડિંગ
+    //     <br />
+    //     સમાચારોના રીકેપ સાથે
+    //   </p>
+    //   <p id="news1">
+    //     ગુજરાત વંદન <span>તરફથી</span>
+    //   </p>
+    //   <input type="test" id="input" placeholder="તમારો ઈમેઈલ દાખલ કરો" />
+    //   <button id="submit" type="submit">
+    //     સબમિટ
+    //   </button>
+    //   <br />
+    //   <button id="social-btn">
         
-          <FontAwesomeIcon style={{color:" #0088cc"}} icon={faTelegram}>
-            &nbsp;
-          </FontAwesomeIcon>
+    //       <FontAwesomeIcon style={{color:" #0088cc"}} icon={faTelegram}>
+    //         &nbsp;
+    //       </FontAwesomeIcon>
        
-        ટેલિગ્રામ પર અમારી સાથે જોડાઓ
-      </button>
-      <button id="social-btn">
+    //     ટેલિગ્રામ પર અમારી સાથે જોડાઓ
+    //   </button>
+    //   <button id="social-btn">
         
-          <FontAwesomeIcon style={{color: "#25d366"}} icon={faWhatsapp}>
-            &nbsp;
-          </FontAwesomeIcon>
+    //       <FontAwesomeIcon style={{color: "#25d366"}} icon={faWhatsapp}>
+    //         &nbsp;
+    //       </FontAwesomeIcon>
      
-        વોટ્સેપ પર અમારી સાથે જોડાઓ
-      </button>
-      <button id="social-btn">
+    //     વોટ્સેપ પર અમારી સાથે જોડાઓ
+    //   </button>
+    //   <button id="social-btn">
         
-          <FontAwesomeIcon style={{color: "#bc2a8d"}} icon={faInstagramSquare}>
-            &nbsp;
-          </FontAwesomeIcon>
+    //       <FontAwesomeIcon style={{color: "#bc2a8d"}} icon={faInstagramSquare}>
+    //         &nbsp;
+    //       </FontAwesomeIcon>
         
-        ઇન્સ્ટાગ્રામ પર અમારી સાથે જોડાઓ
-      </button>
-      <br />
-    </div>
+    //     ઇન્સ્ટાગ્રામ પર અમારી સાથે જોડાઓ
+    //   </button>
+    //   <br />
+    // </div>
+    <></>
   );
 }
 
