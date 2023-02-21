@@ -60,15 +60,22 @@ function VideoSlider() {
             <button className="slide-btn slide-btn-2"></button>
             <button className="slide-btn slide-btn-3"></button>
             <button className="slide-btn slide-btn-4"></button>
+           
             <div className="slideshow-wrapper">
+         
               <div className="slide">
+              {/* {newsData.map((news, index) => (
+            <> */}
                 <img
                   className="slide-img"
                   src="https://images.unsplash.com/photo-1549740425-5e9ed4d8cd34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwzOTU0NTB8fGVufDB8fHx8&w=1000&q=80"
                   alt=""
                 />
                 <p className="Textdata">જેની સાથે લગ્ન કર્યા એ 5000 કાર ચોરનારની પત્ની અને સહ આરોપી, નોનવેજ અને બિયર પીવાની છે શોખીન</p>
-              </div>
+                {/* </>
+          ))} */}
+              </div>  
+            
               <div className="slide">
                 <img
                   className="slide-img"
@@ -94,6 +101,7 @@ function VideoSlider() {
                 <p className="Textdata">જેની સાથે લગ્ન કર્યા એ 5000 કાર ચોરનારની પત્ની અને સહ આરોપી, નોનવેજ અને બિયર પીવાની છે શોખીન</p>
               </div>
             </div>
+          
           </div>
         </div>
       </div>

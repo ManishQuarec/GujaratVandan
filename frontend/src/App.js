@@ -15,7 +15,7 @@ import ShortNews from "./Component/ShortNews/ShortNews";
 import HomePage from "./Pages/HomePage/HomePage";
 import Search from "./Component/SearchNews/Search";
 import EPapers from "./Component/E-Papers/Papers.jsx";
-import FullNews from "./Component/FullNews/FullNews";
+import {FullNews} from "./Component/FullNews/FullNews";
 import FullNewsPost from "./Component/FullNews/FullNewsPost";
 import Comming from "./Component/ComingSoon/Coming"
 
@@ -33,7 +33,7 @@ function App() {
      
         <div className="HomePage">
           <Nav />
-          <BreakingNews />
+          {/* <BreakingNews /> */}
           <div className="boundry">
             <div className="LeftSection">
               <LeftMenuBar />
@@ -41,8 +41,8 @@ function App() {
             </div>
             <div className="MiddleSection">{children}</div>
             <div className="RightSection">
-              <SocialMediaLeft />
-              <RightPhotoImage value={{GujCategory:"રસપ્રદ", EngCategory: "Interesting"}} />
+              {/* <SocialMediaLeft />
+              <RightPhotoImage value={{GujCategory:"રસપ્રદ", EngCategory: "Interesting"}} /> */}
               {/* <ShortNews /> */}
             </div>
           </div>

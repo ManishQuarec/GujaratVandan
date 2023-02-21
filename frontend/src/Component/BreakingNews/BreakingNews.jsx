@@ -29,7 +29,7 @@ function BreakingNews() {
       <div className="breaking-news">BREAKING NEWS</div>
       <div className="news">
 
-        <Marquee pauseOnHover={true} text="swetha" style={{ width: "100%" }} speed={80} >
+        <Marquee pauseOnHover={true} text="swetha" style={{ width: "100%" }} speed={60} >
 
 
 
