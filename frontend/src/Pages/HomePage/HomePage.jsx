@@ -26,9 +26,9 @@ function HomePage(props) {
       <Helmet>
         <meta property="og:image" content="https://pbs.twimg.com/media/FUJUNyQUUAIPURc.jpg" />
       </Helmet>
-      <VideoSlider />
-      <ImageData value={{ GujCategory: "રાજકારણ", EngCategory: "politics" }} />
-      <ImageData value={{ GujCategory: "વ્યાપાર", EngCategory: "Business" }} />
+      {/* <VideoSlider /> */}
+      {/* <ImageData value={{ GujCategory: "રાજકારણ", EngCategory: "politics" }} />
+      <ImageData value={{ GujCategory: "વ્યાપાર", EngCategory: "Business" }} /> */}
       <NewsBlock value={{ unique: true }} />
     </>
   );

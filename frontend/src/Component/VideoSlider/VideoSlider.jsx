@@ -34,9 +34,13 @@ function VideoSlider() {
             <>
               {console.log(news.Path)}
               <a href="/index.html" key={index}>
+
+
+            
                 <img
                   className="SliderIMG"
                   src={process.env.REACT_APP_API_URL + `${news.Path}`}
+
                   alt=""
                 />
                 <div key={index} className="bottom-left">
@@ -56,15 +60,24 @@ function VideoSlider() {
             <button className="slide-btn slide-btn-2"></button>
             <button className="slide-btn slide-btn-3"></button>
             <button className="slide-btn slide-btn-4"></button>
+           
             <div className="slideshow-wrapper">
+         
               <div className="slide">
+              {/* {newsData.map((news, index) => (
+            <> */}
                 <img
                   className="slide-img"
                   src=""
                   alt=""
                 />
-                <p className="Textdata"></p>
-              </div>
+
+                <p className="Textdata">જેની સાથે લગ્ન કર્યા એ 5000 કાર ચોરનારની પત્ની અને સહ આરોપી, નોનવેજ અને બિયર પીવાની છે શોખીન</p>
+                {/* </>
+          ))} */}
+              </div>  
+            
+
               <div className="slide">
                 <img
                   className="slide-img"
@@ -90,6 +103,7 @@ function VideoSlider() {
                 <p className="Textdata"></p>
               </div>
             </div>
+          
           </div>
         </div>
       </div>

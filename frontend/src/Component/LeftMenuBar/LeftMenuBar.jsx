@@ -55,6 +55,7 @@ function LeftMenuBar() {
 
   return (
     <div className="category-section">
+
       {/* {(!cookies.GujCategory ? resData : cookiesdata).map((news, index) => {
         return ( */}
       <>
@@ -199,6 +200,7 @@ function LeftMenuBar() {
       </>
       {/* );
       })} */}
+
     </div>
   );
 }
