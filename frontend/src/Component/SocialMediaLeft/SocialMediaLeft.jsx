@@ -10,6 +10,7 @@ function SocialMediaLeft() {
     if (newWindow) newWindow.opener = null
   }
   return (
+
     <div className="social">
       <h4 id="news1">
         અમારા ન્યૂઝલેટર
@@ -51,11 +52,13 @@ function SocialMediaLeft() {
        
           </FontAwesomeIcon>
           &nbsp;
+
         
-        ઇન્સ્ટાગ્રામ પર અમારી સાથે જોડાઓ
-      </button>
-      <br />
-    </div>
+    //     ઇન્સ્ટાગ્રામ પર અમારી સાથે જોડાઓ
+    //   </button>
+    //   <br />
+    // </div>
+    <></>
   );
 }
 

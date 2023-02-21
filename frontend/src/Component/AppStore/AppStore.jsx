@@ -24,10 +24,10 @@ function AppStore() {
     <p className="p-primary">follow us on</p>
     <div className="social-link">
         <ul>
-            <li><a href="#"><FontAwesomeIcon icon={faFacebook} ></FontAwesomeIcon></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faTwitter} ></FontAwesomeIcon></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faInstagram} ></FontAwesomeIcon></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faYoutube} ></FontAwesomeIcon></a></li>
+            <li><a href="https://www.facebook.com/vandangujarat?mibextid=LQQJ4d"><FontAwesomeIcon icon={faFacebook} ></FontAwesomeIcon></a></li>
+            <li><a href="https://twitter.com/GujaratVandan"><FontAwesomeIcon icon={faTwitter} ></FontAwesomeIcon></a></li>
+            <li><a href="https://www.instagram.com/gujarat_vandan/reels/?hl=en"><FontAwesomeIcon icon={faInstagram} ></FontAwesomeIcon></a></li>
+            <li><a href="https://www.youtube.com/@gujaratvandan"><FontAwesomeIcon icon={faYoutube} ></FontAwesomeIcon></a></li>
         </ul>
     </div>
 </div>

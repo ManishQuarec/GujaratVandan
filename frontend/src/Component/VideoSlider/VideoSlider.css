@@ -7,6 +7,7 @@
   width: 800px;
   height: 333px;
   /* padding-top: 100px; */
+  display: none;
 }
 .content {
   position: relative;

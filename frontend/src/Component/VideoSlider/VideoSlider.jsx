@@ -22,10 +22,10 @@ function VideoSlider() {
 
   return (
     <div className="trending-news">
-      <div className="head">
+      {/* <div className="head">
         <h4>ટ્રેન્ડિંગ ન્યૂઝ</h4>
         <p>વધુ વાંચો...</p>
-      </div>
+      </div> */}
       <br />
 
       {/* <div id="slideshow">
@@ -68,37 +68,39 @@ function VideoSlider() {
             <> */}
                 <img
                   className="slide-img"
-                  src="https://images.unsplash.com/photo-1549740425-5e9ed4d8cd34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwzOTU0NTB8fGVufDB8fHx8&w=1000&q=80"
+                  src=""
                   alt=""
                 />
+
                 <p className="Textdata">જેની સાથે લગ્ન કર્યા એ 5000 કાર ચોરનારની પત્ની અને સહ આરોપી, નોનવેજ અને બિયર પીવાની છે શોખીન</p>
                 {/* </>
           ))} */}
               </div>  
             
+
               <div className="slide">
                 <img
                   className="slide-img"
                   alt=""
-                  src="https://i.pinimg.com/originals/47/0a/19/470a19a36904fe200610cc1f41eb00d9.jpg"
+                  src=""
                 />
-                <p className="Textdata">જેની સાથે લગ્ન કર્યા એ 5000 કાર ચોરનારની પત્ની અને સહ આરોપી, નોનવેજ અને બિયર પીવાની છે શોખીન</p>
+                <p className="Textdata"></p>
               </div>
               <div className="slide">
                 <img
                   className="slide-img"
                   alt=""
-                  src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8NGslMjBtb3VudGFpbnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                  src=""
                 />
-                <p className="Textdata">જેની સાથે લગ્ન કર્યા એ 5000 કાર ચોરનારની પત્ની અને સહ આરોપી, નોનવેજ અને બિયર પીવાની છે શોખીન</p>
+                <p className="Textdata"></p>
               </div>
               <div className="slide">
                 <img
                   className="slide-img"
                   alt=""
-                  src="https://images.unsplash.com/photo-1549740425-5e9ed4d8cd34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwzOTU0NTB8fGVufDB8fHx8&w=1000&q=80"
+                  src=""
                 />
-                <p className="Textdata">જેની સાથે લગ્ન કર્યા એ 5000 કાર ચોરનારની પત્ની અને સહ આરોપી, નોનવેજ અને બિયર પીવાની છે શોખીન</p>
+                <p className="Textdata"></p>
               </div>
             </div>
           

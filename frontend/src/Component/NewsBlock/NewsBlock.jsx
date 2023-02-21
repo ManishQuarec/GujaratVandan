@@ -55,19 +55,7 @@ function NewsBlock(props) {
     }
   }, []);
 
-  return (
-    <>
-      {/* <div className="head">
-        <h4>હેડલાઇન્સ</h4>
-        <p>વધુ વાંચો...</p>
-      </div> */}
 
-      {newsDatas
-        .slice(0)
-        .reverse()
-        .map((news, index) => {
-          console.log(process.env.REACT_APP_API_URL + `${news.Path}`);
-          console.log(news._id);
 
           return (
             // <a href={`/FullNews/${news._id}`} className="ntres">
@@ -122,6 +110,7 @@ function NewsBlock(props) {
             </div>
             // </a>
           );
+
         })}
     </>
   );

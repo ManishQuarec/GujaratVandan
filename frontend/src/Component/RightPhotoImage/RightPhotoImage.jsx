@@ -9,8 +9,6 @@ function RightPhotoImage(name) {
 
   console.log(newsData);
 
-
-
   useEffect(() => {
     axios
       .post(process.env.REACT_APP_API_BASE_URL + "/allNewsData", {
@@ -26,35 +24,32 @@ function RightPhotoImage(name) {
 
   return (
     <>
-      <div className="head">
+      {/* <div className="head">
         <h4>{name.value.GujCategory}</h4>
         <p>વધુ વાંચો...</p>
-      </div>
+      </div> */}
 
-      {newsData.slice(length - 2, length).map((news, index) => {
+      {/* {newsData.slice(length - 2, length).map((news, index) => {
         return (
           <>
             <a href={`/FullNews/${news._id}`} className="rtes">
-              <div className="img-right"  >
+              <div className="img-right">
                 <img
                   src={process.env.REACT_APP_API_URL + `${news.Path}`}
                   alt="Image"
-                  
                 />
 
-
                 <p className="ShortNews">{news.NewsTittle}</p>
-
               </div>
             </a>
           </>
         );
-      })}
+      })} */}
 
-      <div className="Stocks">
-      <div className="head">
-        <h4>શેરબજાર</h4> 
-      </div>
+      {/* <div className="Stocks">
+        <div className="head">
+          <h4>શેરબજાર</h4>
+        </div>
         <div class="tradingview-widget-container">
           <div class="tradingview-widget-container__widget"></div>
           <div class="tradingview-widget-copyright">
@@ -67,9 +62,9 @@ function RightPhotoImage(name) {
             </a>
             by Gujarat Vandan
           </div>
-        </div>
+        </div> */}
         {/* Data Add Here */}
-      </div>
+      {/* </div> */}
     </>
   );
 }

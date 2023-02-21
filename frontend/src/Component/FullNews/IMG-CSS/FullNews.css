@@ -53,6 +53,8 @@
   .NewsContent p {
     font-size: 21px;
     margin: 10px 30px;
+    line-height: 34px;
+    font-weight: 500;
   }
 }
 @media all and (max-width: 1800px) {
@@ -61,10 +63,10 @@
     margin: 10px 30px;
   }
   .NewsContent p {
-    font-size: 19px;
+    font-size: 21px;
     margin: 10px 30px;
-    line-height: 28px;
-    letter-spacing: 2px;
+    line-height: 33px;
+    letter-spacing: 0px;
   }
 }
 @media all and (max-width: 1600px) {
@@ -73,9 +75,12 @@
     margin: 10px 30px;
   }
   .NewsContent p {
-    font-size: 17px;
+    font-size: 20px;
     margin: 10px 30px;
-    letter-spacing: 1px;
+    line-height: 33px;
+    letter-spacing: 0;
+    margin: 10px;
+    font-weight: 500;
   }
 }
 @media all and (max-width: 1300px) {
@@ -138,24 +143,24 @@
     margin: 10px;
   }
   .NewsContent h1 {
-    font-size: 13px;
+    font-size: 18px;
     margin: 10px;
   }
   .NewsContent p {
-    font-size: 11px;
+    font-size: 16px;
     margin: 10px;
-    letter-spacing: 0.5px;
-    line-height: normal;
+    letter-spacing: 0;
+    line-height: 20px;
     padding: 0;
   }
 }
 @media all and (max-width: 700px) {
   .NewsContent h1 {
-    font-size: 18px;
+    font-size: 21px;
     margin: 10px;
   }
   .NewsContent p {
-    font-size: 14px;
+    font-size: 16px;
     margin: 10px;
     letter-spacing: 0.5px;
     line-height: normal;
@@ -164,11 +169,11 @@
 }
 @media all and (max-width: 500px) {
   .NewsContent h1 {
-    font-size: 16px;
+    font-size: 21px;
     margin: 10px;
   }
   .NewsContent p {
-    font-size: 13px;
+    font-size: 16px;
     margin: 10px;
     letter-spacing: 0.5px;
     line-height: normal;
@@ -177,11 +182,11 @@
 }
 @media all and (max-width: 400px) {
   .NewsContent h1 {
-    font-size: 12px;
+    font-size: 19px;
     margin: 10px;
   }
   .NewsContent p {
-    font-size: 10px;
+    font-size: 14px;
     margin: 10px;
     letter-spacing: 0.5px;
     line-height: normal;
