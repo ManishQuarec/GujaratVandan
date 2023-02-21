@@ -30,20 +30,18 @@ function App() {
     
     return (
       <>
-     
+     <Nav />
         <div className="HomePage">
-          <Nav />
-          {/* <BreakingNews /> */}
+          
+         
           <div className="boundry">
             <div className="LeftSection">
               <LeftMenuBar />
-              {/* <AppStore /> */}
+           
             </div>
             <div className="MiddleSection">{children}</div>
             <div className="RightSection">
-              {/* <SocialMediaLeft />
-              <RightPhotoImage value={{GujCategory:"રસપ્રદ", EngCategory: "Interesting"}} /> */}
-              {/* <ShortNews /> */}
+             
             </div>
           </div>
         </div>

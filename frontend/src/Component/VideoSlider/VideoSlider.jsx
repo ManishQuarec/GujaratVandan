@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./VideoSlider.css";
 import axios from "axios";
+// import img from "../../Image/HomePageIMage/"
 
 function VideoSlider() {
   const [newsData, setNewsData] = useState([]);

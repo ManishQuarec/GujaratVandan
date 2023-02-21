@@ -1,0 +1,52 @@
+.FullHead{
+    /* border: 1px solid red; */
+    width: 640px;
+    height: 610px;
+    border: 1px solid  #eaeaea;
+    padding: 20px 20px 8px;
+
+}
+.idcolor{
+    color:#ff554b
+}
+.FullHead h3{
+    height: auto;
+    width:auto;
+    line-height: 36px;
+    font-size: 24px;
+}
+
+.FullHead img {
+    width: 598px;
+    height: 400px;
+    display: flex;
+    border-radius: 4px;
+}
+
+.NewFooter {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 120%;
+    height: 2rem;
+    color: #808080;
+
+ 
+}
+.SocialIcon {
+    height:36px;
+    width:150px;
+    display: flex;
+    flex-direction: row;
+    /* position: relative; */
+    /* justify-content: space-between; */
+    /* right:0 */
+    /* align-items: center; */
+   
+}
+.SocialIconed{
+ padding-left: 10px;
+ height:24px;
+ width:24px;
+}

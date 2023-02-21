@@ -7,7 +7,7 @@
   width: 800px;
   height: 333px;
   /* padding-top: 100px; */
-  display: none;
+  /* display: none; */
 }
 .content {
   position: relative;
@@ -23,7 +23,7 @@
   width: 400%;
   height: 100%;
   position: relative;
-  animation: slideshow 30s infinite;
+  /* animation: slideshow 30s infinite; */
 }
 .slide {
   width: 100%;

@@ -23,7 +23,9 @@ function Nav() {
 
   return (
     <>
+    <div className="insideContainer">
       <div className="Container">
+        
         <input type="checkbox" id="check" />
 
         <div className="logo">
@@ -71,6 +73,7 @@ function Nav() {
               </li>
             </a>
           </ul>
+        </div>
         </div>
       </div>
     </>

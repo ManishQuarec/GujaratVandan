@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faLink } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import axios from "axios";
+import img from "../../Image/HomePageIMage/raspred1.png"
 // import FullNews from "../../Component/FullNews/FullNews";
 import { useNavigate } from "react-router-dom";
 import {FullNews, MyComponent} from "../../Component/FullNews/FullNews";
@@ -61,13 +62,14 @@ function NewsBlock(props) {
             // <a href={`/FullNews/${news._id}`} className="ntres">
             <div
               className="BlockHead"
-              onClick={(e) => {
-                // handleClick(news._id);
-              }}
+              // onClick={(e) => {
+              //   handleClick(news._id);
+              // }}
             >
               <div className="headlines">
                 <div className="headlines-right">
                   <img
+                  src={img}
                     // src={process.env.REACT_APP_API_URL + `${news.Path}`}
                     alt={"data"}
                   />
@@ -111,9 +113,9 @@ function NewsBlock(props) {
             </div>
             // </a>
           );
+
         }
-//         )}
-//     </>
+    // </>
 //   );
 // }
 
