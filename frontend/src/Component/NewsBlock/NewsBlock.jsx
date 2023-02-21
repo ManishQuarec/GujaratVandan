@@ -62,13 +62,13 @@ function NewsBlock(props) {
             <div
               className="BlockHead"
               onClick={(e) => {
-                handleClick(news._id);
+                // handleClick(news._id);
               }}
             >
               <div className="headlines">
                 <div className="headlines-right">
                   <img
-                    src={process.env.REACT_APP_API_URL + `${news.Path}`}
+                    // src={process.env.REACT_APP_API_URL + `${news.Path}`}
                     alt={"data"}
                   />
                 </div>
@@ -86,7 +86,7 @@ function NewsBlock(props) {
                       icon={faGlobe}
                     ></FontAwesomeIcon> */}
                     &nbsp;
-                    <span className="CatName">{news.GujCategory} </span>
+                    {/* <span className="CatName">{news.GujCategory} </span> */}
                     <FontAwesomeIcon
                       onClick={handleCopyUrl}
                       className="SocialGlobelIcns"
@@ -111,12 +111,11 @@ function NewsBlock(props) {
             </div>
             // </a>
           );
-
-
-        // })}
-    // </>
-  // );
-}
+        }
+//         )}
+//     </>
+//   );
+// }
 
 // export default NewsBlock;
 export default React.memo(NewsBlock);
