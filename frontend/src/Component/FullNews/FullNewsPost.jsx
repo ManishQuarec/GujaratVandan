@@ -4,7 +4,7 @@ import BreakingNews from "../../Component/BreakingNews/BreakingNews";
 import LeftMenuBar from "../../Component/LeftMenuBar/LeftMenuBar";
 import AppStore from "../../Component/AppStore/AppStore";
 import ShortNews from "../../Component/ShortNews/ShortNews";
-import FullNews from "./FullNews";
+// import FullNews from "./FullNews";
 import RightPhotoImage from "../../Component/RightPhotoImage/RightPhotoImage";
 import SocialMediaLeft from "../../Component/SocialMediaLeft/SocialMediaLeft";
 
@@ -19,7 +19,7 @@ function FullNewsPost() {
             <AppStore />
           </div>
           <div className="MiddleSection">
-            <FullNews />
+            {/* <FullNews /> */}
           </div>
           <div className="RightSection">
             <SocialMediaLeft />

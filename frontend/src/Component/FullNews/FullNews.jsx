@@ -3,6 +3,11 @@ import "./IMG-CSS/FullNews.css";
 import BenIMG from "./IMG-CSS/BenImg.png";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 import axios from "axios";
+function MyComponent({ htmlContent }) {
+  return (
+    <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+  );
+}
 
 function FullNews() {
   let { userId } = useParams();
@@ -12,7 +17,18 @@ function FullNews() {
   const [tittle, setTittle] = useState("");
   const [news, setNews] = useState("");
 
-  console.log(image, tittle, news);
+//  const data = (dat) => {
+//   React.createElement(
+  
+//   {dat}
+//   )
+//  }
+
+
+
+// function createMarkup(text) { return {__html: text}; };
+
+  console.log( news);
   useEffect(() => {
     axios
       .post(process.env.REACT_APP_API_BASE_URL + "/allNewsDataId", {
@@ -36,20 +52,25 @@ function FullNews() {
   return (
     <>
       <div className="FullNews">
-        <a href="/State">
+        {/* <a href="/State">
           <i className="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp;
           ગુજરાતી / સમાચાર / સ્થાનિક / ગુજરાત / ગાંધીનગર / 
-        </a>
+        </a> */}
+        <div className="NewsContent">
+        <h1>{tittle}</h1>
+      </div>
       </div>
       <div className="ImgSection">
         <img src={process.env.REACT_APP_API_URL + `${image}`} alt="" />
       </div>
       <div className="NewsContent">
-        <h1>{tittle}</h1>
-        <p>{news}</p>
+        {/* <h1>{tittle}</h1> */}
+        {/* <>{news}</> */}
+        <MyComponent htmlContent={news}/>
+    {/* <data dat={news}/> */}
       </div>
     </>
   );
 }
 
-export default FullNews;
+export { FullNews, MyComponent};

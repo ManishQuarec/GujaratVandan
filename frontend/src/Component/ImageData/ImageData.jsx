@@ -57,7 +57,7 @@ function ImageData(name) {
               {/* <img
                 key={index}
                 className={index == 1 ? "Img-2" : "Img-1"}
-                src={"http://localhost:5000" + `/${news.Path}`}
+                src={process.env.REACT_APP_API_URL + `${news.Path}`}
                 alt=""
                 onClick={(e)=>{handleClick(news._id)}} 
               />

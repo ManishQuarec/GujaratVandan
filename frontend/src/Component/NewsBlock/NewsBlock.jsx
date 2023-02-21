@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faLink } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import axios from "axios";
+// import FullNews from "../../Component/FullNews/FullNews";
 import { useNavigate } from "react-router-dom";
-import FullNews from "../../Component/FullNews/FullNews";
+import {FullNews, MyComponent} from "../../Component/FullNews/FullNews";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
 function NewsBlock(props) {
@@ -54,19 +55,7 @@ function NewsBlock(props) {
     }
   }, []);
 
-  return (
-    <>
-      <div className="head">
-        <h4>હેડલાઇન્સ</h4>
-        <p>વધુ વાંચો...</p>
-      </div>
 
-      {newsDatas
-        .slice(0)
-        .reverse()
-        .map((news, index) => {
-          console.log(process.env.REACT_APP_API_URL + `${news.Path}`);
-          console.log(news._id);
 
           return (
             // <a href={`/FullNews/${news._id}`} className="ntres">
@@ -84,14 +73,18 @@ function NewsBlock(props) {
                   />
                 </div>
                 <div className="headlines-left">
-                  <h3>{news.NewsTittle}</h3>
-                  <p>{news.News}</p>
+
+                  {/* <h3>{news.NewsTittle}</h3> */}
+                  <h3>સુરત આવતાં-જતાં લોકો આ ખાસ વાંચજો:BJP MLA-બસ ઓપરેટરો આમને-સામને, આવતીકાલથી લક્ઝરી બસ શહેરમાં નહીં પ્રવેશે, 10 લાખથી વધુ લોકોને અસર </h3>
+                  {/* <p>{news.News}</p> */}
+                  {/* <p>{news.News}</p> */}
+                  {/* <MyComponent htmlContent={news.News}/> */}
                   <div className="footer">
-                    <FontAwesomeIcon
+                    {/* <FontAwesomeIcon
                       className="globelicon"
                       href="#"
                       icon={faGlobe}
-                    ></FontAwesomeIcon>
+                    ></FontAwesomeIcon> */}
                     &nbsp;
                     <span className="CatName">{news.GujCategory} </span>
                     <FontAwesomeIcon
@@ -118,9 +111,11 @@ function NewsBlock(props) {
             </div>
             // </a>
           );
-        })}
-    </>
-  );
+
+
+        // })}
+    // </>
+  // );
 }
 
 // export default NewsBlock;
