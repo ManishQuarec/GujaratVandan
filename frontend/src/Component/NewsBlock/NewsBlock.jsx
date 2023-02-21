@@ -68,56 +68,56 @@ function NewsBlock(props) {
           console.log(process.env.REACT_APP_API_URL + `${news.Path}`);
           console.log(news._id);
 
-          // return (
-          //   // <a href={`/FullNews/${news._id}`} className="ntres">
-          //   <div
-          //     className="BlockHead"
-          //     onClick={(e) => {
-          //       handleClick(news._id);
-          //     }}
-          //   >
-          //     <div className="headlines">
-          //       <div className="headlines-right">
-          //         <img
-          //           src={process.env.REACT_APP_API_URL + `${news.Path}`}
-          //           alt={"data"}
-          //         />
-          //       </div>
-          //       <div className="headlines-left">
-          //         <h3>{news.NewsTittle}</h3>
-          //         <p>{news.News}</p>
-          //         <div className="footer">
-          //           <FontAwesomeIcon
-          //             className="globelicon"
-          //             href="#"
-          //             icon={faGlobe}
-          //           ></FontAwesomeIcon>
-          //           &nbsp;
-          //           <span className="CatName">{news.GujCategory} </span>
-          //           <FontAwesomeIcon
-          //             onClick={handleCopyUrl}
-          //             className="SocialGlobelIcns"
-          //             href="/FullNews"
-          //             icon={faLink}
-          //           ></FontAwesomeIcon>
-          //           <FontAwesomeIcon
-          //             onClick={handleCopyUrl}
-          //             className="SocialGlobelIcns"
-          //             href="#"
-          //             icon={faFacebook}
-          //           ></FontAwesomeIcon>
-          //           <FontAwesomeIcon
-          //             onClick={handleCopyUrl}
-          //             className="SocialGlobelIcns"
-          //             href="#"
-          //             icon={faTwitter}
-          //           ></FontAwesomeIcon>
-          //         </div>
-          //       </div>
-          //     </div>
-          //   </div>
-          //   // </a>
-          // );
+          return (
+            // <a href={`/FullNews/${news._id}`} className="ntres">
+            <div
+              className="BlockHead"
+              onClick={(e) => {
+                handleClick(news._id);
+              }}
+            >
+              <div className="headlines">
+                <div className="headlines-right">
+                  <img
+                    src={process.env.REACT_APP_API_URL + `${news.Path}`}
+                    alt={"data"}
+                  />
+                </div>
+                <div className="headlines-left">
+                  <h3>{news.NewsTittle}</h3>
+                  <p>{news.News}</p>
+                  <div className="footer">
+                    <FontAwesomeIcon
+                      className="globelicon"
+                      href="#"
+                      icon={faGlobe}
+                    ></FontAwesomeIcon>
+                    &nbsp;
+                    <span className="CatName">{news.GujCategory} </span>
+                    <FontAwesomeIcon
+                      onClick={handleCopyUrl}
+                      className="SocialGlobelIcns"
+                      href="/FullNews"
+                      icon={faLink}
+                    ></FontAwesomeIcon>
+                    <FontAwesomeIcon
+                      onClick={handleCopyUrl}
+                      className="SocialGlobelIcns"
+                      href="#"
+                      icon={faFacebook}
+                    ></FontAwesomeIcon>
+                    <FontAwesomeIcon
+                      onClick={handleCopyUrl}
+                      className="SocialGlobelIcns"
+                      href="#"
+                      icon={faTwitter}
+                    ></FontAwesomeIcon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            // </a>
+          );
         })}
     </>
   );
