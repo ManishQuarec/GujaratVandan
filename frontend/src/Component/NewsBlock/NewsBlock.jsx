@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faLink } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import axios from "axios";
+import img from "../../Image/HomePageIMage/raspred1.png"
 // import FullNews from "../../Component/FullNews/FullNews";
 import { useNavigate } from "react-router-dom";
 import {FullNews, MyComponent} from "../../Component/FullNews/FullNews";
@@ -61,14 +62,15 @@ function NewsBlock(props) {
             // <a href={`/FullNews/${news._id}`} className="ntres">
             <div
               className="BlockHead"
-              onClick={(e) => {
-                handleClick(news._id);
-              }}
+              // onClick={(e) => {
+              //   handleClick(news._id);
+              // }}
             >
               <div className="headlines">
                 <div className="headlines-right">
                   <img
-                    src={process.env.REACT_APP_API_URL + `${news.Path}`}
+                  src={img}
+                    // src={process.env.REACT_APP_API_URL + `${news.Path}`}
                     alt={"data"}
                   />
                 </div>
@@ -85,7 +87,7 @@ function NewsBlock(props) {
                       icon={faGlobe}
                     ></FontAwesomeIcon> */}
                     &nbsp;
-                    <span className="CatName">{news.GujCategory} </span>
+                    {/* <span className="CatName">{news.GujCategory} </span> */}
                     <FontAwesomeIcon
                       onClick={handleCopyUrl}
                       className="SocialGlobelIcns"
@@ -111,10 +113,10 @@ function NewsBlock(props) {
             // </a>
           );
 
-        })}
-    </>
-  );
-}
+        }
+    // </>
+//   );
+// }
 
 // export default NewsBlock;
 export default React.memo(NewsBlock);

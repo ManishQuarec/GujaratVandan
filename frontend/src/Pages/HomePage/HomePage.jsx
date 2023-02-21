@@ -16,7 +16,7 @@ import FullNews from "../../Component/FullNews/FullNews";
 import searchNews from "../../Component/SearchNews/SearchNews";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 import EPapers from "../../Component/E-Papers/Papers";
-
+import TrendingNews from "../../Component/TrendingNews/TrendingNews";
 import axios from "axios";
 
 function HomePage(props) {
@@ -26,6 +26,7 @@ function HomePage(props) {
       <Helmet>
         <meta property="og:image" content="https://pbs.twimg.com/media/FUJUNyQUUAIPURc.jpg" />
       </Helmet>
+      <TrendingNews/>
       {/* <VideoSlider /> */}
       {/* <ImageData value={{ GujCategory: "રાજકારણ", EngCategory: "politics" }} />
       <ImageData value={{ GujCategory: "વ્યાપાર", EngCategory: "Business" }} /> */}
