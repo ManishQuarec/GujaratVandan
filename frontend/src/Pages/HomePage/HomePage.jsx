@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
 import Nav from "../../Component/Nav/Nav";
+import Bottom from "../../Component/BottomNAV/Bottom"
 import BreakingNews from "../../Component/BreakingNews/BreakingNews";
 import LeftMenuBar from "../../Component/LeftMenuBar/LeftMenuBar";
 import AppStore from "../../Component/AppStore/AppStore";
@@ -27,6 +28,7 @@ function HomePage(props) {
         <meta property="og:image" content="https://pbs.twimg.com/media/FUJUNyQUUAIPURc.jpg" />
       </Helmet>
       <TrendingNews/>
+
       {/* <VideoSlider /> */}
       {/* <ImageData value={{ GujCategory: "રાજકારણ", EngCategory: "politics" }} />
       <ImageData value={{ GujCategory: "વ્યાપાર", EngCategory: "Business" }} /> */}

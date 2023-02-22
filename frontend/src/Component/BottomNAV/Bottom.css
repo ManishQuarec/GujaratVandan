@@ -1,0 +1,14 @@
+.IYMAIN {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.I86iuu {
+  color: #808080;
+}
+
+.I86iuu:hover {
+  color: #f89c1d;
+}

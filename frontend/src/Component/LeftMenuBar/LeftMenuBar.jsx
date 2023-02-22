@@ -61,7 +61,9 @@ function LeftMenuBar() {
       <>
         <a
           style={{ textDecoration: "none", color: "#000" }}
-          href={"/category/Top news"}
+
+          // href={`/category/${news.Category.EngCategory}`}
+          href="/#"
         >
           <div className="category">
             <div className="DATA">
@@ -126,6 +128,7 @@ function LeftMenuBar() {
           </div>
         </a>
         {/* <a style={{ textDecoration: "none", color: "#000" }} href="category/">
+
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Entertaiment} alt="" />
@@ -135,6 +138,7 @@ function LeftMenuBar() {
           </div>
         </a> */}
         <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Dharma Darshan"}>
+
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Book} alt="" />

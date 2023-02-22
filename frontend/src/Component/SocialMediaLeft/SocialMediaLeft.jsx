@@ -1,14 +1,21 @@
 import React from "react";
 import "./SocialMedia.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faGlobe, faLink, } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faTwitter,faTelegram, faWhatsapp,faInstagram, faInstagramSquare} from  "@fortawesome/free-brands-svg-icons"
+import { faGlobe, faLink } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faTwitter,
+  faTelegram,
+  faWhatsapp,
+  faInstagram,
+  faInstagramSquare,
+} from "@fortawesome/free-brands-svg-icons";
 
 function SocialMediaLeft() {
   const openInNewTab = (url) => {
-    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-    if (newWindow) newWindow.opener = null
-  }
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
   return (
 
     <div className="social">
@@ -63,4 +70,4 @@ function SocialMediaLeft() {
 }
 
 // export default SocialMediaLeft;
-export default React.memo(SocialMediaLeft)
+export default React.memo(SocialMediaLeft);
