@@ -18,6 +18,7 @@ import EPapers from "./Component/E-Papers/Papers.jsx";
 import {FullNews} from "./Component/FullNews/FullNews";
 import FullNewsPost from "./Component/FullNews/FullNewsPost";
 import Comming from "./Component/ComingSoon/Coming"
+import Bottom from "./Component/BottomNAV/Bottom"
 
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
@@ -31,21 +32,17 @@ function App() {
     return (
       <>
      <Nav />
-        <div className="HomePage">
-          
-         
+        <div className="HomePage">        
           <div className="boundry">
             <div className="LeftSection">
               <LeftMenuBar />
-           
             </div>
             <div className="MiddleSection">{children}</div>
             <div className="RightSection">
-             
             </div>
           </div>
         </div>
-       
+        <Bottom />
       </>
       
     );

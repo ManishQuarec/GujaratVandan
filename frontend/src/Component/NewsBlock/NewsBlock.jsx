@@ -143,6 +143,7 @@ function NewsBlock(props) {
                   {news.NewsSubTittle.split(" ").splice(0, 20).join(" ")}
                   {/* {news.NewsTittle} */}
 
+
                   {/* <MyComponent htmlContent={news.NewsTittle.split(" ").splice(0,20).join(" ")}/> */}
                 </h3>
                 {/* <p>{news.News}</p> */}

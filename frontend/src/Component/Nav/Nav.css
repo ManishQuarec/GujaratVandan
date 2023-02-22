@@ -3,20 +3,14 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  /* padding: 0 6.25rem 0 6.25rem; */
-  
   margin: 0 auto;
-    
-    transition: all .5s ease;
-    max-width: 1280px;
-
-    width: 100%;
-  /* height: 10vh; */
- 
+  transition: all 0.5s ease;
+  max-width: 1280px;
+  width: 100%;
+  background-color: #fafafa;
 }
-.insideContainer{
-  background-color:#fafafa;
-  border: 1px solid  #eaeaea
+.insideContainer {
+  border: 1px solid #eaeaea;
 }
 
 .logo {
@@ -70,7 +64,13 @@
   font-size: 200%;
   display: none;
 }
-
+.MediaIco {
+  display: none;
+}
+.MediaIcoDOT {
+  display: none;
+  padding-right: 10px;
+}
 @media only screen and (max-width: 1330px) {
   .Container {
     padding: 0%;
@@ -82,6 +82,7 @@
     text-decoration: none;
     font-size: 1.2rem;
     color: black;
+    margin: 0.5rem;
   }
 
   .logo img {
@@ -91,55 +92,61 @@
 
 @media only screen and (max-width: 701px) {
   .Container {
-    display: inline-block;
+    /* display: inline-block; */
     position: fixed;
     z-index: 100;
-    margin-top: -10px;
+    margin-top: -1px;
   }
-  .date {
+  .MediaIco {
+    display: block;
+  }
+  .MediaIcoDOT {
+    display: block;
+  }
+  /* .date {
     position: absolute;
     bottom: 0;
     right: 0;
     font-weight: bold;
     margin-right: 11%;
     font-size: 12px;
-  }
-  .logo {
+  } */
+  /* .logo {
     display: contents;
-  }
-  .logo img {
+  } */
+  /* .logo img {
     height: 2rem;
     margin-top: 2%;
     margin-left: 1%;
-  }
+    margin-bottom: 1%;
+  } */
 
-  .Icones {
+  /* .Icones {
     display: flex;
-  }
-  .navmenu a li {
+  } */
+  /* .navmenu a li {
+    display: none;
+  } */
+  .link {
     display: none;
   }
-
-  #check:checked ~ .Container {
+  /* #check:checked ~ .Container {
     background-color: #ffffff;
 
     height: 100vh;
-  }
-  #check:checked ~ .navmenu ul {
+  } */
+  /* #check:checked ~ .navmenu ul {
     flex-direction: column;
     background-color: #ffffff;
     flex-basis: 70%;
-
-    /* width: 108%; */
-  }
-  #check:checked ~ .navmenu li {
+  } */
+  /* #check:checked ~ .navmenu li {
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
     width: 100%;
-    /* height: 500%; */
-  }
+  } */
 }
 @media all and (max-width: 360px) {
   .Container {
