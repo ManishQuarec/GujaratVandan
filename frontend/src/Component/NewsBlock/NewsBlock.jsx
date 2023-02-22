@@ -11,57 +11,8 @@ import { FullNews, MyComponent } from "../../Component/FullNews/FullNews";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
 function NewsBlock(props) {
-  const dts = () => {
-    const expr = "Papayas";
-  switch (expr) {
-    case "Top news":
-
-      return "#FF554B"
-      break;
-    case " my city":
-      return "#FF554B"
-      break;
-    case "My Gujarat":
-      return "#FF554B"
-      break;
-    case "Original":
-      return "#FF554B"
-      break;
-    case "Cricket":
-      return "#FF554B"
-      break;
-    case "Entertainment":
-      return "#FF554B"
-      break;
-    case "India":
-      console.log("Oranges are $0.59 a pound.");
-      break;
-    case "Dharma Darshan":
-      return "#FF554B"
-      break;
-    case "World":
-      return "#FF554B"
-      break;
-    case "utility":
-      return "#FF554B"
-      break;
-    case "Sports":
-      return "#FF554B"
-      break;
-    case "Business":
-      return "#FF554B"
-      break;
-      case "Horoscope":
-        return "#FF554B"
-        break;
-        case "magazine":
-          return "#FF554B"
-          break;
-
-    default:
-      console.log(`Sorry, we are out of ${expr}.`);
-  }
-  }
+ 
+ 
 
  
 
@@ -135,9 +86,9 @@ function NewsBlock(props) {
               </div>
               <div className="headlines-left">
                 {/* <h3>{news.NewsTittle}</h3> */}
-                {dts()}
+                {/* {dts(news.EngCategory)} */}
                 <h3>
-                  <font style={{ color: news.EngCategory == "Top news" ? "#0F86F5":"green" }}>
+                  <font style={{ color: news.Colored ? news.Colored:"#000000"}}>
                     
                     {news.NewsTittle.slice(0, 52)}
                   </font>
