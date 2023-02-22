@@ -1,7 +1,14 @@
+.datt{
+
+  border: 1px solid  #eaeaea;
+  padding: 1%;
+}
+
 .FullNews a {
   text-decoration: none;
   color: #000;
   font-size: 11px;
+ 
 }
 .FullNews i {
   border: 2px solid #000;
