@@ -9,6 +9,7 @@ import {
   faSearch,
   faNewspaper,
   faBars,
+  faEllipsisV,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Nav() {
@@ -23,57 +24,76 @@ function Nav() {
 
   return (
     <>
-    <div className="insideContainer">
-      <div className="Container">
-        
-        <input type="checkbox" id="check" />
+      <div className="insideContainer">
+        <div className="Container">
+          <input type="checkbox" id="check" />
 
-        <div className="logo">
-        <a href="/">
-          <img src={require("../../Image/HomePageIMage/Logo.png")} alt="Logo" />
-          </a>
-          {/* <div className="date">
+          <div className="logo">
+            <a href="/">
+              <img
+                src={require("../../Image/HomePageIMage/Logo.png")}
+                alt="Logo"
+              />
+            </a>
+            {/* <div className="date">
             {date.toLocaleDateString()} {date.toLocaleTimeString()}
           </div> */}
-          <div className="date">
-            {date.getDate() +
-              "/" +
-              (date.getMonth() + 1) +
-              "/" +
-              date.getFullYear()}{" "}
-            {date.toLocaleTimeString()}
+            {/* Date and Time Start */}
+            {/* <div className="date">
+              {date.getDate() +
+                "/" +
+                (date.getMonth() + 1) +
+                "/" +
+                date.getFullYear()}{" "}
+              {date.toLocaleTimeString()}
+            </div> */}
+            {/* Date and Time END */}
           </div>
-        </div>
-        <label htmlFor="check" className="Icones">
-          <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-        </label>
-        <div className="navmenu">
-          <ul>
-            <a style={{ textDecoration: "none", color: "#000" }} href="/">
-              <li className="link">
-                <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>હોમ
-              </li>
-            </a>
-            <a style={{ textDecoration: "none", color: "#000" }} href="/Coming">
-              <li className="link">
-                <FontAwesomeIcon icon={faPlayCircle}></FontAwesomeIcon>વીડિઓ
-              </li>
-            </a>
-            <a style={{ textDecoration: "none", color: "#000" }} href="/Coming">
-              <li className="link">
-                <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>સર્ચ કરો
-              </li>
-            </a>
-            <a
-              style={{ textDecoration: "none", color: "#000" }}
-              href="/EPapers"
-            >
-              <li className="link">
-                <FontAwesomeIcon icon={faNewspaper}></FontAwesomeIcon>ઇ-પેપર્સ
-              </li>
-            </a>
-          </ul>
-        </div>
+          <label htmlFor="check" className="Icones">
+            <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+          </label>
+
+          <div className="navmenu">
+            <ul>
+              <a style={{ textDecoration: "none", color: "#000" }} href="/">
+                <li className="link">
+                  <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>હોમ
+                </li>
+              </a>
+              <a
+                style={{ textDecoration: "none", color: "#000" }}
+                href="/Coming"
+              >
+                <li className="link">
+                  <FontAwesomeIcon icon={faPlayCircle}></FontAwesomeIcon>વીડિઓ
+                </li>
+              </a>
+              <a
+                style={{ textDecoration: "none", color: "#000" }}
+                href="/Coming"
+              >
+                <li className="link">
+                  <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>સર્ચ કરો
+                </li>
+              </a>
+              <a
+                style={{ textDecoration: "none", color: "#000" }}
+                href="/EPapers"
+              >
+                <li className="link">
+                  <FontAwesomeIcon icon={faNewspaper}></FontAwesomeIcon>ઇ-પેપર્સ
+                </li>
+                <li className="MediaIco">
+                  <FontAwesomeIcon icon={faNewspaper}></FontAwesomeIcon>
+                </li>
+              </a>
+              <a style={{ textDecoration: "none", color: "#000" }} href="/">
+                <li className="MediaIcoDOT">
+                  <FontAwesomeIcon icon={faEllipsisV}></FontAwesomeIcon>
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
       </div>
     </>
