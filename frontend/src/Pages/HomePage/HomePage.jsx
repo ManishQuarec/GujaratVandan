@@ -31,6 +31,9 @@ function HomePage(props) {
       {/* <ImageData value={{ GujCategory: "રાજકારણ", EngCategory: "politics" }} />
       <ImageData value={{ GujCategory: "વ્યાપાર", EngCategory: "Business" }} /> */}
       <NewsBlock value={{ unique: true }} />
+      {/* <NewsBlock value={{ unique: true }} />
+      <NewsBlock value={{ unique: true }} />
+      <NewsBlock value={{ unique: true }} /> */}
     </>
   );
 }

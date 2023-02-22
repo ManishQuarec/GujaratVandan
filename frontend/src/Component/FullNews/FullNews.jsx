@@ -3,6 +3,7 @@ import "./IMG-CSS/FullNews.css";
 import BenIMG from "./IMG-CSS/BenImg.png";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 import axios from "axios";
+import NewsBlock from "../NewsBlock/NewsBlock";
 function MyComponent({ htmlContent }) {
   return (
     <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
@@ -51,13 +52,14 @@ function FullNews() {
   }, []);
   return (
     <>
+    <div className="datt">
       <div className="FullNews">
         {/* <a href="/State">
           <i className="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp;
           ગુજરાતી / સમાચાર / સ્થાનિક / ગુજરાત / ગાંધીનગર / 
         </a> */}
         <div className="NewsContent">
-        <h1>{tittle}</h1>
+        <h1><MyComponent htmlContent={tittle}/></h1>
       </div>
       </div>
       <div className="ImgSection">
@@ -69,6 +71,9 @@ function FullNews() {
         <MyComponent htmlContent={news}/>
     {/* <data dat={news}/> */}
       </div>
+      <NewsBlock style={{width:"auto"}} value={{ unique: true }} />
+      </div>
+      
     </>
   );
 }
