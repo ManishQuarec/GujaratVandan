@@ -12,57 +12,58 @@ import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
 function NewsBlock(props) {
   const dts = () => {
-    console.log("dts");
-  }
-  console.log(props);
-  const expr = "Papayas";
+    const expr = "Papayas";
   switch (expr) {
     case "Top news":
-      console.log("Oranges are $0.59 a pound.");
+
+      return "#FF554B"
       break;
     case " my city":
-      console.log("Oranges are $0.59 a pound.");
+      return "#FF554B"
       break;
     case "My Gujarat":
-      console.log("Oranges are $0.59 a pound.");
+      return "#FF554B"
       break;
     case "Original":
-      console.log("Oranges are $0.59 a pound.");
+      return "#FF554B"
       break;
     case "Cricket":
-      console.log("Oranges are $0.59 a pound.");
+      return "#FF554B"
       break;
     case "Entertainment":
-      console.log("Oranges are $0.59 a pound.");
+      return "#FF554B"
       break;
     case "India":
       console.log("Oranges are $0.59 a pound.");
       break;
     case "Dharma Darshan":
-      console.log("Oranges are $0.59 a pound.");
+      return "#FF554B"
       break;
     case "World":
-      console.log("Oranges are $0.59 a pound.");
+      return "#FF554B"
       break;
     case "utility":
-      console.log("Oranges are $0.59 a pound.");
+      return "#FF554B"
       break;
     case "Sports":
-      console.log("Oranges are $0.59 a pound.");
+      return "#FF554B"
       break;
     case "Business":
-      console.log("Oranges are $0.59 a pound.");
+      return "#FF554B"
       break;
       case "Horoscope":
-        console.log("Oranges are $0.59 a pound.");
+        return "#FF554B"
         break;
         case "magazine":
-          console.log("Oranges are $0.59 a pound.");
+          return "#FF554B"
           break;
 
     default:
       console.log(`Sorry, we are out of ${expr}.`);
   }
+  }
+
+ 
 
   const [url, setUrl] = useState(window.location.href);
   function handleCopyUrl() {
