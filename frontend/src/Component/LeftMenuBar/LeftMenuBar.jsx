@@ -61,6 +61,7 @@ function LeftMenuBar() {
       <>
         <a
           style={{ textDecoration: "none", color: "#000" }}
+
           // href={`/category/${news.Category.EngCategory}`}
           href="/#"
         >
@@ -72,7 +73,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/my city"}>
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={City} alt="" />
@@ -81,7 +82,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        <a style={{ textDecoration: "none", color: "#000" }} href="/category/My Gujarat">
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Gujarat} alt="" />
@@ -90,7 +91,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        <a style={{ textDecoration: "none", color: "#000" }} href="category/Original">
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Original} alt="" />
@@ -99,7 +100,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Cricket"}>
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Cricket} alt="" />
@@ -108,7 +109,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Entertainment"}>
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Entertaiment} alt="" />
@@ -117,7 +118,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/India"}>
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={India} alt="" />
@@ -126,7 +127,8 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        {/* <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        {/* <a style={{ textDecoration: "none", color: "#000" }} href="category/">
+
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Entertaiment} alt="" />
@@ -135,7 +137,8 @@ function LeftMenuBar() {
             </div>
           </div>
         </a> */}
-        <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Dharma Darshan"}>
+
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Book} alt="" />
@@ -144,7 +147,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        <a style={{ textDecoration: "none", color: "#000" }} href="category/World">
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={World} alt="" />
@@ -153,7 +156,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/utility"}>
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Utilities} alt="" />
@@ -162,7 +165,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Sports"}>
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Sports} alt="" />
@@ -171,7 +174,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Business"}>
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Business} alt="" />
@@ -180,7 +183,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Horoscope"}>
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Astrology} alt="" />
@@ -189,7 +192,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href="/#">
+        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/magazine"}>
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Magazine} alt="" />
