@@ -10,9 +10,10 @@ import { useNavigate } from "react-router-dom";
 function TrendingNews() {
   const [resData, setResData] = useState("");
   const navigate = useNavigate();
+  // console.log("resData",resData);
 
   const handleClick = (e) => {
-    // await
+    
     navigate("/FullNews/" + `${e}`, { replace: true });
   };
   // const data = resData.length;
@@ -24,9 +25,9 @@ function TrendingNews() {
       })
       .then(async (response) => {
         await setResData(
-          response.data.response[response.data.response.length - 1]
+          response.data.response.pop()
         );
-        // console.log("ntt",response.data);
+        // console.log("ntt",response);
       });
   }, []);
 
