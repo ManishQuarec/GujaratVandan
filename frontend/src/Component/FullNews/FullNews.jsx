@@ -52,10 +52,6 @@ function FullNews() {
     <>
       <div className="datt">
         <div className="FullNews">
-          {/* <a href="/State">
-          <i className="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;&nbsp;
-          ગુજરાતી / સમાચાર / સ્થાનિક / ગુજરાત / ગાંધીનગર / 
-        </a> */}
           <div className="NewsContent">
             <h1>
               <font style={{ color: colored ? colored : "#000000" }}>
@@ -66,14 +62,13 @@ function FullNews() {
             </h1>
           </div>
         </div>
+        
         <div className="ImgSection">
           <img src={process.env.REACT_APP_API_URL + `${image}`} alt="" />
         </div>
         <div className="NewsContent">
-          {/* <h1>{tittle}</h1> */}
-          {/* <>{news}</> */}
           <MyComponent htmlContent={news} />
-          {/* <data dat={news}/> */}
+          <h1 className="gu78">અન્ય સમાચારો પણ છે...</h1>
         </div>
         <NewsBlock style={{ width: "auto" }} value={{ unique: true }} />
       </div>

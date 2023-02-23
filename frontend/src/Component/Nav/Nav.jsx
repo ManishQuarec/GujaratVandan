@@ -87,11 +87,11 @@ function Nav() {
                   <FontAwesomeIcon icon={faNewspaper}></FontAwesomeIcon>
                 </li>
               </a>
-              <a style={{ textDecoration: "none", color: "#000" }} href="/">
+              {/* <a style={{ textDecoration: "none", color: "#000" }} href="/">
                 <li className="MediaIcoDOT">
                   <FontAwesomeIcon icon={faEllipsisV}></FontAwesomeIcon>
                 </li>
-              </a>
+              </a> */}
             </ul>
           </div>
         </div>
