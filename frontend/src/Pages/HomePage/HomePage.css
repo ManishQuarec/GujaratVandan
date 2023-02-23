@@ -61,14 +61,20 @@
   }
 }
 
+@media all and (max-width:500px) {
+  .MiddleSection {
+    margin-top: 20%;
+  }
+}
+
 @media all and (max-width:450px) {
   .MiddleSection {
-    margin-top: 10%;
+    margin-top: 25%;
   }
 }
 
 @media all and (max-width:350px) {
   .MiddleSection {
-    margin-top: 15%;
+    margin-top: 30%;
   }
 }

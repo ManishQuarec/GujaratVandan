@@ -1,5 +1,6 @@
 .IYMAIN {
   display: flex;
+  display: none;
   justify-content: space-between;
   text-align: center;
   align-items: center;
@@ -12,3 +13,26 @@
 .I86iuu:hover {
   color: #f89c1d;
 }
+
+@media all and (max-width:769px) {
+  .IYMAIN {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    /* top: 90.5%; */
+    bottom: 0;
+    left: 0;
+    background: #FFF;
+    width: 100%;
+    z-index: 99;
+  }
+}
+
+/* @media all and (max-width:620px) {
+  .IYMAIN {
+    top: 91%;
+    width: 100%;
+  }
+} */

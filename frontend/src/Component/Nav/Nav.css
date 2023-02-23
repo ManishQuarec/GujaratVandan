@@ -106,7 +106,7 @@
   .Container {
     position: fixed;
     z-index: 100;
-    margin-top: -1px;
+    margin-top: 0px;
   }
 
   .MediaIco {
@@ -117,20 +117,39 @@
     display: block;
   }
 
+  .navmenu a li {
+    font-size: 1.5rem;
+    padding: 0px 15px;
+  }
+
   .link {
     display: none;
   }
 
+  .logo img {
+    height: 3rem;
+    margin: 0px 35px;
+  }
 }
 
 @media all and (max-width:500px) {
-  .Container{
-    height: 100px;
+  .Container {
+    height: 97px;
   }
+
+  .logo img {
+    height: 3rem;
+  }
+
+
 }
 
 @media all and (max-width: 360px) {
   .Container {
     margin-top: -2px;
+  }
+
+  .Container {
+    height: 92px;
   }
 }

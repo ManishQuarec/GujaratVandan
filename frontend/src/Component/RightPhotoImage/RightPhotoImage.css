@@ -45,13 +45,13 @@
 }
 
 @media all and (max-width:1230px) {
-  .KHUGUTF {
+  /* .KHUGUTF {
     padding: 24px 20px 0px 0px;
-  }
+  } */
 
-  .VIDeohg {
+  /* .VIDeohg {
     margin-left: -167px;
-  }
+  } */
 
   .MKF9878 {
     margin-left: 160px;
@@ -64,9 +64,8 @@
     position: relative;
     width: 85px;
   }
-
   .VIDeohg {
-    margin-left: 115px;
+    margin-left: 135px;
   }
 }
 
