@@ -63,7 +63,7 @@ function LeftMenuBar() {
           style={{ textDecoration: "none", color: "#000" }}
 
           // href={`/category/${news.Category.EngCategory}`}
-          href="/#"
+          href={"/category/Top news"}
         >
           <div className="category">
             <div className="DATA">

@@ -23,6 +23,7 @@
   /* border: red 1px solid; */
   width: 144px;
     height: 108px;
+    border-radius: 4%;
 }
 .headlines-left {
   /* width: 75%; */
