@@ -1,4 +1,88 @@
-.ShortNews {
+/* Coming Soon Part   */
+/* .IUTYO {
+  width: 100%;
+} */
+.KHUGUTF {
+  min-height: 540px;
+  max-width: 280px;
+  border-radius: 5px;
+  padding: 24px 0px 0px 24px;
+}
+
+.JKUv {
+  position: absolute;
+  margin-top: -500px;
+  margin-left: 30px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.MKF9878 {
+  position: absolute;
+  background: #0000008b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: -500px;
+  margin-left: 190px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.VIDeohg {
+  height: 50px;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: -145px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.63);
+  border: 1px solid #FFF;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+@media all and (max-width:1230px) {
+  .KHUGUTF {
+    padding: 24px 20px 0px 0px;
+  }
+
+  .VIDeohg {
+    margin-left: -167px;
+  }
+
+  .MKF9878 {
+    margin-left: 160px;
+  }
+}
+
+@media all and (max-width:1176px) {
+  .MKF9878 {
+    margin-left: 145px;
+    position: relative;
+    width: 85px;
+  }
+
+  .VIDeohg {
+    margin-left: 115px;
+  }
+}
+
+@media all and (max-width:769px) {
+  .IUTYO {
+    display: none;
+  }
+}
+
+
+/* Coming Soon Part   */
+
+
+
+
+/* .ShortNews {
   position: absolute;
   margin-top: -42px;
   font-size: 14px;
@@ -42,9 +126,7 @@
     height: 26px;
   }
 }
-/* @media only screen and (max-width: 1799px) and (min-width: 1500px) {
 
-} */
 @media only screen and (max-width: 2000px) and (min-width: 1800px) {
   .img-right img {
     height: 313px;
@@ -61,4 +143,4 @@
     width: 360px;
     height: 64px;
   }
-}
+} */

@@ -11,11 +11,6 @@ import { FullNews, MyComponent } from "../../Component/FullNews/FullNews";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
 function NewsBlock(props) {
- 
- 
-
- 
-
   const [url, setUrl] = useState(window.location.href);
   function handleCopyUrl() {
     navigator.clipboard.writeText(url);

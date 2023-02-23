@@ -11,11 +11,11 @@ import {
 function Bottom() {
   return (
     <>
-      <div className="IYMAIN">
+      {/* <div className="IYMAIN">
         <p className="I86iuu"><FontAwesomeIcon icon={faHome}></FontAwesomeIcon><br />વાંચો</p>
         <p className="I86iuu"><FontAwesomeIcon icon={faPlayCircle}></FontAwesomeIcon><br />જુઓ</p>
         <p className="I86iuu"><FontAwesomeIcon icon={faSearch}></FontAwesomeIcon><br />શોધો</p>
-      </div>
+      </div> */}
     </>
   );
 }

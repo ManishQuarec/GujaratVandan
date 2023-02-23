@@ -9,8 +9,13 @@
   width: 100%;
   background-color: #fafafa;
 }
+
 .insideContainer {
   border: 1px solid #eaeaea;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
 }
 
 .logo {
@@ -26,6 +31,7 @@
   justify-content: flex-end;
   align-items: center;
 }
+
 .navmenu li {
   list-style: none;
   margin: 1.25rem;
@@ -33,9 +39,11 @@
   cursor: pointer;
   justify-content: flex-end;
 }
+
 .nevmenu li:hover {
   color: orangered;
 }
+
 .navmenu a li {
   text-decoration: none;
   font-size: 1.625rem;
@@ -57,6 +65,7 @@
 #check {
   display: none;
 }
+
 .Icones {
   float: right;
   margin-top: 2%;
@@ -64,13 +73,16 @@
   font-size: 200%;
   display: none;
 }
+
 .MediaIco {
   display: none;
 }
+
 .MediaIcoDOT {
   display: none;
   padding-right: 10px;
 }
+
 @media only screen and (max-width: 1330px) {
   .Container {
     padding: 0%;
@@ -90,64 +102,33 @@
   }
 }
 
-@media only screen and (max-width: 701px) {
+@media only screen and (max-width: 769px) {
   .Container {
-    /* display: inline-block; */
     position: fixed;
     z-index: 100;
     margin-top: -1px;
   }
+
   .MediaIco {
     display: block;
   }
+
   .MediaIcoDOT {
     display: block;
   }
-  /* .date {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-weight: bold;
-    margin-right: 11%;
-    font-size: 12px;
-  } */
-  /* .logo {
-    display: contents;
-  } */
-  /* .logo img {
-    height: 2rem;
-    margin-top: 2%;
-    margin-left: 1%;
-    margin-bottom: 1%;
-  } */
 
-  /* .Icones {
-    display: flex;
-  } */
-  /* .navmenu a li {
-    display: none;
-  } */
   .link {
     display: none;
   }
-  /* #check:checked ~ .Container {
-    background-color: #ffffff;
 
-    height: 100vh;
-  } */
-  /* #check:checked ~ .navmenu ul {
-    flex-direction: column;
-    background-color: #ffffff;
-    flex-basis: 70%;
-  } */
-  /* #check:checked ~ .navmenu li {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-  } */
 }
+
+@media all and (max-width:500px) {
+  .Container{
+    height: 100px;
+  }
+}
+
 @media all and (max-width: 360px) {
   .Container {
     margin-top: -2px;
