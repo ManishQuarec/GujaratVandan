@@ -10,12 +10,14 @@ import { useNavigate } from "react-router-dom";
 function TrendingNews() {
   const [resData, setResData] = useState("");
   const navigate = useNavigate();
-  // console.log("resData",resData);
+  console.log("resData",resData);
 
   const handleClick = (e) => {
     
     navigate("/FullNews/" + `${e}`, { replace: true });
   };
+
+
   // const data = resData.length;
   // console.log("ntt",resData.NewsTittle);
   useEffect(() => {
@@ -25,7 +27,7 @@ function TrendingNews() {
       })
       .then(async (response) => {
         await setResData(
-          response.data.response.pop()
+         await  response.data.response.pop()
         );
         // console.log("ntt",response);
       });
@@ -47,7 +49,7 @@ function TrendingNews() {
       </h3>
 
       {/* <img className="" src={img} alt="" /> */}
-      <img src={process.env.REACT_APP_API_URL + `${resData.Path}`} alt="" />
+      <img src={process.env.REACT_APP_API_URL + resData.Path} alt="" />
 
       <div className="NewFooter">
         <div className="catted">{resData.GujCategory}</div>

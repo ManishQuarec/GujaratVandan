@@ -24,10 +24,10 @@ function HomePage(props) {
   document.title = "Gujarat Vandan - Home";
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <meta property="og:image" content="https://pbs.twimg.com/media/FUJUNyQUUAIPURc.jpg" />
-      </Helmet>
-      <TrendingNews/>
+      </Helmet> */}
+      {/* <TrendingNews/> */}
 
       {/* <VideoSlider /> */}
       {/* <ImageData value={{ GujCategory: "રાજકારણ", EngCategory: "politics" }} />

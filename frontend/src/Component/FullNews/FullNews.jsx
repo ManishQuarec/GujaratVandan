@@ -62,7 +62,8 @@ function FullNews() {
                 {" "}
                 {tittle.slice(0, 52)}{" "}
               </font>{" "}
-              {subTittle.split(" ").splice(0, 20).join(" ")}
+              {/* {subTittle.split(" ").splice(0, 20).join(" ")} */}
+              {subTittle}
             </h1>
           </div>
         </div>

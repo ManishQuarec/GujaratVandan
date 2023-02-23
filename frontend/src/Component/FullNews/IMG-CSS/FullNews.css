@@ -25,6 +25,15 @@
     width: 100%;
 }
 
+.NewsContent img {
+  min-height: 220px;
+  display: block;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 100%;
+}
+
 .NewsContent{
   font-size: 18px;
   line-height: 35px;
@@ -121,103 +130,5 @@
     padding: 3px;
     font-size: 18px;
     border-radius: 20px;
-  }
-}
-@media all and (max-width: 1100px) {
-  .NewsContent h1 {
-    font-size: 15px;
-    margin: 10px 30px;
-  }
-  .NewsContent p {
-    font-size: 15px;
-    margin: 10px 30px;
-    letter-spacing: 0.5px;
-    line-height: normal;
-  }
-}
-@media all and (max-width: 950px) {
-  .NewsContent p {
-    font-size: 15px;
-    margin: 10px;
-    letter-spacing: 0.5px;
-    line-height: normal;
-    padding: 0;
-  }
-  .NewsContent h1 {
-    font-size: 15px;
-    margin: 10px;
-  }
-}
-@media all and (max-width: 800px) {
-  .FullNews a {
-    text-decoration: none;
-    color: #000;
-    font-size: 14px;
-  }
-  .FullNews i {
-    border: 2px solid #000;
-    padding: 1px;
-    font-size: 20px;
-    border-radius: 20px;
-  }
-  .ImgSection img {
-    width: 95%;
-    height: 192px;
-    margin: 10px;
-  }
-  .NewsContent h1 {
-    font-size: 18px;
-    margin: 10px;
-  }
-  .NewsContent p {
-    font-size: 16px;
-    margin: 10px;
-    letter-spacing: 0;
-    line-height: 20px;
-    padding: 0;
-  }
-}
-@media all and (max-width: 700px) {
-  .NewsContent h1 {
-    font-size: 21px;
-    margin: 10px;
-  }
-  .NewsContent p {
-    font-size: 16px;
-    margin: 10px;
-    letter-spacing: 0.5px;
-    line-height: normal;
-    padding: 0;
-  }
-}
-@media all and (max-width: 500px) {
-  .NewsContent h1 {
-    font-size: 21px;
-    margin: 10px;
-  }
-  .NewsContent p {
-    font-size: 16px;
-    margin: 10px;
-    letter-spacing: 0.5px;
-    line-height: normal;
-    padding: 0;
-  }
-}
-@media all and (max-width: 400px) {
-  .NewsContent h1 {
-    font-size: 19px;
-    margin: 10px;
-  }
-  .NewsContent p {
-    font-size: 14px;
-    margin: 10px;
-    letter-spacing: 0.5px;
-    line-height: normal;
-    padding: 0;
-  }
-  .FullNews a {
-    text-decoration: none;
-    color: #000;
-    font-size: 12px;
   }
 }

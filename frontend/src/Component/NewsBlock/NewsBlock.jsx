@@ -87,9 +87,9 @@ function NewsBlock(props) {
                     
                     {news.NewsTittle.slice(0, 52)}
                   </font>
-                  {news.NewsSubTittle.split(" ").splice(0, 20).join(" ")}
+                  {/* {news.NewsSubTittle.split(" ").splice(0, 20).join(" ")} */}
                   {/* {news.NewsTittle} */}
-
+                  {news.NewsSubTittle} 
 
                   {/* <MyComponent htmlContent={news.NewsTittle.split(" ").splice(0,20).join(" ")}/> */}
                 </h3>

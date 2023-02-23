@@ -57,10 +57,10 @@ function VideoSlider() {
       <div className="containerSlider">
         <div className="content">
           <div className="slideshow">
-            <button className="slide-btn slide-btn-1"></button>
+            {/* <button className="slide-btn slide-btn-1"></button>
             <button className="slide-btn slide-btn-2"></button>
             <button className="slide-btn slide-btn-3"></button>
-            <button className="slide-btn slide-btn-4"></button>
+            <button className="slide-btn slide-btn-4"></button> */}
            
             <div className="slideshow-wrapper">
          
