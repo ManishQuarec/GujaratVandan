@@ -27,7 +27,7 @@ function HomePage(props) {
       {/* <Helmet>
         <meta property="og:image" content="https://pbs.twimg.com/media/FUJUNyQUUAIPURc.jpg" />
       </Helmet> */}
-      {/* <TrendingNews/> */}
+      <TrendingNews/>
 
       {/* <VideoSlider /> */}
       {/* <ImageData value={{ GujCategory: "રાજકારણ", EngCategory: "politics" }} />

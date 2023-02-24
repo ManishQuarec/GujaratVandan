@@ -26,7 +26,7 @@ function NewsBlock(props) {
   const handleClick = (e) => {
     setNewsDatas([]);
     // await
-    navigate("/FullNews/" + `${e}`, { replace: true });
+    navigate("/FullNews/" + `${e}`);
   };
 
   useEffect(() => {

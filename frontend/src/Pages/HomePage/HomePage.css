@@ -1,7 +1,8 @@
 .HomePage {
   /* border: red 1px solid ; */
-  /* height: 200vh;
-     */
+  height: 100vh;
+  width:100vw;
+    
   /* padding-left: 10%;
     padding-right: 10%; */
 }
@@ -10,7 +11,7 @@
   margin-top: 5.5%;
   margin-left: 5%;
   margin-right: 5%;
-  height: 89%;
+  /* height: 89%; */
   display: flex;
 }
 
@@ -42,7 +43,7 @@
   width: 60%;
 }
 
-@media all and (max-width:769px) {
+@media all and (max-width:810px) {
   .boundry {
     margin-top: 5.5%;
     margin-left: 0%;
@@ -77,4 +78,11 @@
   .MiddleSection {
     margin-top: 30%;
   }
+}
+
+@media all and (min-width:810px) and (max-width:1024px) {
+  .boundry {
+    /* border: 1px solid red; */
+  }
+
 }

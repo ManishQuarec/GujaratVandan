@@ -71,8 +71,9 @@ function FullNews() {
           <MyComponent htmlContent={news} />
           <h1 className="gu78">અન્ય સમાચારો પણ છે...</h1>
         </div>
-        <NewsBlock style={{ width: "auto" }} value={{ unique: true }} />
+       
       </div>
+      <NewsBlock value={{ unique: true }} />
     </>
   );
 }
