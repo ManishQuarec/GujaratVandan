@@ -30,6 +30,13 @@ function App() {
     return (
       <>
         <Nav />
+        <div className="viewed">
+        <div className="datars">
+          
+          <LeftMenuBar />
+          </div>
+        </div>
+
         <div className="HomePage">
           <div className="boundry">
             <div className="LeftSection">

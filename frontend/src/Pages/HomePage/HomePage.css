@@ -17,7 +17,7 @@
 
 .LeftSection {
   flex: 1s;
-  flex-basis: 24%;
+  flex-basis: 15%;
   margin-right: 1%;
   /* border:magenta 1px solid; */
   height: 99%;
@@ -58,31 +58,36 @@
   }
 
   .MiddleSection {
-    margin-top: 7%;
+    /* margin-top: 7%; */
   }
 }
 
 @media all and (max-width:500px) {
   .MiddleSection {
-    margin-top: 20%;
+    /* margin-top: 20%; */
   }
 }
 
 @media all and (max-width:450px) {
   .MiddleSection {
-    margin-top: 25%;
+    /* margin-top: 25%; */
   }
 }
 
 @media all and (max-width:350px) {
   .MiddleSection {
-    margin-top: 30%;
+    /* margin-top: 30%; */
   }
 }
 
-@media all and (min-width:810px) and (max-width:1024px) {
-  .boundry {
-    /* border: 1px solid red; */
+@media all and (min-width:183px) and (max-width:809px) {
+
+  .LeftSection {
+    display:none;
   }
 
+  .RightSection {
+    display:none;
+
+  }
 }

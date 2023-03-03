@@ -1,7 +1,8 @@
 .datt {
   border: 1px solid #eaeaea;
   padding: 1%;
-  width: 102%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .FullNews a {
@@ -36,10 +37,17 @@
     width: 100%;
 }
 
+.FullNews .NewsContent h1 {
+
+  overflow: hidden;
+
+}
+
 .NewsContent{
   font-size: 18px;
   line-height: 35px;
   margin: 10px 0;
+  overflow: hidden;
 
 
 }
@@ -137,8 +145,8 @@
 
 @media all and (max-width: 1300px) {
   .NewsContent h1 {
-    font-size: 18px;
-    margin: 10px 30px;
+    font-size: 20px;
+    margin: 10px 10px;
   }
 
   .FullNews a {
@@ -153,5 +161,13 @@
     font-size: 18px;
     border-radius: 20px;
   }
+}
+
+@media all and (min-width:360px) and (max-width:480px) {
+  .NewsContent p {
+    font-size: 18px;
+    line-height: 30px;
+
+}
 }
 

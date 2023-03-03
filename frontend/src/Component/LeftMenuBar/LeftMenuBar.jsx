@@ -39,17 +39,17 @@ function LeftMenuBar() {
   //   return () => {};
   // }, []);
 
-  useEffect(() => {
-    if (!cookies.GujCategory) {
-      axios
-        .get(process.env.REACT_APP_API_BASE_URL + "/GetCategory")
-        .then((response) => {
-          setResData(response.data);
-          console.log(response.data);
-          setCookies("GujCategory", JSON.stringify(response.data));
-        });
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!cookies.GujCategory) {
+  //     axios
+  //       .get(process.env.REACT_APP_API_BASE_URL + "/GetCategory")
+  //       .then((response) => {
+  //         setResData(response.data);
+  //         console.log(response.data);
+  //         setCookies("GujCategory", JSON.stringify(response.data));
+  //       });
+  //   }
+  // }, []);
 
   console.log(resData);
 
@@ -100,7 +100,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Cricket"}>
+        {/* <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Cricket"}>
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Cricket} alt="" />
@@ -108,7 +108,7 @@ function LeftMenuBar() {
               <p className="ntres">ક્રિકેટ</p>
             </div>
           </div>
-        </a>
+        </a> */}
         <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Entertainment"}>
           <div className="category">
             <div className="DATA">
@@ -143,7 +143,7 @@ function LeftMenuBar() {
             <div className="DATA">
               <img className="IOCINC" src={Book} alt="" />
               &nbsp;
-              <p className="ntres">ધર્મ દર્શન</p>
+              <p className="ntres">ધર્મ-રાશિ</p>
             </div>
           </div>
         </a>
@@ -156,7 +156,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/utility"}>
+        {/* <a style={{ textDecoration: "none", color: "#000" }} href={"/category/utility"}>
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Utilities} alt="" />
@@ -164,7 +164,7 @@ function LeftMenuBar() {
               <p className="ntres">યુટિલિટી</p>
             </div>
           </div>
-        </a>
+        </a> */}
         <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Sports"}>
           <div className="category">
             <div className="DATA">
@@ -183,7 +183,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a>
-        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Horoscope"}>
+        {/* <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Horoscope"}>
           <div className="category">
             <div className="DATA">
               <img className="IOCINC" src={Astrology} alt="" />
@@ -191,7 +191,7 @@ function LeftMenuBar() {
               <p className="ntres">રાશિફળ</p>
             </div>
           </div>
-        </a>
+        </a> */}
         <a style={{ textDecoration: "none", color: "#000" }} href={"/category/magazine"}>
           <div className="category">
             <div className="DATA">

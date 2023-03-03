@@ -4,6 +4,7 @@ import BenIMG from "./IMG-CSS/BenImg.png";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 import axios from "axios";
 import NewsBlock from "../NewsBlock/NewsBlock";
+import { Helmet } from "react-helmet";
 function MyComponent({ htmlContent }) {
   return <div dangerouslySetInnerHTML={{ __html: htmlContent }} />;
 }
@@ -50,6 +51,10 @@ function FullNews() {
   }, []);
   return (
     <>
+      {/* <Helmet>
+        <title>Gujarat Vandan - FullNews </title>
+        <meta name="description" content={subTittle} />
+      </Helmet> */}
       <div className="datt">
         <div className="FullNews">
           <div className="NewsContent">
@@ -63,7 +68,7 @@ function FullNews() {
             </h1>
           </div>
         </div>
-        
+
         <div className="ImgSection">
           <img src={process.env.REACT_APP_API_URL + `${image}`} alt="" />
         </div>
@@ -71,7 +76,6 @@ function FullNews() {
           <MyComponent htmlContent={news} />
           <h1 className="gu78">અન્ય સમાચારો પણ છે...</h1>
         </div>
-       
       </div>
       <NewsBlock value={{ unique: true }} />
     </>

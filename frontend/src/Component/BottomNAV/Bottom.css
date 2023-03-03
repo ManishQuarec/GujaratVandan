@@ -4,6 +4,11 @@
   justify-content: space-between;
   text-align: center;
   align-items: center;
+  text-decoration: none;
+}
+
+.IYMAIN a {
+  text-decoration: none;
 }
 
 .I86iuu {
@@ -27,6 +32,8 @@
     background: #FFF;
     width: 100%;
     z-index: 99;
+    height: 8%;
+    padding: 6%;
   }
 }
 
@@ -36,3 +43,11 @@
     width: 100%;
   }
 } */
+
+@media all and (min-width:360px) and (max-width:480px) {
+  .IYMAIN {
+    /* text-decoration: none; */
+    /* width:83%; */
+  }
+
+}

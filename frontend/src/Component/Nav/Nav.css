@@ -135,7 +135,7 @@
 
 @media all and (max-width:500px) {
   .Container {
-    height: 97px;
+    /* height: 97px; */
   }
 
   .logo img {
@@ -151,6 +151,15 @@
   }
 
   .Container {
-    height: 92px;
+    /* height: 92px; */
+  }
+}
+
+@media all and (min-width:360px) and (max-width:480px) {
+  .Container{
+    width:auto;
+    /* width:63%; */
+    /* height: 65px; */
+    position: relative;
   }
 }

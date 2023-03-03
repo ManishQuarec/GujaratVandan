@@ -12,9 +12,9 @@ function Bottom() {
   return (
     <>
       <div className="IYMAIN">
-        <p className="I86iuu"><FontAwesomeIcon icon={faHome}></FontAwesomeIcon><br />વાંચો</p>
-        <p className="I86iuu"><FontAwesomeIcon icon={faPlayCircle}></FontAwesomeIcon><br />જુઓ</p>
-        <p className="I86iuu"><FontAwesomeIcon icon={faSearch}></FontAwesomeIcon><br />શોધો</p>
+        <a className="I86iuu"  href="/" ><FontAwesomeIcon icon={faHome}></FontAwesomeIcon><br />વાંચો</a>
+        <a className="I86iuu" href="/Coming"><FontAwesomeIcon icon={faPlayCircle}></FontAwesomeIcon><br />જુઓ</a>
+        <a className="I86iuu" href="/"><FontAwesomeIcon icon={faSearch}></FontAwesomeIcon><br />શોધો</a>
       </div>
     </>
   );

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faLink } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 import img from "../../Image/HomePageIMage/raspred1.png";
 // import FullNews from "../../Component/FullNews/FullNews";
 import { useNavigate } from "react-router-dom";
@@ -11,6 +12,7 @@ import { FullNews, MyComponent } from "../../Component/FullNews/FullNews";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
 function NewsBlock(props) {
+  console.log(process.env.REACT_APP_FRONT_FILES);
   const [url, setUrl] = useState(window.location.href);
   function handleCopyUrl() {
     navigator.clipboard.writeText(url);
@@ -24,9 +26,18 @@ function NewsBlock(props) {
   console.log("dataser", newsDatas);
 
   const handleClick = (e) => {
+    console.log("need",e.data);
+
+
     setNewsDatas([]);
     // await
-    navigate("/FullNews/" + `${e}`);
+    navigate("/FullNews/" + `${e._id}`);
+
+    const metaDescTag = document.querySelector("meta[name='description']");
+    metaDescTag.setAttribute("content", e.data);
+   document.title=`${e.data}`
+
+ 
   };
 
   useEffect(() => {
@@ -58,20 +69,24 @@ function NewsBlock(props) {
 
   return (
     // <a href={`/FullNews/${news._id}`} className="ntres">
+
     <>
       {newsDatas
         .slice(0)
         .reverse()
         .map((news, index) => (
-         
-          <div
-            className="BlockHead"
-            onClick={(e) => {
-              handleClick(news._id);
-            }}
-          >
-             {console.log(news.EngCategory)}
-            <div className="refl">
+          <div className="BlockHead">
+            {console.log(news.EngCategory)}
+            <div
+              className="refl"
+              onClick={(e) => {
+                handleClick({_id:news._id, data:news.NewsSubTittle});
+              }}
+            >
+              {/* <Helmet>
+        <title>Gujarat Vandan - sub </title>
+        <meta name="description" content={news.NewsSubTittle} />
+      </Helmet> */}
               <div className="headlines-right">
                 <img
                   // src={img}
@@ -83,13 +98,14 @@ function NewsBlock(props) {
                 {/* <h3>{news.NewsTittle}</h3> */}
                 {/* {dts(news.EngCategory)} */}
                 <h3>
-                  <font style={{ color: news.Colored ? news.Colored:"#000000"}}>
-                    
+                  <font
+                    style={{ color: news.Colored ? news.Colored : "#000000" }}
+                  >
                     {news.NewsTittle.slice(0, 52)}
                   </font>
                   {/* {news.NewsSubTittle.split(" ").splice(0, 20).join(" ")} */}
                   {/* {news.NewsTittle} */}
-                  {news.NewsSubTittle} 
+                  {news.NewsSubTittle}
 
                   {/* <MyComponent htmlContent={news.NewsTittle.split(" ").splice(0,20).join(" ")}/> */}
                 </h3>
@@ -103,11 +119,21 @@ function NewsBlock(props) {
               <div className="cated">{news.GujCategory}</div>
 
               <div className="SocialIcon2">
-                <FontAwesomeIcon
-                  className="SocialIconed1"
-                  href="#"
-                  icon={faLink}
-                ></FontAwesomeIcon>
+                <div
+                  onClick={async (e) => {
+                    console.log("datrrrr");
+                 
+                    await navigator.clipboard.writeText(
+                      process.env.REACT_APP_FRONT_FILES + news._id
+                    );
+                  }}
+                >
+                  <FontAwesomeIcon
+                    className="SocialIconed1"
+                    href="#"
+                    icon={faLink}
+                  ></FontAwesomeIcon>
+                </div>
                 <FontAwesomeIcon
                   className="SocialIconed2"
                   href="#"

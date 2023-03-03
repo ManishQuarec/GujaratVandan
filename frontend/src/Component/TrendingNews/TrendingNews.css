@@ -1,6 +1,6 @@
 .FullHead{
     /* border: 1px solid red; */
-    width: 640px;
+    width: 100%;
     height: 610px;
     border: 1px solid  #eaeaea;
     padding: 20px 20px 8px;
@@ -56,4 +56,33 @@
  padding-left: 10px;
  height:24px;
  width:24px;
+}
+
+@media all and (min-width:360px) and (max-width:480px) {
+    .FullHead{
+        width: 100%;
+        height: 500px;
+        border-top: none;
+        
+    }
+
+    .FullHead img {
+        width:auto;
+    }
+
+    .FullHead img {
+        width: 100%;
+        height:20rem
+    }
+    .FullHead h3 {
+    
+        line-height: 28px;
+        font-size: 15px;
+    }
+
+    .SocialIcon {
+        flex-direction: row-reverse
+        
+    }
+    
 }

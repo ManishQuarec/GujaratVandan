@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
 import Nav from "../../Component/Nav/Nav";
-import Bottom from "../../Component/BottomNAV/Bottom"
+import Bottom from "../../Component/BottomNAV/Bottom";
 import BreakingNews from "../../Component/BreakingNews/BreakingNews";
 import LeftMenuBar from "../../Component/LeftMenuBar/LeftMenuBar";
 import AppStore from "../../Component/AppStore/AppStore";
@@ -21,21 +21,18 @@ import TrendingNews from "../../Component/TrendingNews/TrendingNews";
 import axios from "axios";
 
 function HomePage(props) {
-  document.title = "Gujarat Vandan - Home";
+  // document.title = "Gujarat Vandan - Home";
   return (
     <>
-      {/* <Helmet>
-        <meta property="og:image" content="https://pbs.twimg.com/media/FUJUNyQUUAIPURc.jpg" />
-      </Helmet> */}
-      <TrendingNews/>
+      <Helmet>
+        <title>Gujarat Vandan - Home </title>
+        {/* <meta name="description" content="get the latest news" /> */}
+      </Helmet>
+      <div className="Nate">
+        <TrendingNews />
 
-      {/* <VideoSlider /> */}
-      {/* <ImageData value={{ GujCategory: "રાજકારણ", EngCategory: "politics" }} />
-      <ImageData value={{ GujCategory: "વ્યાપાર", EngCategory: "Business" }} /> */}
-      <NewsBlock value={{ unique: true }} />
-      {/* <NewsBlock value={{ unique: true }} />
-      <NewsBlock value={{ unique: true }} />
-      <NewsBlock value={{ unique: true }} /> */}
+        <NewsBlock value={{ unique: true }} />
+      </div>
     </>
   );
 }
