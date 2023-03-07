@@ -25,7 +25,7 @@ function HomePage(props) {
   return (
     <>
       <Helmet>
-        <title>Gujarat Vandan - Home </title>
+        {/* <title>Gujarat Vandan - Home </title> */}
         {/* <meta name="description" content="get the latest news" /> */}
       </Helmet>
       <div className="Nate">

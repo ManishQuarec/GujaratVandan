@@ -13,10 +13,10 @@ import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
 function NewsBlock(props) {
   console.log(process.env.REACT_APP_FRONT_FILES);
-  const [url, setUrl] = useState(window.location.href);
-  function handleCopyUrl() {
+  // const [url, setUrl] = useState(window.location.href);
+  function handleCopyUrl(url) {
+    console.log(url);
     navigator.clipboard.writeText(url);
-    alert("URL copied to clipboard!");
   }
   console.log("datassss", props.value.unique);
   const navigate = useNavigate();
@@ -26,18 +26,21 @@ function NewsBlock(props) {
   console.log("dataser", newsDatas);
 
   const handleClick = (e) => {
-    console.log("need",e.data);
-
+    console.log("need", e.data);
 
     setNewsDatas([]);
     // await
     navigate("/FullNews/" + `${e._id}`);
 
-    const metaDescTag = document.querySelector("meta[name='description']");
-    metaDescTag.setAttribute("content", e.data);
-   document.title=`${e.data}`
+    // const metaDescTag = document.querySelector("meta[name='description']");
+    // metaDescTag.setAttribute("content", e.data);
+    // document.title = `${e.data}`;
 
- 
+    // // < Helmet><meta property="og:image" content="http://156.67.219.205:5000/Media//2023//2//27/ajay.jpg" data-rh="true"/> </Helmet>
+
+    // const metaDescTag2 = document.querySelector("meta[property='og:image']");
+    // metaDescTag2.setAttribute("content", process.env.REACT_APP_API_URL+e.image);
+
   };
 
   useEffect(() => {
@@ -80,13 +83,9 @@ function NewsBlock(props) {
             <div
               className="refl"
               onClick={(e) => {
-                handleClick({_id:news._id, data:news.NewsSubTittle});
+                handleClick({ _id: news._id, data: news.NewsSubTittle, image:news.Path });
               }}
             >
-              {/* <Helmet>
-        <title>Gujarat Vandan - sub </title>
-        <meta name="description" content={news.NewsSubTittle} />
-      </Helmet> */}
               <div className="headlines-right">
                 <img
                   // src={img}
@@ -113,40 +112,37 @@ function NewsBlock(props) {
                 {/* <p>{news.News}</p> */}
                 {/* <MyComponent htmlContent={news.News}/> */}
               </div>
-            </div>
+              </div>
 
             <div className="NewFooter2">
               <div className="cated">{news.GujCategory}</div>
 
               <div className="SocialIcon2">
-                <div
-                  onClick={async (e) => {
-                    console.log("datrrrr");
-                 
-                    await navigator.clipboard.writeText(
-                      process.env.REACT_APP_FRONT_FILES + news._id
-                    );
-                  }}
-                >
+                <div onClick={(e)=>{handleCopyUrl(process.env.REACT_APP_FRONT_FILES + news._id)}}>
                   <FontAwesomeIcon
                     className="SocialIconed1"
                     href="#"
                     icon={faLink}
                   ></FontAwesomeIcon>
                 </div>
+                <div>
                 <FontAwesomeIcon
                   className="SocialIconed2"
                   href="#"
                   icon={faFacebook}
                 ></FontAwesomeIcon>
+                </div>
+                <div>
                 <FontAwesomeIcon
                   className="SocialIconed2"
                   href="#"
                   icon={faTwitter}
                 ></FontAwesomeIcon>
+                </div>
               </div>
             </div>
           </div>
+         
         ))}
     </>
   );

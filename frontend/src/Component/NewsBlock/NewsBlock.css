@@ -78,6 +78,8 @@
 
 }
 .SocialIcon2 {
+  /* flex:1; */
+  float:right;
   height:19px;
   width:175px;
   display: flex;
@@ -89,6 +91,7 @@
  
 }
 .cated{
+  /* flex:1; */
   height:24px;
   width:150px;
   font-weight: bold;
@@ -175,7 +178,7 @@ width:24px;
   padding-top: 5px;
 }
 
-@media all and (min-width:360px) and (max-width:620px) {
+@media all and (min-width:360px) and (max-width:532px) {
   .BlockHead {
     /* border: 1px solid red; */
     /* width:55%; */
@@ -238,7 +241,7 @@ width:24px;
   .SocialIcon2 {
   /* border: 1px solid red; */
   height:19px;
-    width:87px;
+    width:74px;
   }
   .SocialIconed1{
     height:14px;
@@ -250,4 +253,111 @@ width:24px;
   height:14px;
   width:24px;
   }
+}
+
+
+@media all and (min-width:1500px) and (max-width:1800px) {
+  .SocialIcon2 {
+
+    width: auto;
+   
+  }
+
+  
+
+}
+
+@media all and (min-width:1026px) and (max-width:1214px) {
+
+  .headlines-left h3 {
+    width:auto;
+    min-width:350px;
+  }
+  
+}
+
+@media all and (min-width:1026px) and (max-width:1269px) {
+  .headlines-left h3 {
+    width:auto;
+    min-width:350px;
+  }
+  .SocialIcon2 {
+
+    width: auto;
+    min-width:89px;
+   
+  }
+
+  .headlines-right img {
+
+    min-width: 134px;
+  }
+
+}
+
+@media all and (min-width:997px) and (max-width:1025px) {
+
+  .SocialIcon2 {
+
+    width: auto;
+    min-width:327px;
+   
+  }
+}
+
+@media all and (min-width:977px) and (max-width:997px) {
+  .SocialIcon2 {
+
+    width: auto;
+    min-width:297px;
+   
+  }
+
+}
+
+@media all and (min-width:907px) and (max-width:955px) {
+
+  .SocialIcon2 {
+
+    width: auto;
+    min-width:297px;
+   
+  }
+}
+
+@media all and (min-width:856px) and (max-width:906px) {
+  .SocialIcon2 {
+
+    width: auto;
+    min-width:208px;
+   
+  }
+
+}
+
+
+@media all and (min-width:770px) and (max-width:809px) {
+  .SocialIcon2 {
+
+    width: auto;
+    min-width:301px;
+   
+  }
+
+}
+
+@media all and (min-width:725px) and (max-width:769px) {
+  .SocialIcon2 {
+
+    width: auto;
+    min-width:250px;
+   
+  }
+
+}
+
+@media all and (min-width:533px) and (max-width:646px) {
+
+
+
 }

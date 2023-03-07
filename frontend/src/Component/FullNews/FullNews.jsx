@@ -4,6 +4,7 @@ import BenIMG from "./IMG-CSS/BenImg.png";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 import axios from "axios";
 import NewsBlock from "../NewsBlock/NewsBlock";
+import MetaDecorator from "../MetaTag/Metatag";
 import { Helmet } from "react-helmet";
 function MyComponent({ htmlContent }) {
   return <div dangerouslySetInnerHTML={{ __html: htmlContent }} />;
@@ -18,6 +19,7 @@ function FullNews() {
   const [subTittle, setSubTittle] = useState("");
   const [news, setNews] = useState("");
   const [colored, setColored] = useState("");
+  const [id, setId] = useState("");
 
   //  const data = (dat) => {
   //   React.createElement(
@@ -28,8 +30,9 @@ function FullNews() {
 
   // function createMarkup(text) { return {__html: text}; };
 
-  console.log(news);
+  console.log("id", id);
   useEffect(() => {
+    window.scrollTo(0, 0);
     axios
       .post(process.env.REACT_APP_API_BASE_URL + "/allNewsDataId", {
         data: userId,
@@ -42,19 +45,19 @@ function FullNews() {
         await setNews(response.data.response[0].News);
         await setSubTittle(response.data.response[0].NewsSubTittle);
         await setColored(response.data.response[0].Colored);
+        await setId(response.data.response[0]._id);
         // console.log(response.data.response);
       });
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <>
-      {/* <Helmet>
-        <title>Gujarat Vandan - FullNews </title>
-        <meta name="description" content={subTittle} />
-      </Helmet> */}
+      <MetaDecorator
+        description={subTittle}
+        title={tittle}
+        imageUrl={image}
+        imageAlt={"imageAlt"}
+      />
       <div className="datt">
         <div className="FullNews">
           <div className="NewsContent">
