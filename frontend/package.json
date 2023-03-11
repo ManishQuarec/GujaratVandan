@@ -13,6 +13,7 @@
     "axios": "^1.2.2",
     "dotenv": "^16.0.3",
     "env-cmd": "^10.1.0",
+    "express": "^4.18.2",
     "file": "^0.2.2",
     "file-saver": "^2.0.5",
     "fs": "^0.0.1-security",
@@ -23,9 +24,10 @@
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.3.5",
     "react-helmet": "^6.1.0",
+    "react-helmet-async": "^1.3.0",
     "react-router-dom": "^6.8.0",
     "react-scripts": "^5.0.1",
-    "react-snap": "^1.23.0",
+    "rendertron-middleware": "^0.1.5",
     "saver": "^0.1.1",
     "web-vitals": "^2.1.4"
   },
@@ -33,8 +35,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postbuild": "react-snap"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -55,6 +56,7 @@
     ]
   },
   "devDependencies": {
-    "dotenv-webpack": "^8.0.1"
+    "dotenv-webpack": "^8.0.1",
+    "react-snap": "^1.23.0"
   }
 }

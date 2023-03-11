@@ -10,6 +10,7 @@ import img from "../../Image/HomePageIMage/raspred1.png";
 import { useNavigate } from "react-router-dom";
 import { FullNews, MyComponent } from "../../Component/FullNews/FullNews";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
+import MetaDecorator from "../MetaTag/Metatag";
 
 function NewsBlock(props) {
   console.log(process.env.REACT_APP_FRONT_FILES);
@@ -28,9 +29,25 @@ function NewsBlock(props) {
   const handleClick = (e) => {
     console.log("need", e.data);
 
+    // const url  = process.env.REACT_APP_FRONT_FILES+ "/filessss" + `${e._id}`
+
+    // window.location.href = url
+    navigate("/fullnews/" + `${e._id}`);
+    window.location.reload();
+
+    // return (
+    //   <MetaDecorator
+    //     description={e.data}
+    //     title={e.data}
+    //     imageUrl={"Media/icon.png"}
+    //     imageAlt={"imageAlt"}
+    //   />
+
+    // )
+
     setNewsDatas([]);
     // await
-    navigate("/FullNews/" + `${e._id}`);
+
 
     // const metaDescTag = document.querySelector("meta[name='description']");
     // metaDescTag.setAttribute("content", e.data);
@@ -50,23 +67,23 @@ function NewsBlock(props) {
     {
       props.value.unique == true
         ? axios
-            .post(process.env.REACT_APP_API_BASE_URL + "/allNews")
-            .then(async (response) => {
-              // console.log(response.data.response);
-              await setNewsDatas(response.data.response);
+          .post(process.env.REACT_APP_API_BASE_URL + "/allNews")
+          .then(async (response) => {
+            // console.log(response.data.response);
+            await setNewsDatas(response.data.response);
 
-              console.log("res1");
-            })
+            console.log("res1");
+          })
         : axios
-            .post(process.env.REACT_APP_API_BASE_URL + "/allNewsData", {
-              data: cat,
-            })
-            .then(async (response) => {
-              // console.log(response.data.response);
-              await setNewsDatas(response.data.response);
-              console.log("res2");
-              // console.log(response.data.response);
-            });
+          .post(process.env.REACT_APP_API_BASE_URL + "/allNewsData", {
+            data: cat,
+          })
+          .then(async (response) => {
+            // console.log(response.data.response);
+            await setNewsDatas(response.data.response);
+            console.log("res2");
+            // console.log(response.data.response);
+          });
     }
   }, []);
 
@@ -83,7 +100,7 @@ function NewsBlock(props) {
             <div
               className="refl"
               onClick={(e) => {
-                handleClick({ _id: news._id, data: news.NewsSubTittle, image:news.Path });
+                handleClick({ _id: news._id, data: news.NewsSubTittle, image: news.Path });
               }}
             >
               <div className="headlines-right">
@@ -112,13 +129,13 @@ function NewsBlock(props) {
                 {/* <p>{news.News}</p> */}
                 {/* <MyComponent htmlContent={news.News}/> */}
               </div>
-              </div>
+            </div>
 
             <div className="NewFooter2">
               <div className="cated">{news.GujCategory}</div>
 
               <div className="SocialIcon2">
-                <div onClick={(e)=>{handleCopyUrl(process.env.REACT_APP_FRONT_FILES + news._id)}}>
+                <div onClick={(e) => { handleCopyUrl(process.env.REACT_APP_FRONT_FILES + news._id) }}>
                   <FontAwesomeIcon
                     className="SocialIconed1"
                     href="#"
@@ -126,23 +143,23 @@ function NewsBlock(props) {
                   ></FontAwesomeIcon>
                 </div>
                 <div>
-                <FontAwesomeIcon
-                  className="SocialIconed2"
-                  href="#"
-                  icon={faFacebook}
-                ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                    className="SocialIconed2"
+                    href="#"
+                    icon={faFacebook}
+                  ></FontAwesomeIcon>
                 </div>
                 <div>
-                <FontAwesomeIcon
-                  className="SocialIconed2"
-                  href="#"
-                  icon={faTwitter}
-                ></FontAwesomeIcon>
+                  <FontAwesomeIcon
+                    className="SocialIconed2"
+                    href="#"
+                    icon={faTwitter}
+                  ></FontAwesomeIcon>
                 </div>
               </div>
             </div>
           </div>
-         
+
         ))}
     </>
   );

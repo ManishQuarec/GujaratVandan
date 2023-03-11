@@ -32,7 +32,7 @@ function FullNews() {
 
   console.log("id", id);
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
     axios
       .post(process.env.REACT_APP_API_BASE_URL + "/allNewsDataId", {
         data: userId,
@@ -41,7 +41,7 @@ function FullNews() {
         console.log("new", response.data.response[0]);
         await setNewsData(response.data.response);
         await setImage(response.data.response[0].Path);
-        await setTittle(response.data.response[0].NewsTittle);
+        await setTittle(response.data.response[0].NewsTittle);  
         await setNews(response.data.response[0].News);
         await setSubTittle(response.data.response[0].NewsSubTittle);
         await setColored(response.data.response[0].Colored);

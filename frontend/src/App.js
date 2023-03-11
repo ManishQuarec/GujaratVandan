@@ -20,6 +20,7 @@ import { FullNews } from "./Component/FullNews/FullNews";
 import FullNewsPost from "./Component/FullNews/FullNewsPost";
 import Comming from "./Component/ComingSoon/Coming";
 import Bottom from "./Component/BottomNAV/Bottom";
+import News from "./Component/news/News";
 
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 
@@ -64,7 +65,8 @@ function App() {
             <Route path="/VideoSlider" element={<VideoSlider />} />
             <Route path="/Search" element={<SearchNews />} />
             <Route path="/EPapers" element={<EPapers />} />
-            <Route path="/FullNews/:userId" element={<FullNews />} />
+            <Route path="/fullnews/:userId" element={<FullNews />} />
+            <Route path="/news" element={<News />} />
             <Route
               path="category/:cat"
               element={<NewsBlock value={{ unique: false }} />}

@@ -137,7 +137,7 @@ function LeftMenuBar() {
             </div>
           </div>
         </a> */}
-        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Dharma Darshan"}>
+        <a style={{ textDecoration: "none", color: "#000" }} href={"/category/Dharma-Darshan"}>
 
           <div className="category">
             <div className="DATA">

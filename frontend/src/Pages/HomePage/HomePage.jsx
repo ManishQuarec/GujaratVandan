@@ -21,6 +21,12 @@ import TrendingNews from "../../Component/TrendingNews/TrendingNews";
 import axios from "axios";
 
 function HomePage(props) {
+
+  // useEffect(() => {
+  //   axios
+  //   .get(process.env.REACT_APP_API_URL + "need")
+
+  // })
   // document.title = "Gujarat Vandan - Home";
   return (
     <>
