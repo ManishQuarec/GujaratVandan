@@ -31,8 +31,19 @@ function FullNews() {
   // function createMarkup(text) { return {__html: text}; };
 
   console.log("id", id);
+
+
+
   useEffect(() => {
     // window.scrollTo(0, 0);
+    axios.get(process.env.REACT_APP_API_BASE_URL + "/fullnews").then(async (response) => {
+      console.log(response.data);
+
+      // document.documentElement.innerHTML = await String(response.data);
+
+
+      // String(response.data);;
+    })
     axios
       .post(process.env.REACT_APP_API_BASE_URL + "/allNewsDataId", {
         data: userId,
@@ -41,23 +52,24 @@ function FullNews() {
         console.log("new", response.data.response[0]);
         await setNewsData(response.data.response);
         await setImage(response.data.response[0].Path);
-        await setTittle(response.data.response[0].NewsTittle);  
+        await setTittle(response.data.response[0].NewsTittle);
         await setNews(response.data.response[0].News);
         await setSubTittle(response.data.response[0].NewsSubTittle);
         await setColored(response.data.response[0].Colored);
         await setId(response.data.response[0]._id);
         // console.log(response.data.response);
       });
-  }, []);
+
+  }, [id]);
 
   return (
     <>
-      <MetaDecorator
+      {/* <MetaDecorator
         description={subTittle}
         title={tittle}
         imageUrl={image}
         imageAlt={"imageAlt"}
-      />
+      /> */}
       <div className="datt">
         <div className="FullNews">
           <div className="NewsContent">

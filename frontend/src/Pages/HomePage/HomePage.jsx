@@ -22,18 +22,18 @@ import axios from "axios";
 
 function HomePage(props) {
 
-  // useEffect(() => {
-  //   axios
-  //   .get(process.env.REACT_APP_API_URL + "need")
+  useEffect(() => {
+    axios
+    .get(process.env.REACT_APP_API_URL + "need")
 
-  // })
+  },[])
   // document.title = "Gujarat Vandan - Home";
   return (
     <>
-      <Helmet>
+      {/* <Helmet> */}
         {/* <title>Gujarat Vandan - Home </title> */}
         {/* <meta name="description" content="get the latest news" /> */}
-      </Helmet>
+      {/* </Helmet> */}
       <div className="Nate">
         <TrendingNews />
 
