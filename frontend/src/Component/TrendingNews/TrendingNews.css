@@ -4,6 +4,7 @@
     height: 610px;
     border: 1px solid  #eaeaea;
     padding: 20px 20px 8px;
+    cursor: pointer; 
 
 }
 .idcolor{

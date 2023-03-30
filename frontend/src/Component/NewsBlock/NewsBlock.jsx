@@ -7,7 +7,7 @@ import axios from "axios";
 import { Helmet } from "react-helmet";
 import img from "../../Image/HomePageIMage/raspred1.png";
 // import FullNews from "../../Component/FullNews/FullNews";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,  } from "react-router-dom";
 import { FullNews, MyComponent } from "../../Component/FullNews/FullNews";
 import { Route, Routes, BrowserRouter, useParams } from "react-router-dom";
 import MetaDecorator from "../MetaTag/Metatag";
@@ -61,6 +61,8 @@ function NewsBlock(props) {
   };
 
   useEffect(() => {
+
+  
     // await setNewsDatas([])
     console.warn(cat);
     setNewsDatas([]);
@@ -91,6 +93,12 @@ function NewsBlock(props) {
     // <a href={`/FullNews/${news._id}`} className="ntres">
 
     <>
+{props.value.unique? null :<MetaDecorator  description={"Category Block"}
+        title={"Category Block"}
+        imageUrl={"Category Block"}
+        imageAlt={"Category Block"}
+        link={"https://www.gujaratvandan.com/category/"+{cat}}/>}
+
       {newsDatas
         .slice(0)
         .reverse()
@@ -100,7 +108,7 @@ function NewsBlock(props) {
             <div
               className="refl"
               onClick={(e) => {
-                handleClick({ _id: news._id, data: news.NewsSubTittle, image: news.Path });
+                handleClick({ _id: news._id, data: news.NewsSubTittle, image: news.Path, category: news.EngCategory});
               }}
             >
               <div className="headlines-right">
@@ -135,7 +143,7 @@ function NewsBlock(props) {
               <div className="cated">{news.GujCategory}</div>
 
               <div className="SocialIcon2">
-                <div onClick={(e) => { handleCopyUrl(process.env.REACT_APP_FRONT_FILES + news._id) }}>
+                <div onClick={(e) => { handleCopyUrl(process.env.REACT_APP_FRONT_FILES + "fullnews/" + news._id) }}>
                   <FontAwesomeIcon
                     className="SocialIconed1"
                     href="#"

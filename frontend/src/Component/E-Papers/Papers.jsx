@@ -1,9 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./Papers.css";
 import PapersIMG from "./IMG/Papers.png";
 import axios from "axios";
 import fileDownload from 'js-file-download'
 import { saveAs } from 'file-saver';
+import MetaDecorator from "../MetaTag/Metatag";
 
 function Papers() {
   document.title = "Gujarat Vandan - E-pepers";
@@ -12,58 +13,64 @@ function Papers() {
 
 
 
- const download = (e) => {
+  const download = (e) => {
 
-  const data={url:e}
-  console.log(data);
-  axios({
-    url:process.env.REACT_APP_API_BASE_URL+"/downloads",
-    method:"POST",
-    responseType:"blob",
-    data
-  }).then((res)=>{
-    console.log(res);
-    fileDownload(res.data, "download.pdf")
-  })
- }
+    const data = { url: e }
+    console.log(data);
+    axios({
+      url: process.env.REACT_APP_API_BASE_URL + "/downloads",
+      method: "POST",
+      responseType: "blob",
+      data
+    }).then((res) => {
+      console.log(res);
+      fileDownload(res.data, "download.pdf")
+    })
+  }
 
 
-console.log("newsData", newsData);
+  console.log("newsData", newsData);
 
 
   useEffect(() => {
-    
-    axios.get(process.env.REACT_APP_API_BASE_URL+"/newsPaper").then(async (response) => {
+
+    axios.get(process.env.REACT_APP_API_BASE_URL + "/newsPaper").then(async (response) => {
       // console.log(response.data.response);
       await setNewsData(response.data.response);
       // console.log(response.data.response);
     });
-  
-    
-  },[])
-  
+
+
+  }, [])
+
   return (
     <>
+      {/* <MetaDecorator description={"NewsPaper"}
+        title={"NewsPaper"}
+        imageUrl={"NewsPaper"}
+        imageAlt={"NewsPaper"}
+        link ={"https://www.gujaratvandan.com/EPapers"} /> */}
+
       <div className="E-Papers">
         <h1>ઈ-ન્યુઝ પેપર્સ</h1>
       </div>
       <div className="Collection">
-      {newsData.slice(0)
-        .reverse().map((news, index) => (
+        {newsData.slice(0)
+          .reverse().map((news, index) => (
 
-<div className="upload">
-          <button onClick={(e)=>download(news.Path)}>
-          <img  src={PapersIMG} alt="" />
-          <p>
-            તારીખ:-{news.NewsPaperDate}<br />
-            શનિવાર
-          </p>
-          </button>
-        </div>
-        
-      ))}
-     
-        
+            <div className="upload">
+              <button onClick={(e) => download(news.Path)}>
+                <img src={PapersIMG} alt="" />
+                <p>
+                  તારીખ:-{news.NewsPaperDate}<br />
+                  શનિવાર
+                </p>
+              </button>
+            </div>
+
+          ))}
+
+
         {/* <div className="upload">
           <img src={PapersIMG} alt="" />
           <p>

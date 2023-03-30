@@ -63,7 +63,7 @@ function TrendingNews() {
             href="#"
             icon={faLink}
             onClick={() => {
-              navigator.clipboard.writeText(process.env.REACT_APP_FRONT_FILES +resData._id);
+              navigator.clipboard.writeText(process.env.REACT_APP_FRONT_FILES + "fullnews/"+resData._id);
             }}
           ></FontAwesomeIcon>
           <FontAwesomeIcon

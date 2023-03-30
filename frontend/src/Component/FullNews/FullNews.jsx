@@ -34,16 +34,17 @@ function FullNews() {
 
 
 
-  useEffect(() => {
+  useEffect( () => {
     // window.scrollTo(0, 0);
-    axios.get(process.env.REACT_APP_API_BASE_URL + "/fullnews").then(async (response) => {
-      console.log(response.data);
+    //  axios.get(process.env.REACT_APP_API_BASE_URL + "/fullnews").then(async (response) => {
+    //   console.log("datares");
+    //   console.log(response.data);
 
-      // document.documentElement.innerHTML = await String(response.data);
+    //   document.documentElement.innerHTML = await String(response.data);
 
 
-      // String(response.data);;
-    })
+    //   // String(response.data);;
+    // })
     axios
       .post(process.env.REACT_APP_API_BASE_URL + "/allNewsDataId", {
         data: userId,
@@ -60,16 +61,19 @@ function FullNews() {
         // console.log(response.data.response);
       });
 
-  }, [id]);
+  },[]);
 
   return (
     <>
-      {/* <MetaDecorator
-        description={subTittle}
-        title={tittle}
-        imageUrl={image}
+      <MetaDecorator
+        description={"fullnews"}
+        title={"fullnews"}
+        imageUrl={"fullnews"}
         imageAlt={"imageAlt"}
-      /> */}
+        link={"lifullnewsnk"}
+        
+
+      />
       <div className="datt">
         <div className="FullNews">
           <div className="NewsContent">

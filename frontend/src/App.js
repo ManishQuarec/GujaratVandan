@@ -32,9 +32,9 @@ function App() {
       <>
         <Nav />
         <div className="viewed">
-        <div className="datars">
-          
-          <LeftMenuBar />
+          <div className="datars">
+
+            <LeftMenuBar />
           </div>
         </div>
 
@@ -56,25 +56,28 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Layout>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/Coming" element={<Comming />} />
-            <Route path="/" element={<HomePage />} />
-            <Route path="/VideoSlider" element={<VideoSlider />} />
-            <Route path="/Search" element={<SearchNews />} />
-            <Route path="/EPapers" element={<EPapers />} />
-            <Route path="/fullnews/:userId" element={<FullNews />} />
-            <Route path="/news" element={<News />} />
-            <Route
-              path="category/:cat"
-              element={<NewsBlock value={{ unique: false }} />}
-            />
-          </Routes>
-        </BrowserRouter>
-      </Layout>
-    </div>
+    <>
+      <div id="mysitemapgenerator_loadcorsdata" data-token="86260b6dd16fef3bf729367f0fe98f13" data-domain="www.mysitemapgenerator.com"></div><script src="https://www.mysitemapgenerator.com/api/embedmap.min.js"></script>
+      <div className="App">
+        <Layout>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/Coming" element={<Comming />} />
+              <Route path="/" element={<HomePage />} />
+              <Route path="/VideoSlider" element={<VideoSlider />} />
+              <Route path="/Search" element={<SearchNews />} />
+              <Route path="/EPapers" element={<EPapers />} />
+              <Route path="/fullnews/:userId" element={<FullNews />} />
+              <Route path="/news" element={<News />} />
+              <Route
+                path="category/:cat"
+                element={<NewsBlock value={{ unique: false }} />}
+              />
+            </Routes>
+          </BrowserRouter>
+        </Layout>
+      </div>
+    </>
   );
 }
 
